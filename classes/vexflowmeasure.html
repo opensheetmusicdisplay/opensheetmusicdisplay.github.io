@@ -160,6 +160,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="vexflowmeasure.html#resetlayout" class="tsd-kind-icon">reset<wbr>Layout</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vexflowmeasure.html#setabsolutecoordinates" class="tsd-kind-icon">set<wbr>Absolute<wbr>Coordinates</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="vexflowmeasure.html#setpositioninstaffline" class="tsd-kind-icon">set<wbr>Position<wbr>InStaffline</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="vexflowmeasure.html#setstaffentriesxpositions" class="tsd-kind-icon">set<wbr>Staff<wbr>EntriesXPositions</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="vexflowmeasure.html#setwidth" class="tsd-kind-icon">set<wbr>Width</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vexflowmeasure.html#staffmeasurecreatedcalculations" class="tsd-kind-icon">staff<wbr>Measure<wbr>Created<wbr>Calculations</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="vexflowmeasure.html#updateinstructionwidth" class="tsd-kind-icon">update<wbr>Instruction<wbr>Width</a></li>
@@ -181,7 +182,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L21">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L21">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:21</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -209,7 +210,7 @@
 					<div class="tsd-signature tsd-kind-icon">beams<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L42">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L42">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:42</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -228,9 +229,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#begininstructionswidth">beginInstructionsWidth</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L47">MusicalScore/Graphical/StaffMeasure.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L50">MusicalScore/Graphical/StaffMeasure.ts:50</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The x-width of possibly existing: repetition start line, clef, key, rhythm.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="boundingbox" class="tsd-anchor"></a>
@@ -239,7 +245,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="graphicalobject.html">GraphicalObject</a>.<a href="graphicalobject.html#boundingbox">boundingBox</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/GraphicalObject.ts#L4">MusicalScore/Graphical/GraphicalObject.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/GraphicalObject.ts#L5">MusicalScore/Graphical/GraphicalObject.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -249,7 +255,7 @@
 					<div class="tsd-signature tsd-kind-icon">connectors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">StaveConnector</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L40">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L40">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -260,9 +266,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#endinstructionswidth">endInstructionsWidth</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L50">MusicalScore/Graphical/StaffMeasure.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L62">MusicalScore/Graphical/StaffMeasure.ts:62</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The x-width of possibly existing: repetition end line, clef.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="firstinstructionstaffentry" class="tsd-anchor"></a>
@@ -271,7 +282,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#firstinstructionstaffentry">firstInstructionStaffEntry</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L22">MusicalScore/Graphical/StaffMeasure.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L22">MusicalScore/Graphical/StaffMeasure.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -281,7 +292,7 @@
 					<div class="tsd-signature tsd-kind-icon">format<wbr>Voices<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L33">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L33">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:33</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -313,7 +324,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#haserror">hasError</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L51">MusicalScore/Graphical/StaffMeasure.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L63">MusicalScore/Graphical/StaffMeasure.ts:63</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -324,7 +335,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#lastinstructionstaffentry">lastInstructionStaffEntry</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L23">MusicalScore/Graphical/StaffMeasure.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L23">MusicalScore/Graphical/StaffMeasure.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -335,9 +346,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#minimumstaffentrieswidth">minimumStaffEntriesWidth</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L48">MusicalScore/Graphical/StaffMeasure.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L54">MusicalScore/Graphical/StaffMeasure.ts:54</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The minimum possible x-width of all staff entries without overlapping.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="octaveoffset" class="tsd-anchor"></a>
@@ -345,7 +361,7 @@
 					<div class="tsd-signature tsd-kind-icon">octave<wbr>Offset<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;3</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L29">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L29">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -356,7 +372,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#parentmusicsystem">parentMusicSystem</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L46">MusicalScore/Graphical/StaffMeasure.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L46">MusicalScore/Graphical/StaffMeasure.ts:46</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -367,7 +383,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#parentsourcemeasure">parentSourceMeasure</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L44">MusicalScore/Graphical/StaffMeasure.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L44">MusicalScore/Graphical/StaffMeasure.ts:44</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -378,7 +394,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#staffentries">staffEntries</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L45">MusicalScore/Graphical/StaffMeasure.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L45">MusicalScore/Graphical/StaffMeasure.ts:45</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -389,9 +405,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#staffentriesscalefactor">staffEntriesScaleFactor</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L49">MusicalScore/Graphical/StaffMeasure.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L58">MusicalScore/Graphical/StaffMeasure.ts:58</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Will be set by music system builder while building systems.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="stave" class="tsd-anchor"></a>
@@ -399,7 +420,7 @@
 					<div class="tsd-signature tsd-kind-icon">stave<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Stave</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L38">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L38">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -409,7 +430,7 @@
 					<div class="tsd-signature tsd-kind-icon">tuplets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L46">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L46">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -427,7 +448,7 @@
 					<div class="tsd-signature tsd-kind-icon">vf<wbr>Ties<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">StaveTie</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L35">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L35">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:35</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -437,7 +458,7 @@
 					<div class="tsd-signature tsd-kind-icon">vf<wbr>Voices<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L31">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L31">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:31</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -455,7 +476,7 @@
 					<div class="tsd-signature tsd-kind-icon">vfbeams<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L44">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L44">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:44</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -473,7 +494,7 @@
 					<div class="tsd-signature tsd-kind-icon">vftuplets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L48">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L48">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:48</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -500,7 +521,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#firstinstructionstaffentry-1">FirstInstructionStaffEntry</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L65">MusicalScore/Graphical/StaffMeasure.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L77">MusicalScore/Graphical/StaffMeasure.ts:77</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="graphicalstaffentry.html" class="tsd-signature-type">GraphicalStaffEntry</a></h4>
@@ -509,7 +530,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#firstinstructionstaffentry-1">FirstInstructionStaffEntry</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L69">MusicalScore/Graphical/StaffMeasure.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L81">MusicalScore/Graphical/StaffMeasure.ts:81</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -534,7 +555,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#lastinstructionstaffentry-1">LastInstructionStaffEntry</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L73">MusicalScore/Graphical/StaffMeasure.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L85">MusicalScore/Graphical/StaffMeasure.ts:85</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="graphicalstaffentry.html" class="tsd-signature-type">GraphicalStaffEntry</a></h4>
@@ -543,7 +564,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#lastinstructionstaffentry-1">LastInstructionStaffEntry</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L77">MusicalScore/Graphical/StaffMeasure.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L89">MusicalScore/Graphical/StaffMeasure.ts:89</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -567,7 +588,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#measurenumber-1">MeasureNumber</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L61">MusicalScore/Graphical/StaffMeasure.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L73">MusicalScore/Graphical/StaffMeasure.ts:73</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -585,7 +606,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#parentstaff-1">ParentStaff</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L57">MusicalScore/Graphical/StaffMeasure.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L69">MusicalScore/Graphical/StaffMeasure.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="staff.html" class="tsd-signature-type">Staff</a></h4>
@@ -604,7 +625,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#parentstaffline-1">ParentStaffLine</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L81">MusicalScore/Graphical/StaffMeasure.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L93">MusicalScore/Graphical/StaffMeasure.ts:93</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="staffline.html" class="tsd-signature-type">StaffLine</a></h4>
@@ -613,7 +634,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#parentstaffline-1">ParentStaffLine</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L85">MusicalScore/Graphical/StaffMeasure.ts:85</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L97">MusicalScore/Graphical/StaffMeasure.ts:97</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -638,7 +659,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="graphicalobject.html">GraphicalObject</a>.<a href="graphicalobject.html#positionandshape">PositionAndShape</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/GraphicalObject.ts#L5">MusicalScore/Graphical/GraphicalObject.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/GraphicalObject.ts#L7">MusicalScore/Graphical/GraphicalObject.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a></h4>
@@ -647,7 +668,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="graphicalobject.html">GraphicalObject</a>.<a href="graphicalobject.html#positionandshape">PositionAndShape</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/GraphicalObject.ts#L8">MusicalScore/Graphical/GraphicalObject.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/GraphicalObject.ts#L11">MusicalScore/Graphical/GraphicalObject.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -674,7 +695,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#addclefatbegin">addClefAtBegin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L101">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L101">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:101</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -706,7 +727,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#addclefatend">addClefAtEnd</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L143">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:143</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L143">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:143</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -738,7 +759,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#addgraphicalstaffentry">addGraphicalStaffEntry</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L212">MusicalScore/Graphical/StaffMeasure.ts:212</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L280">MusicalScore/Graphical/StaffMeasure.ts:280</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -762,13 +783,20 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#addgraphicalstaffentryattimestamp">addGraphicalStaffEntryAtTimestamp</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L217">MusicalScore/Graphical/StaffMeasure.ts:217</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L289">MusicalScore/Graphical/StaffMeasure.ts:289</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add a [[StaffEntry]] (along with its <a href="boundingbox.html">BoundingBox</a>) to the current Measure.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>staffEntry: <a href="graphicalstaffentry.html" class="tsd-signature-type">GraphicalStaffEntry</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -786,7 +814,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#addkeyatbegin">addKeyAtBegin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L115">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L115">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:115</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -831,7 +859,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#addrhythmatbegin">addRhythmAtBegin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L129">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L129">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:129</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -863,7 +891,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#beginswithlinerepetition">beginsWithLineRepetition</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L236">MusicalScore/Graphical/StaffMeasure.ts:236</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L308">MusicalScore/Graphical/StaffMeasure.ts:308</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -881,9 +909,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#beginswithwordrepetition">beginsWithWordRepetition</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L252">MusicalScore/Graphical/StaffMeasure.ts:252</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L332">MusicalScore/Graphical/StaffMeasure.ts:332</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if a Repetition starts at the next Measure.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -898,7 +931,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L71">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L71">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:71</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -915,7 +948,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L184">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:184</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L184">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:184</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -946,9 +979,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#endswithlinerepetition">endsWithLineRepetition</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L244">MusicalScore/Graphical/StaffMeasure.ts:244</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L320">MusicalScore/Graphical/StaffMeasure.ts:320</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if this Measure is a Repetition Ending.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -964,9 +1002,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#endswithwordrepetition">endsWithWordRepetition</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L260">MusicalScore/Graphical/StaffMeasure.ts:260</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L343">MusicalScore/Graphical/StaffMeasure.ts:343</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if this Measure is a Repetition Ending.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -981,7 +1024,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L283">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:283</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L286">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:286</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1003,7 +1046,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L312">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:312</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L319">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:319</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1026,7 +1069,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#findgraphicalstaffentryfromtimestamp">findGraphicalStaffEntryFromTimestamp</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L128">MusicalScore/Graphical/StaffMeasure.ts:128</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L183">MusicalScore/Graphical/StaffMeasure.ts:183</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1050,9 +1093,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#findgraphicalstaffentryfromverticalcontainertimestamp">findGraphicalStaffEntryFromVerticalContainerTimestamp</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L138">MusicalScore/Graphical/StaffMeasure.ts:138</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L198">MusicalScore/Graphical/StaffMeasure.ts:198</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Iterate from start to end and find the <a href="graphicalstaffentry.html">GraphicalStaffEntry</a> with the same absolute timestamp.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1074,7 +1122,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#getgraphicalmeasuredurationfromstaffentries">getGraphicalMeasureDurationFromStaffEntries</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L181">MusicalScore/Graphical/StaffMeasure.ts:181</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L249">MusicalScore/Graphical/StaffMeasure.ts:249</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="fraction.html" class="tsd-signature-type">Fraction</a></h4>
@@ -1092,7 +1140,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#getlinewidth">getLineWidth</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L83">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L83">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:83</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1121,7 +1169,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L395">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:395</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L402">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:402</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1143,7 +1191,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L236">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:236</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L239">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:239</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1176,7 +1224,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L258">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:258</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L261">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:261</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1203,9 +1251,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#hasmultiplevoices">hasMultipleVoices</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L157">MusicalScore/Graphical/StaffMeasure.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L225">MusicalScore/Graphical/StaffMeasure.ts:225</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check a whole [[Measure]] for the presence of multiple Voices (used for Stem direction).</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -1221,9 +1274,14 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#hassamedurationwithsourcemeasureparent">hasSameDurationWithSourceMeasureParent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L148">MusicalScore/Graphical/StaffMeasure.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L212">MusicalScore/Graphical/StaffMeasure.ts:212</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if the all the [[GraphicalMeasure]]&#39;s [[StaffEntry]]s (their minimum Length) have the same duration with the <a href="sourcemeasure.html">SourceMeasure</a>.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -1239,7 +1297,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#isvisible">isVisible</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L177">MusicalScore/Graphical/StaffMeasure.ts:177</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L245">MusicalScore/Graphical/StaffMeasure.ts:245</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1256,7 +1314,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L338">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:338</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L345">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:345</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1280,7 +1338,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#layoutsymbols">layoutSymbols</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L167">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:167</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L167">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:167</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1304,7 +1362,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L385">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:385</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L392">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:392</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1338,7 +1396,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#resetlayout">resetLayout</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L59">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L59">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:59</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1361,7 +1419,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L51">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L51">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1388,15 +1446,45 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#setpositioninstaffline">setPositionInStaffline</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/StaffMeasure.ts#L116">MusicalScore/Graphical/StaffMeasure.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/StaffMeasure.ts#L162">MusicalScore/Graphical/StaffMeasure.ts:162</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the x-position relative to the staffline (y-Position is always 0 relative to the staffline).</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>xPos: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="setstaffentriesxpositions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> set<wbr>Staff<wbr>EntriesXPositions</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Staff<wbr>EntriesXPositions<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L437">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:437</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>sets the vexflow x positions back into the bounding boxes of the staff entries in the osmd object model.
+									The positions are needed for cursor placement and mouse/tap interactions</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -1412,7 +1500,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="staffmeasure.html">StaffMeasure</a>.<a href="staffmeasure.html#setwidth">setWidth</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L153">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L153">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:153</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1442,7 +1530,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L342">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:342</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L349">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:349</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1459,7 +1547,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/c56ec5a/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L421">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:421</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/e48bf11/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L428">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:428</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1662,6 +1750,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="vexflowmeasure.html#setpositioninstaffline" class="tsd-kind-icon">set<wbr>Position<wbr>InStaffline</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="vexflowmeasure.html#setstaffentriesxpositions" class="tsd-kind-icon">set<wbr>Staff<wbr>EntriesXPositions</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="vexflowmeasure.html#setwidth" class="tsd-kind-icon">set<wbr>Width</a>
