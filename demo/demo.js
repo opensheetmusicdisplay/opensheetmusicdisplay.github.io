@@ -29,7 +29,6 @@
         zoom = 1.0,
     // HTML Elements in the page
         err,
-        error_tr,
         canvas,
         select,
         zoomIn,
@@ -46,15 +45,14 @@
     function init() {
         var name, option;
 
-        err = document.getElementById("error-td");
-        error_tr = document.getElementById("error-tr");
+        err = document.getElementById("error-container");
         size = document.getElementById("size-str");
         zoomDiv = document.getElementById("zoom-str");
         custom = document.createElement("option");
         select = document.getElementById("select");
         zoomIn = document.getElementById("zoom-in-btn");
         zoomOut = document.getElementById("zoom-out-btn");
-        canvas = document.createElement("div");
+        canvas = document.getElementById("osmd-demo-canvas");
         nextCursorBtn = document.getElementById("next-cursor-btn");
         resetCursorBtn = document.getElementById("reset-cursor-btn");
         showCursorBtn = document.getElementById("show-cursor-btn");
@@ -89,7 +87,6 @@
         // Create OSMD object and canvas
         OSMD = new opensheetmusicdisplay.OSMD(canvas);
         OSMD.setLogLevel('info');
-        document.body.appendChild(canvas);
 
         // Set resize event handler
         new Resize(
@@ -161,9 +158,10 @@
         if (!isCustom) {
             str = folder + select.value;
         }
-        zoom = 1.0;
+        zoom = 0.55;
         OSMD.load(str).then(
             function() {
+                OSMD.zoom = zoom;
                 return OSMD.render();
             },
             function(e) {
@@ -204,10 +202,10 @@
 
     function error(errString) {
         if (!errString) {
-            error_tr.style.display = "none";
+            err.style.display = "none";
         } else {
             err.textContent = errString;
-            error_tr.style.display = "";
+            err.style.display = "";
             canvas.width = canvas.height = 0;
             enable();
         }

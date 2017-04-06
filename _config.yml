@@ -1,1 +1,20 @@
-theme: jekyll-theme-cayman
+# Site settings
+title: OpenSheetMusicDisplay
+email: thomas@opensheetmusicdisplay.org
+description: The first JavaScript engine for MusicXML using VexFlow
+baseurl: ""
+url: "https://opensheetmusicdisplay.github.io/"
+twitter_username: osmdengine
+github_username: opensheetmusicdisplay/opensheetmusicdisplay
+facebook_username: opensheetmusicdisplay
+
+# Build settings
+markdown: kramdown
+markdown_ext: md
+exclude: [vendor]
+
+page_gen:
+  - data: rules
+    template: rule
+    name: ruleName
+    dir: rules
