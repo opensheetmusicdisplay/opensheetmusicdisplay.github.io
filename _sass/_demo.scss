@@ -1,0 +1,24 @@
+.btn.btn-demo {
+  background-color: transparent;
+  border-color: transparent;
+  color: $osmd-orange;
+
+  &:hover {
+    text-decoration: none;
+    border-color: $osmd-orange;
+  }
+}
+
+select.btn.btn-demo {
+  border-color: $osmd-orange;
+}
+
+.error-container {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  padding: 0.75rem 1rem;
+  color: darken(red, 5%);
+  border-color: darken(red, 5%);
+  background-color: transparentize(darken(red, 5%), 0.95);
+}

@@ -1,0 +1,34 @@
+{
+   "title": "Usage",
+   "url": "/usage",
+   "links": [
+      {
+         "title": "Script Tag / Browser",
+         "url": "/script/"
+      },
+      {
+         "title": "Webpack",
+         "url": "/webpack/"
+      },
+      {
+         "title": "SystemJS",
+         "url": "/systemjs/"
+      },
+      {
+         "title": "Browserify",
+         "url": "/browserify/"
+      },
+      {
+         "title": "RequireJS",
+         "url": "/requirejs/"
+      },
+      {
+          "title": "Angular Module",
+          "url": "/angular/"
+      },
+      {
+         "title": "WordPress Plugin",
+         "url": "/wordpress/"
+      }
+   ]
+}
