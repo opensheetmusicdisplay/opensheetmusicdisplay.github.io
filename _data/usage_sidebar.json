@@ -7,20 +7,8 @@
          "url": "/script/"
       },
       {
-         "title": "Webpack",
-         "url": "/webpack/"
-      },
-      {
-         "title": "SystemJS",
-         "url": "/systemjs/"
-      },
-      {
-         "title": "Browserify",
-         "url": "/browserify/"
-      },
-      {
-         "title": "RequireJS",
-         "url": "/requirejs/"
+         "title": "TypeScript / Module",
+         "url": "/typescript/"
       },
       {
           "title": "Angular Module",

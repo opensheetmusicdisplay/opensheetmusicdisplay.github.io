@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="485px" height="85px" viewBox="0 0 485 85" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="-144" y="-201" width="720" height="540"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<defs>
+			<rect id="SVGID_3_" x="-144" y="-201" width="720" height="540"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"/>
+		</clipPath>
+		<rect x="-144" y="-201" opacity="0" clip-path="url(#SVGID_4_)" width="720" height="540"/>
+		<path opacity="0" clip-path="url(#SVGID_4_)" d="M111.295,51.624L111.295,51.624c0-2.764,2.24-5.004,5.004-5.004h47.96    c1.327,0,2.6,0.527,3.539,1.466c0.938,0.938,1.465,2.211,1.465,3.538V71.64c0,2.764-2.24,5.004-5.004,5.004h-47.96    c-2.764,0-5.004-2.24-5.004-5.004V51.624z"/>
+		
+			<path clip-path="url(#SVGID_4_)" fill="none" stroke="#FF6600" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="14.3356" d="    M111.295,51.624L111.295,51.624c0-2.764,2.24-5.004,5.004-5.004h47.96c1.327,0,2.6,0.527,3.539,1.466    c0.938,0.938,1.465,2.211,1.465,3.538V71.64c0,2.764-2.24,5.004-5.004,5.004h-47.96c-2.764,0-5.004-2.24-5.004-5.004V51.624z"/>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 123.5542 66.8213)" font-family="'ArialMT'" font-size="14">Read</text>
+		</g>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 157.0039 66.8213)" font-family="'ArialMT'" font-size="12"> </text>
+		</g>
+		<path opacity="0" clip-path="url(#SVGID_4_)" d="M202.792,51.624L202.792,51.624c0-2.764,2.241-5.004,5.004-5.004h56.417    c1.327,0,2.6,0.527,3.538,1.466s1.466,2.211,1.466,3.538V71.64c0,2.764-2.24,5.004-5.004,5.004h-56.417    c-2.764,0-5.004-2.24-5.004-5.004V51.624z"/>
+		
+			<path clip-path="url(#SVGID_4_)" fill="none" stroke="#FF6600" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="14.3356" d="    M202.792,51.624L202.792,51.624c0-2.764,2.241-5.004,5.004-5.004h56.417c1.327,0,2.6,0.527,3.538,1.466s1.466,2.211,1.466,3.538    V71.64c0,2.764-2.24,5.004-5.004,5.004h-56.417c-2.764,0-5.004-2.24-5.004-5.004V51.624z"/>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 214.999 66.8213)" font-family="'ArialMT'" font-size="14">Layout</text>
+		</g>
+		<path opacity="0" clip-path="url(#SVGID_4_)" d="M296.651,51.341L296.651,51.341c0-2.764,2.24-5.004,5.004-5.004h56.417    c1.327,0,2.601,0.527,3.539,1.466s1.466,2.211,1.466,3.539v20.016c0,2.764-2.241,5.004-5.005,5.004h-56.417    c-2.764,0-5.004-2.24-5.004-5.004V51.341z"/>
+		
+			<path clip-path="url(#SVGID_4_)" fill="none" stroke="#FF6600" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="14.3356" d="    M296.651,51.341L296.651,51.341c0-2.764,2.24-5.004,5.004-5.004h56.417c1.327,0,2.601,0.527,3.539,1.466s1.466,2.211,1.466,3.539    v20.016c0,2.764-2.241,5.004-5.005,5.004h-56.417c-2.764,0-5.004-2.24-5.004-5.004V51.341z"/>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 306.918 66.5376)" font-family="'ArialMT'" font-size="14">Render</text>
+		</g>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 352.8086 66.5376)" font-family="'ArialMT'" font-size="10"> </text>
+		</g>
+		<line opacity="0" clip-path="url(#SVGID_4_)" x1="77.229" y1="61.349" x2="111.292" y2="61.632"/>
+		
+			<line clip-path="url(#SVGID_4_)" fill="none" stroke="#FF6600" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="14.3356" x1="77.229" y1="61.349" x2="93.292" y2="61.482"/>
+		<polygon clip-path="url(#SVGID_4_)" fill-rule="evenodd" clip-rule="evenodd" fill="#FF6600" points="93.25,66.437     106.906,61.595 93.333,56.527   "/>
+		<polygon clip-path="url(#SVGID_4_)" fill="none" stroke="#FF6600" stroke-width="3" stroke-miterlimit="11.4737" points="    93.25,66.437 106.906,61.595 93.333,56.527   "/>
+		<line opacity="0" clip-path="url(#SVGID_4_)" x1="169.264" y1="61.632" x2="202.784" y2="61.632"/>
+		
+			<line clip-path="url(#SVGID_4_)" fill="none" stroke="#FF6600" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="14.3356" x1="169.264" y1="61.632" x2="184.784" y2="61.632"/>
+		<polygon clip-path="url(#SVGID_4_)" fill-rule="evenodd" clip-rule="evenodd" fill="#FF6600" points="184.784,66.587     198.398,61.632 184.784,56.677   "/>
+		<polygon clip-path="url(#SVGID_4_)" fill="none" stroke="#FF6600" stroke-width="3" stroke-miterlimit="11.4737" points="    184.784,66.587 198.398,61.632 184.784,56.677   "/>
+		<line opacity="0" clip-path="url(#SVGID_4_)" x1="269.218" y1="61.632" x2="296.643" y2="61.349"/>
+		
+			<line clip-path="url(#SVGID_4_)" fill="none" stroke="#FF6600" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="14.3356" x1="269.218" y1="61.632" x2="278.644" y2="61.535"/>
+		<polygon clip-path="url(#SVGID_4_)" fill-rule="evenodd" clip-rule="evenodd" fill="#FF6600" points="278.695,66.489     292.258,61.394 278.593,56.58   "/>
+		<polygon clip-path="url(#SVGID_4_)" fill="none" stroke="#FF6600" stroke-width="3" stroke-miterlimit="11.4737" points="    278.695,66.489 292.258,61.394 278.593,56.58   "/>
+		<line opacity="0" clip-path="url(#SVGID_4_)" x1="363.077" y1="61.349" x2="397.068" y2="61.349"/>
+		
+			<line clip-path="url(#SVGID_4_)" fill="none" stroke="#FF6600" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="14.3356" x1="363.077" y1="61.349" x2="379.068" y2="61.349"/>
+		<polygon clip-path="url(#SVGID_4_)" fill-rule="evenodd" clip-rule="evenodd" fill="#FF6600" points="379.068,66.304     392.684,61.349 379.068,56.393   "/>
+		<polygon clip-path="url(#SVGID_4_)" fill="none" stroke="#FF6600" stroke-width="3" stroke-miterlimit="11.4737" points="    379.068,66.304 392.684,61.349 379.068,56.393   "/>
+		<rect x="-16.527" y="46.336" opacity="0" clip-path="url(#SVGID_4_)" width="93.756" height="30.024"/>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 5.1699 66.5264)" font-family="'ArialMT'" font-size="14">MusicXML</text>
+		</g>
+		<rect x="397.079" y="46.336" opacity="0" clip-path="url(#SVGID_4_)" width="93.756" height="30.024"/>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 403.8281 66.5264)" font-family="'ArialMT'" font-size="14">Sheet Music</text>
+		</g>
+		<path clip-path="url(#SVGID_4_)" fill="#FF6600" d="M123.52,23.727L123.52,23.727c0-8.285,7.504-15,16.76-15    c9.256,0,16.76,6.715,16.76,15c0,8.284-7.504,15-16.76,15C131.023,38.727,123.52,32.011,123.52,23.727z"/>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 136.3882 28.9155)" fill="#FFFFFF" font-family="'Arial-BoldMT'" font-size="14">1</text>
+		</g>
+		<path clip-path="url(#SVGID_4_)" fill="#FF6600" d="M219.246,23.727L219.246,23.727c0-8.285,7.504-15,16.76-15    s16.76,6.715,16.76,15c0,8.284-7.504,15-16.76,15S219.246,32.011,219.246,23.727z"/>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 232.1143 28.9155)" fill="#FFFFFF" font-family="'Arial-BoldMT'" font-size="14">2</text>
+		</g>
+		<path clip-path="url(#SVGID_4_)" fill="#FF6600" d="M313.104,23.727L313.104,23.727c0-8.285,7.504-15,16.76-15    s16.76,6.715,16.76,15c0,8.284-7.504,15-16.76,15S313.104,32.011,313.104,23.727z"/>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 325.9727 28.9155)" fill="#FFFFFF" font-family="'Arial-BoldMT'" font-size="14">3</text>
+		</g>
+	</g>
+</g>
+</svg>

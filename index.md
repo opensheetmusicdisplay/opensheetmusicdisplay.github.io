@@ -17,11 +17,14 @@ OpenSheetMusicDisplay brings the two together and offers an open source turnkey 
 
 ### Script tag
 ```html
-<script src="osmd.js"></script>
+<script src="osmd.min.js"></script>
 <script>
-  var osmd = new OSMD("div-container");
-  osmd.load("http://downloads2.makemusic.com/musicxml/MozaVeilSample.xml");
-  osmd.render();
+var osmd = new OSMD("container-id");
+osmd.load("http://downloads2.makemusic.com/musicxml/MozaVeilSample.xml").then(
+  function() {
+    osmd.render();
+  }
+);
 </script>
 ```
 
@@ -40,6 +43,6 @@ osmd.load(...);
 osmd.render();
 ```
 
-Check out [the full usage guide](usage) to learn more.
+Check out [the full usage guide](usage/script) to learn more.
 
 [0]: http://www.typescriptlang.org/
