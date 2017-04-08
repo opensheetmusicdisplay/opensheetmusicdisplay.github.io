@@ -1,0 +1,1070 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>InstrumentReader | opensheetmusicdisplay</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">opensheetmusicdisplay</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="instrumentreader.html">InstrumentReader</a>
+				</li>
+			</ul>
+			<h1>Class InstrumentReader</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>An InstrumentReader is used during the reading phase to keep parsing new measures from the MusicXML file
+						with the readNextXmlMeasure method.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">InstrumentReader</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="instrumentreader.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#abstractinstructions" class="tsd-kind-icon">abstract<wbr>Instructions</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#activeclefs" class="tsd-kind-icon">active<wbr>Clefs</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#activeclefshavebeeninitialized" class="tsd-kind-icon">active<wbr>Clefs<wbr>Have<wbr>Been<wbr>Initialized</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#activekey" class="tsd-kind-icon">active<wbr>Key</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#activekeyhasbeeninitialized" class="tsd-kind-icon">active<wbr>Key<wbr>Has<wbr>Been<wbr>Initialized</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#activerhythm" class="tsd-kind-icon">active<wbr>Rhythm</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#currentmeasure" class="tsd-kind-icon">current<wbr>Measure</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#currentstaff" class="tsd-kind-icon">current<wbr>Staff</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#currentstaffentry" class="tsd-kind-icon">current<wbr>Staff<wbr>Entry</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#currentvoicegenerator" class="tsd-kind-icon">current<wbr>Voice<wbr>Generator</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#currentxmlmeasureindex" class="tsd-kind-icon">current<wbr>Xml<wbr>Measure<wbr>Index</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#divisions" class="tsd-kind-icon">divisions</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#insourcemeasureinstrumentindex" class="tsd-kind-icon">in<wbr>Source<wbr>Measure<wbr>Instrument<wbr>Index</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#instrument" class="tsd-kind-icon">instrument</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#maxtienotefraction" class="tsd-kind-icon">max<wbr>Tie<wbr>Note<wbr>Fraction</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#musicsheet" class="tsd-kind-icon">music<wbr>Sheet</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#openchordsymbolcontainer" class="tsd-kind-icon">open<wbr>Chord<wbr>Symbol<wbr>Container</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#previousmeasure" class="tsd-kind-icon">previous<wbr>Measure</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#slurreader" class="tsd-kind-icon">slur<wbr>Reader</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#staffmainvoicegeneratordict" class="tsd-kind-icon">staff<wbr>Main<wbr>Voice<wbr>Generator<wbr>Dict</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#voicegeneratorsdict" class="tsd-kind-icon">voice<wbr>Generators<wbr>Dict</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#xmlmeasurelist" class="tsd-kind-icon">xml<wbr>Measure<wbr>List</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="instrumentreader.html#activekey-1" class="tsd-kind-icon">Active<wbr>Key</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="instrumentreader.html#activerhythm-1" class="tsd-kind-icon">Active<wbr>Rhythm</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="instrumentreader.html#maxtienotefraction-1" class="tsd-kind-icon">Max<wbr>Tie<wbr>Note<wbr>Fraction</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#addabstractinstruction" class="tsd-kind-icon">add<wbr>Abstract<wbr>Instruction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#createdefaultclefinstruction" class="tsd-kind-icon">create<wbr>Default<wbr>Clef<wbr>Instruction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#createdefaultkeyinstruction" class="tsd-kind-icon">create<wbr>Default<wbr>Key<wbr>Instruction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="instrumentreader.html#docalculationsafterdurationhasbeenset" class="tsd-kind-icon">do<wbr>Calculations<wbr>After<wbr>Duration<wbr>Has<wbr>Been<wbr>Set</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#getnotedurationfortuplet" class="tsd-kind-icon">get<wbr>Note<wbr>Duration<wbr>For<wbr>Tuplet</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#getnotedurationfromtypenode" class="tsd-kind-icon">get<wbr>Note<wbr>Duration<wbr>From<wbr>Type<wbr>Node</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#getorcreatevoicegenerator" class="tsd-kind-icon">get<wbr>OrCreate<wbr>Voice<wbr>Generator</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#isattributesnodeatbeginofmeasure" class="tsd-kind-icon">is<wbr>Attributes<wbr>Node<wbr>AtBegin<wbr>OfMeasure</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#isattributesnodeatendofmeasure" class="tsd-kind-icon">is<wbr>Attributes<wbr>Node<wbr>AtEnd<wbr>OfMeasure</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#readdivisionsfromnotes" class="tsd-kind-icon">read<wbr>Divisions<wbr>From<wbr>Notes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="instrumentreader.html#readnextxmlmeasure" class="tsd-kind-icon">read<wbr>Next<wbr>Xml<wbr>Measure</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#saveabstractinstructionlist" class="tsd-kind-icon">save<wbr>Abstract<wbr>Instruction<wbr>List</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="instrumentreader.html#saveclefinstructionatendofmeasure" class="tsd-kind-icon">save<wbr>Clef<wbr>Instruction<wbr>AtEnd<wbr>OfMeasure</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Instrument<wbr>Reader<span class="tsd-signature-symbol">(</span>repetitionInstructionReader<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">repetitionInstructionReader</a>, xmlMeasureList<span class="tsd-signature-symbol">: </span><a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a><span class="tsd-signature-symbol">[]</span>, instrument<span class="tsd-signature-symbol">: </span><a href="instrument.html" class="tsd-signature-type">Instrument</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="instrumentreader.html" class="tsd-signature-type">InstrumentReader</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L55">src/MusicalScore/ScoreIO/InstrumentReader.ts:55</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>repetitionInstructionReader: <a href="" class="tsd-signature-type">repetitionInstructionReader</a></h5>
+								</li>
+								<li>
+									<h5>xmlMeasureList: <a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>instrument: <a href="instrument.html" class="tsd-signature-type">Instrument</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="instrumentreader.html" class="tsd-signature-type">InstrumentReader</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="abstractinstructions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> abstract<wbr>Instructions</h3>
+					<div class="tsd-signature tsd-kind-icon">abstract<wbr>Instructions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="abstractnotationinstruction.html" class="tsd-signature-type">AbstractNotationInstruction</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L90">src/MusicalScore/ScoreIO/InstrumentReader.ts:90</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="activeclefs" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> active<wbr>Clefs</h3>
+					<div class="tsd-signature tsd-kind-icon">active<wbr>Clefs<span class="tsd-signature-symbol">:</span> <a href="clefinstruction.html" class="tsd-signature-type">ClefInstruction</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L85">src/MusicalScore/ScoreIO/InstrumentReader.ts:85</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="activeclefshavebeeninitialized" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> active<wbr>Clefs<wbr>Have<wbr>Been<wbr>Initialized</h3>
+					<div class="tsd-signature tsd-kind-icon">active<wbr>Clefs<wbr>Have<wbr>Been<wbr>Initialized<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L88">src/MusicalScore/ScoreIO/InstrumentReader.ts:88</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="activekey" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> active<wbr>Key</h3>
+					<div class="tsd-signature tsd-kind-icon">active<wbr>Key<span class="tsd-signature-symbol">:</span> <a href="keyinstruction.html" class="tsd-signature-type">KeyInstruction</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L86">src/MusicalScore/ScoreIO/InstrumentReader.ts:86</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="activekeyhasbeeninitialized" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> active<wbr>Key<wbr>Has<wbr>Been<wbr>Initialized</h3>
+					<div class="tsd-signature tsd-kind-icon">active<wbr>Key<wbr>Has<wbr>Been<wbr>Initialized<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L89">src/MusicalScore/ScoreIO/InstrumentReader.ts:89</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="activerhythm" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> active<wbr>Rhythm</h3>
+					<div class="tsd-signature tsd-kind-icon">active<wbr>Rhythm<span class="tsd-signature-symbol">:</span> <a href="rhythminstruction.html" class="tsd-signature-type">RhythmInstruction</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L87">src/MusicalScore/ScoreIO/InstrumentReader.ts:87</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="currentmeasure" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> current<wbr>Measure</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Measure<span class="tsd-signature-symbol">:</span> <a href="sourcemeasure.html" class="tsd-signature-type">SourceMeasure</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L80">src/MusicalScore/ScoreIO/InstrumentReader.ts:80</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="currentstaff" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> current<wbr>Staff</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Staff<span class="tsd-signature-symbol">:</span> <a href="staff.html" class="tsd-signature-type">Staff</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L83">src/MusicalScore/ScoreIO/InstrumentReader.ts:83</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="currentstaffentry" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> current<wbr>Staff<wbr>Entry</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Staff<wbr>Entry<span class="tsd-signature-symbol">:</span> <a href="sourcestaffentry.html" class="tsd-signature-type">SourceStaffEntry</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L84">src/MusicalScore/ScoreIO/InstrumentReader.ts:84</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="currentvoicegenerator" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> current<wbr>Voice<wbr>Generator</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Voice<wbr>Generator<span class="tsd-signature-symbol">:</span> <a href="voicegenerator.html" class="tsd-signature-type">VoiceGenerator</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L93">src/MusicalScore/ScoreIO/InstrumentReader.ts:93</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="currentxmlmeasureindex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> current<wbr>Xml<wbr>Measure<wbr>Index</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Xml<wbr>Measure<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L82">src/MusicalScore/ScoreIO/InstrumentReader.ts:82</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="divisions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> divisions</h3>
+					<div class="tsd-signature tsd-kind-icon">divisions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L79">src/MusicalScore/ScoreIO/InstrumentReader.ts:79</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="insourcemeasureinstrumentindex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> in<wbr>Source<wbr>Measure<wbr>Instrument<wbr>Index</h3>
+					<div class="tsd-signature tsd-kind-icon">in<wbr>Source<wbr>Measure<wbr>Instrument<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L78">src/MusicalScore/ScoreIO/InstrumentReader.ts:78</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="instrument" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> instrument</h3>
+					<div class="tsd-signature tsd-kind-icon">instrument<span class="tsd-signature-symbol">:</span> <a href="instrument.html" class="tsd-signature-type">Instrument</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L75">src/MusicalScore/ScoreIO/InstrumentReader.ts:75</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="maxtienotefraction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> max<wbr>Tie<wbr>Note<wbr>Fraction</h3>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Tie<wbr>Note<wbr>Fraction<span class="tsd-signature-symbol">:</span> <a href="fraction.html" class="tsd-signature-type">Fraction</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L95">src/MusicalScore/ScoreIO/InstrumentReader.ts:95</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="musicsheet" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> music<wbr>Sheet</h3>
+					<div class="tsd-signature tsd-kind-icon">music<wbr>Sheet<span class="tsd-signature-symbol">:</span> <a href="musicsheet.html" class="tsd-signature-type">MusicSheet</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L73">src/MusicalScore/ScoreIO/InstrumentReader.ts:73</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="openchordsymbolcontainer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> open<wbr>Chord<wbr>Symbol<wbr>Container</h3>
+					<div class="tsd-signature tsd-kind-icon">open<wbr>Chord<wbr>Symbol<wbr>Container<span class="tsd-signature-symbol">:</span> <a href="chordsymbolcontainer.html" class="tsd-signature-type">ChordSymbolContainer</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L91">src/MusicalScore/ScoreIO/InstrumentReader.ts:91</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="previousmeasure" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> previous<wbr>Measure</h3>
+					<div class="tsd-signature tsd-kind-icon">previous<wbr>Measure<span class="tsd-signature-symbol">:</span> <a href="sourcemeasure.html" class="tsd-signature-type">SourceMeasure</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L81">src/MusicalScore/ScoreIO/InstrumentReader.ts:81</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="slurreader" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> slur<wbr>Reader</h3>
+					<div class="tsd-signature tsd-kind-icon">slur<wbr>Reader<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L74">src/MusicalScore/ScoreIO/InstrumentReader.ts:74</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="staffmainvoicegeneratordict" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> staff<wbr>Main<wbr>Voice<wbr>Generator<wbr>Dict</h3>
+					<div class="tsd-signature tsd-kind-icon">staff<wbr>Main<wbr>Voice<wbr>Generator<wbr>Dict<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L77">src/MusicalScore/ScoreIO/InstrumentReader.ts:77</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>staffId: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]: </span><a href="voicegenerator.html" class="tsd-signature-type">VoiceGenerator</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="voicegeneratorsdict" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> voice<wbr>Generators<wbr>Dict</h3>
+					<div class="tsd-signature tsd-kind-icon">voice<wbr>Generators<wbr>Dict<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L76">src/MusicalScore/ScoreIO/InstrumentReader.ts:76</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>n: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]: </span><a href="voicegenerator.html" class="tsd-signature-type">VoiceGenerator</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="xmlmeasurelist" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> xml<wbr>Measure<wbr>List</h3>
+					<div class="tsd-signature tsd-kind-icon">xml<wbr>Measure<wbr>List<span class="tsd-signature-symbol">:</span> <a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L72">src/MusicalScore/ScoreIO/InstrumentReader.ts:72</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="activekey-1" class="tsd-anchor"></a>
+					<h3>Active<wbr>Key</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> ActiveKey<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="keyinstruction.html" class="tsd-signature-type">KeyInstruction</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L97">src/MusicalScore/ScoreIO/InstrumentReader.ts:97</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="keyinstruction.html" class="tsd-signature-type">KeyInstruction</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="activerhythm-1" class="tsd-anchor"></a>
+					<h3>Active<wbr>Rhythm</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> ActiveRhythm<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="rhythminstruction.html" class="tsd-signature-type">RhythmInstruction</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> ActiveRhythm<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="rhythminstruction.html" class="tsd-signature-type">RhythmInstruction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L105">src/MusicalScore/ScoreIO/InstrumentReader.ts:105</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="rhythminstruction.html" class="tsd-signature-type">RhythmInstruction</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L109">src/MusicalScore/ScoreIO/InstrumentReader.ts:109</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <a href="rhythminstruction.html" class="tsd-signature-type">RhythmInstruction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="maxtienotefraction-1" class="tsd-anchor"></a>
+					<h3>Max<wbr>Tie<wbr>Note<wbr>Fraction</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> MaxTieNoteFraction<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fraction.html" class="tsd-signature-type">Fraction</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L101">src/MusicalScore/ScoreIO/InstrumentReader.ts:101</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="fraction.html" class="tsd-signature-type">Fraction</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="addabstractinstruction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> add<wbr>Abstract<wbr>Instruction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Abstract<wbr>Instruction<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a>, guitarPro<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L562">src/MusicalScore/ScoreIO/InstrumentReader.ts:562</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add (the three basic) Notation Instructions to a list</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>node: <a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a></h5>
+								</li>
+								<li>
+									<h5>guitarPro: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="createdefaultclefinstruction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> create<wbr>Default<wbr>Clef<wbr>Instruction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Default<wbr>Clef<wbr>Instruction<span class="tsd-signature-symbol">(</span>staffIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L444">src/MusicalScore/ScoreIO/InstrumentReader.ts:444</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create the default <a href="clefinstruction.html">ClefInstruction</a> for the given staff index.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>staffIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="createdefaultkeyinstruction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> create<wbr>Default<wbr>Key<wbr>Instruction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Default<wbr>Key<wbr>Instruction<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L467">src/MusicalScore/ScoreIO/InstrumentReader.ts:467</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create the default <a href="keyinstruction.html">KeyInstruction</a> in case no <a href="keyinstruction.html">KeyInstruction</a> is given in the whole <a href="instrument.html">Instrument</a>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="docalculationsafterdurationhasbeenset" class="tsd-anchor"></a>
+					<h3>do<wbr>Calculations<wbr>After<wbr>Duration<wbr>Has<wbr>Been<wbr>Set</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">do<wbr>Calculations<wbr>After<wbr>Duration<wbr>Has<wbr>Been<wbr>Set<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L394">src/MusicalScore/ScoreIO/InstrumentReader.ts:394</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getnotedurationfortuplet" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Note<wbr>Duration<wbr>For<wbr>Tuplet</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Note<wbr>Duration<wbr>For<wbr>Tuplet<span class="tsd-signature-symbol">(</span>xmlNode<span class="tsd-signature-symbol">: </span><a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fraction.html" class="tsd-signature-type">Fraction</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L951">src/MusicalScore/ScoreIO/InstrumentReader.ts:951</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>In case of a <a href="tuplet.html">Tuplet</a>, read NoteDuration from type.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>xmlNode: <a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="fraction.html" class="tsd-signature-type">Fraction</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getnotedurationfromtypenode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Note<wbr>Duration<wbr>From<wbr>Type<wbr>Node</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Note<wbr>Duration<wbr>From<wbr>Type<wbr>Node<span class="tsd-signature-symbol">(</span>xmlNode<span class="tsd-signature-symbol">: </span><a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fraction.html" class="tsd-signature-type">Fraction</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L546">src/MusicalScore/ScoreIO/InstrumentReader.ts:546</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called only when no noteDuration is given in XML.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>xmlNode: <a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="fraction.html" class="tsd-signature-type">Fraction</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getorcreatevoicegenerator" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>OrCreate<wbr>Voice<wbr>Generator</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>OrCreate<wbr>Voice<wbr>Generator<span class="tsd-signature-symbol">(</span>voiceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, staffId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="voicegenerator.html" class="tsd-signature-type">VoiceGenerator</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L408">src/MusicalScore/ScoreIO/InstrumentReader.ts:408</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get or create the passing <a href="voicegenerator.html">VoiceGenerator</a>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>voiceId: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>staffId: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="voicegenerator.html" class="tsd-signature-type">VoiceGenerator</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="isattributesnodeatbeginofmeasure" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Attributes<wbr>Node<wbr>AtBegin<wbr>OfMeasure</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Attributes<wbr>Node<wbr>AtBegin<wbr>OfMeasure<span class="tsd-signature-symbol">(</span>parentNode<span class="tsd-signature-symbol">: </span><a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a>, attributesNode<span class="tsd-signature-symbol">: </span><a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L500">src/MusicalScore/ScoreIO/InstrumentReader.ts:500</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if the given attributesNode is at the begin of a XmlMeasure.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>parentNode: <a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a></h5>
+								</li>
+								<li>
+									<h5>attributesNode: <a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="isattributesnodeatendofmeasure" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Attributes<wbr>Node<wbr>AtEnd<wbr>OfMeasure</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Attributes<wbr>Node<wbr>AtEnd<wbr>OfMeasure<span class="tsd-signature-symbol">(</span>parentNode<span class="tsd-signature-symbol">: </span><a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a>, attributesNode<span class="tsd-signature-symbol">: </span><a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L522">src/MusicalScore/ScoreIO/InstrumentReader.ts:522</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if the given attributesNode is at the end of a XmlMeasure.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>parentNode: <a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a></h5>
+								</li>
+								<li>
+									<h5>attributesNode: <a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="readdivisionsfromnotes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Divisions<wbr>From<wbr>Notes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Divisions<wbr>From<wbr>Notes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L1000">src/MusicalScore/ScoreIO/InstrumentReader.ts:1000</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Calculate the divisions value from the type and duration of the first MeasureNote that makes sense
+									(meaning itself hasn&#39;t any errors and it doesn&#39;t belong to a <a href="tuplet.html">Tuplet</a>).</p>
+								</div>
+								<p>If all the MeasureNotes belong to a <a href="tuplet.html">Tuplet</a>, then we read the next XmlMeasure (and so on...).
+								If we have reached the end of the <a href="instrument.html">Instrument</a> and still the divisions aren&#39;t set, we throw an exception</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="readnextxmlmeasure" class="tsd-anchor"></a>
+					<h3>read<wbr>Next<wbr>Xml<wbr>Measure</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Next<wbr>Xml<wbr>Measure<span class="tsd-signature-symbol">(</span>currentMeasure<span class="tsd-signature-symbol">: </span><a href="sourcemeasure.html" class="tsd-signature-type">SourceMeasure</a>, measureStartAbsoluteTimestamp<span class="tsd-signature-symbol">: </span><a href="fraction.html" class="tsd-signature-type">Fraction</a>, guitarPro<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L120">src/MusicalScore/ScoreIO/InstrumentReader.ts:120</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Main CreateSheet: read the next XML Measure and save all data to the given <a href="sourcemeasure.html">SourceMeasure</a>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>currentMeasure: <a href="sourcemeasure.html" class="tsd-signature-type">SourceMeasure</a></h5>
+								</li>
+								<li>
+									<h5>measureStartAbsoluteTimestamp: <a href="fraction.html" class="tsd-signature-type">Fraction</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Using this instead of currentMeasure.AbsoluteTimestamp as it isn&#39;t set yet</p>
+									</div>
+								</li>
+								<li>
+									<h5>guitarPro: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="saveabstractinstructionlist" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> save<wbr>Abstract<wbr>Instruction<wbr>List</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">save<wbr>Abstract<wbr>Instruction<wbr>List<span class="tsd-signature-symbol">(</span>numberOfStaves<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, beginOfMeasure<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L780">src/MusicalScore/ScoreIO/InstrumentReader.ts:780</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Save the current AbstractInstructions to the corresponding [[StaffEntry]]s.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numberOfStaves: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>beginOfMeasure: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="saveclefinstructionatendofmeasure" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> save<wbr>Clef<wbr>Instruction<wbr>AtEnd<wbr>OfMeasure</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">save<wbr>Clef<wbr>Instruction<wbr>AtEnd<wbr>OfMeasure<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/00cf8f5/src/MusicalScore/ScoreIO/InstrumentReader.ts#L922">src/MusicalScore/ScoreIO/InstrumentReader.ts:922</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Save any ClefInstruction given - exceptionally - at the end of the currentMeasure.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class">
+						<a href="instrumentreader.html" class="tsd-kind-icon">Instrument<wbr>Reader</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="instrumentreader.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#abstractinstructions" class="tsd-kind-icon">abstract<wbr>Instructions</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#activeclefs" class="tsd-kind-icon">active<wbr>Clefs</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#activeclefshavebeeninitialized" class="tsd-kind-icon">active<wbr>Clefs<wbr>Have<wbr>Been<wbr>Initialized</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#activekey" class="tsd-kind-icon">active<wbr>Key</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#activekeyhasbeeninitialized" class="tsd-kind-icon">active<wbr>Key<wbr>Has<wbr>Been<wbr>Initialized</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#activerhythm" class="tsd-kind-icon">active<wbr>Rhythm</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#currentmeasure" class="tsd-kind-icon">current<wbr>Measure</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#currentstaff" class="tsd-kind-icon">current<wbr>Staff</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#currentstaffentry" class="tsd-kind-icon">current<wbr>Staff<wbr>Entry</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#currentvoicegenerator" class="tsd-kind-icon">current<wbr>Voice<wbr>Generator</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#currentxmlmeasureindex" class="tsd-kind-icon">current<wbr>Xml<wbr>Measure<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#divisions" class="tsd-kind-icon">divisions</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#insourcemeasureinstrumentindex" class="tsd-kind-icon">in<wbr>Source<wbr>Measure<wbr>Instrument<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#instrument" class="tsd-kind-icon">instrument</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#maxtienotefraction" class="tsd-kind-icon">max<wbr>Tie<wbr>Note<wbr>Fraction</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#musicsheet" class="tsd-kind-icon">music<wbr>Sheet</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#openchordsymbolcontainer" class="tsd-kind-icon">open<wbr>Chord<wbr>Symbol<wbr>Container</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#previousmeasure" class="tsd-kind-icon">previous<wbr>Measure</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#slurreader" class="tsd-kind-icon">slur<wbr>Reader</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#staffmainvoicegeneratordict" class="tsd-kind-icon">staff<wbr>Main<wbr>Voice<wbr>Generator<wbr>Dict</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#voicegeneratorsdict" class="tsd-kind-icon">voice<wbr>Generators<wbr>Dict</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#xmlmeasurelist" class="tsd-kind-icon">xml<wbr>Measure<wbr>List</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="instrumentreader.html#activekey-1" class="tsd-kind-icon">Active<wbr>Key</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="instrumentreader.html#activerhythm-1" class="tsd-kind-icon">Active<wbr>Rhythm</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="instrumentreader.html#maxtienotefraction-1" class="tsd-kind-icon">Max<wbr>Tie<wbr>Note<wbr>Fraction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#addabstractinstruction" class="tsd-kind-icon">add<wbr>Abstract<wbr>Instruction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#createdefaultclefinstruction" class="tsd-kind-icon">create<wbr>Default<wbr>Clef<wbr>Instruction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#createdefaultkeyinstruction" class="tsd-kind-icon">create<wbr>Default<wbr>Key<wbr>Instruction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="instrumentreader.html#docalculationsafterdurationhasbeenset" class="tsd-kind-icon">do<wbr>Calculations<wbr>After<wbr>Duration<wbr>Has<wbr>Been<wbr>Set</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#getnotedurationfortuplet" class="tsd-kind-icon">get<wbr>Note<wbr>Duration<wbr>For<wbr>Tuplet</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#getnotedurationfromtypenode" class="tsd-kind-icon">get<wbr>Note<wbr>Duration<wbr>From<wbr>Type<wbr>Node</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#getorcreatevoicegenerator" class="tsd-kind-icon">get<wbr>OrCreate<wbr>Voice<wbr>Generator</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#isattributesnodeatbeginofmeasure" class="tsd-kind-icon">is<wbr>Attributes<wbr>Node<wbr>AtBegin<wbr>OfMeasure</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#isattributesnodeatendofmeasure" class="tsd-kind-icon">is<wbr>Attributes<wbr>Node<wbr>AtEnd<wbr>OfMeasure</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#readdivisionsfromnotes" class="tsd-kind-icon">read<wbr>Divisions<wbr>From<wbr>Notes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="instrumentreader.html#readnextxmlmeasure" class="tsd-kind-icon">read<wbr>Next<wbr>Xml<wbr>Measure</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#saveabstractinstructionlist" class="tsd-kind-icon">save<wbr>Abstract<wbr>Instruction<wbr>List</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="instrumentreader.html#saveclefinstructionatendofmeasure" class="tsd-kind-icon">save<wbr>Clef<wbr>Instruction<wbr>AtEnd<wbr>OfMeasure</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
