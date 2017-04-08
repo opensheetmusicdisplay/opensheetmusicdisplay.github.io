@@ -39,8 +39,12 @@ npm install --save opensheetmusicdisplay
 import { OSMD } from "opensheetmusicdisplay";
 
 let osmd = new OSMD(container, false);
-osmd.load(...);
-osmd.render();
+osmd
+  .load(...)
+  .then(
+    () => osmd.render(),
+    (err) => console.log(err)
+  );
 ```
 
 Check out [the full usage guide](usage/script) to learn more.
