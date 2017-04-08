@@ -7,7 +7,6 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
-	<script src="assets/js/modernizr.js"></script>
 </head>
 <body>
 <header>
@@ -65,18 +64,19 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<p align="center">
-					<img alt="OSMD logo" src="http://opensheetmusicdisplay.org/wp-content/uploads/2015/03/OSMD_3_icon.png" width="200"/>
-				</p>
-				<h1 id="open-sheet-music-display">Open Sheet Music Display</h1>
-				<p><a href="https://travis-ci.org/opensheetmusicdisplay/opensheetmusicdisplay"><img src="https://travis-ci.org/opensheetmusicdisplay/opensheetmusicdisplay.svg?branch=master" alt="Build Status"></a>
-				<a href="https://david-dm.org/opensheetmusicdisplay/opensheetmusicdisplay"><img src="https://david-dm.org/opensheetmusicdisplay/opensheetmusicdisplay.png" alt="Dependency Status"></a></p>
-				<p>Display sheet music (<a href="http://www.musicxml.com">MusicXML</a> files) in the browser.
-					Using the <a href="https://github.com/0xfe/vexflow">VexFlow</a> music notation rendering API.
-				Written in <a href="https://www.typescriptlang.org">TypeScript</a> and released under <a href="#license">MIT license</a>.</p>
-				<p>How to <strong>build</strong>, how to <strong>install</strong>, how to <strong>use</strong>, ...? Have a look at the <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/wiki">GitHub Wiki</a>!</p>
-				<p>All the code is hosted at <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay">GitHub</a>.</p>
-				<p>Go to <a href="http://opensheetmusicdisplay.org">opensheetmusicdisplay.org</a> for further information.</p>
+				<p><img alt="OSMD logo" src="http://opensheetmusicdisplay.org/assets/osmd_logo.svg" width="200"/></p>
+				<h1 id="opensheetmusicdisplay">OpenSheetMusicDisplay</h1>
+				<p><a href="https://greenkeeper.io/"><img src="https://badges.greenkeeper.io/opensheetmusicdisplay/opensheetmusicdisplay.svg" alt="Greenkeeper badge"></a>
+					<a href="https://travis-ci.org/opensheetmusicdisplay/opensheetmusicdisplay"><img src="https://travis-ci.org/opensheetmusicdisplay/opensheetmusicdisplay.svg?branch=master" alt="Build Status"></a>
+					<a href="https://david-dm.org/opensheetmusicdisplay/opensheetmusicdisplay"><img src="https://david-dm.org/opensheetmusicdisplay/opensheetmusicdisplay.png" alt="Dependency Status"></a>
+					<a href="https://gitter.im/opensheetmusicdisplay/opensheetmusicdisplay?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter"></a>
+					<a href="https://codeclimate.com/github/opensheetmusicdisplay/opensheetmusicdisplay"><img src="https://codeclimate.com/github/opensheetmusicdisplay/opensheetmusicdisplay/badges/gpa.svg" alt="Code Climate"></a>
+				<a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" alt="Commitizen friendly"></a></p>
+				<p><a href="https://www.opensheetmusicdisplay.org/">https://www.opensheetmusicdisplay.org/</a></p>
+				<p>OpenSheeMusicDisplay is the missing link between MusicXML and VexFlow. Built upon many years of experience in both sheet music interactivity and engraving, it is the perfect solution for app developers seeking to build digital sheet music services.</p>
+				<p>MusicXML is the de facto standard for sharing sheet music on the internet. VexFlow is widely used for rendering sheet music. It features an extensive note sign library attributable to its open source nature.</p>
+				<p>OpenSheetMusicDisplay brings the two together and offers an open source turnkey solution for your digital sheet music project.</p>
+				<p>Written in <a href="https://www.typescriptlang.org">TypeScript</a> and released under <a href="#license">MIT license</a>.</p>
 				<!--# <a name="license"></a>License
 The MIT License (MIT)
 
@@ -530,6 +530,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 						<a href="classes/tempoexpressionentry.html" class="tsd-kind-icon">Tempo<wbr>Expression<wbr>Entry</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/testutils.html" class="tsd-kind-icon">Test<wbr>Utils</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/tie.html" class="tsd-kind-icon">Tie</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -613,8 +616,26 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#repetitioninstructionreader" class="tsd-kind-icon">repetition<wbr>Instruction<wbr>Reader</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="globals.html#parser" class="tsd-kind-icon">parser</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="globals.html#reader" class="tsd-kind-icon">reader</a>
+					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#unitinpixels" class="tsd-kind-icon">unit<wbr>InPixels</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="globals.html#xmltestdata" class="tsd-kind-icon">xml<wbr>Test<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-not-exported">
+						<a href="globals.html#getillegalmusicxmlwithtwofifthselements" class="tsd-kind-icon">get<wbr>Illegal<wbr>Music<wbr>Xml<wbr>With<wbr>Two<wbr>Fifths<wbr>Elements</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-not-exported">
+						<a href="globals.html#getmusicsheetwithkey" class="tsd-kind-icon">get<wbr>Music<wbr>Sheet<wbr>With<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-not-exported">
+						<a href="globals.html#getmusicxmlwithkey" class="tsd-kind-icon">get<wbr>Music<wbr>Xml<wbr>With<wbr>Key</a>
 					</li>
 				</ul>
 			</nav>
@@ -681,7 +702,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>
