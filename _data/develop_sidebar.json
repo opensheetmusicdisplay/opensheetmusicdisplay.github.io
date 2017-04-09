@@ -25,6 +25,10 @@
       {
          "title": "Data Flow",
          "url": "/data-flow/"
+      },
+      {
+         "title": "Project Structure",
+         "url": "/project-structure/"
       }
    ]
 }
