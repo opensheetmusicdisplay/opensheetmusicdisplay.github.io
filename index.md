@@ -19,7 +19,7 @@ OpenSheetMusicDisplay brings the two together and offers an open source turnkey 
 ```html
 <script src="osmd.min.js"></script>
 <script>
-var osmd = new OSMD("container-id");
+var osmd = new opensheetmusicdisplay.OSMD("container-id");
 osmd.load("http://downloads2.makemusic.com/musicxml/MozaVeilSample.xml").then(
   function() {
     osmd.render();
