@@ -20,3 +20,5 @@ Download the latest OpenSheetMusicDisplay bundle from [Github](https://github.co
     );
 </script>
 ```
+
+Depending on your Browser, you might encounter CORS issues when trying to load a MusicXML from a remote location. If that is the case, try to serve one from the script's location.
