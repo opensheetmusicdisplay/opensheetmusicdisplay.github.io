@@ -14,6 +14,14 @@ OSMD can display [MusicXML][0] in both `.xml` and `.mxl` containers. On this dem
 
 <select id="select" class="btn btn-demo"></select>
 
+## Renderer
+You can select the rendering strategy, by choosing either the Canvas option, or the SVG one.
+
+<select id="backend-select" class="btn btn-demo" value="canvas">
+    <option value="canvas">Canvas</option>>
+    <option value="svg">SVG</option>
+</select>
+
 ## Zoom level
 You control the zoom level of the music sheet displayed. Right now, OSMD is rendering the music piece at <span id="zoom-str">100</span>% on <span id="size-str">0</span>px width.
 
