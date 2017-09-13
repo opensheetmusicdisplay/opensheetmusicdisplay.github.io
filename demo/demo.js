@@ -39,7 +39,8 @@
         nextCursorBtn,
         resetCursorBtn,
         showCursorBtn,
-        hideCursorBtn;
+        hideCursorBtn,
+        backendSelect;
 
     // Initialization code
     function init() {
@@ -57,6 +58,7 @@
         resetCursorBtn = document.getElementById("reset-cursor-btn");
         showCursorBtn = document.getElementById("show-cursor-btn");
         hideCursorBtn = document.getElementById("hide-cursor-btn");
+        backendSelect = document.getElementById("backend-select");
 
         // Hide error
         error();
@@ -85,7 +87,7 @@
         };
 
         // Create OSMD object and canvas
-        OSMD = new opensheetmusicdisplay.OSMD(canvas);
+        OSMD = new opensheetmusicdisplay.OSMD(canvas, false);
         OSMD.setLogLevel('info');
 
         // Set resize event handler
@@ -120,6 +122,16 @@
         });
         showCursorBtn.addEventListener("click", function() {
             OSMD.cursor.show();
+        });
+
+        backendSelect.addEventListener("change", function(e) {
+            var value = e.target.value;
+            // clears the canvas element
+            canvas.innerHTML = "";
+            OSMD = new opensheetmusicdisplay.OSMD(canvas, false, value);
+            OSMD.setLogLevel('info');
+            selectOnChange();
+
         });
     }
 
