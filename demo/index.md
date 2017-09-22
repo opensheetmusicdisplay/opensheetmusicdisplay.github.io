@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Demo
+lang: en_US
 permalink: /demo/
 menu: main
 order: 4

@@ -2,6 +2,7 @@
 layout: page
 title: Music Sheet Object Model
 permalink: /develop/music-sheet-object-model/
+lang: en_US
 ---
 
 OSMD is using a slightly different object model for handling music sheet data than VexFlow. Both concepts are described on this page.

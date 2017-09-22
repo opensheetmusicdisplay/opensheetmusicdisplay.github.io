@@ -2,6 +2,7 @@
 layout: page
 title: The OSMD Angular Module
 permalink: /usage/angular/
+lang: en_US
 ---
 
 > The use of the name _Angular_ on this page refers to Angular version >= 2.0.0

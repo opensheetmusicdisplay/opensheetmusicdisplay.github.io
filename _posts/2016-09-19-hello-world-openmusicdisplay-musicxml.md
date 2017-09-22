@@ -3,6 +3,7 @@ layout: post
 title:  "Hello World, OpenSheetMusicDisplay!"
 date:   2016-09-19 00:00:00
 author: Thomas Buchstätter
+lang:   en_US
 ---
 
 We are proud to introduce OpenSheetMusicDisplay, the JavaScript library for [MusicXML][1] using [VexFlow][0].

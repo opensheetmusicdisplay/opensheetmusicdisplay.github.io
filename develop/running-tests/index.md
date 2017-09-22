@@ -2,6 +2,7 @@
 layout: page
 title: Running Tests
 permalink: /develop/running-tests/
+lang: en_US
 ---
 
 This page describes how to run the OSMD test suite. The requires that you've already set up [OSMD for development][0].
