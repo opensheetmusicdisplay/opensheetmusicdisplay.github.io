@@ -37,7 +37,7 @@ OSMD is able to display a simple cursor. You can control the visibility of the c
 <input type="button" value="Reset" id="reset-cursor-btn" class="btn btn-demo"/>
 
 ## Sheet music
-<div id="error-container" class="error-container">This is really shit.</div>
+<div id="error-container" class="error-container"></div>
 <div id="osmd-demo-canvas"></div>
 
 [0]: https://www.musicxml.com/
