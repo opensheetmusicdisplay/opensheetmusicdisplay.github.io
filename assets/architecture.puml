@@ -1,0 +1,117 @@
+@startuml OSMD Architecture
+title OSMD Architecture
+
+left header
+<font color=red>Warning:</font>
+Preliminary. Not all classes are documented here. It is just a rough top down overview to help navigating the basic code pieces
+endheader
+
+
+class OSMD {
+    + backend: VexFlowBackend
+    - sheet: MusicSheet
+    - drawer: VexFlowMusicSheetDrawer
+    - graphic: GraphicalMusicSheet
+    + load(input: string|Document)
+    + render()
+}
+abstract Graphical.VexFlow.VexFlowBackend
+abstract Graphical.StaffMeasure
+abstract Graphical.MusicSheetCalculator
+abstract Graphical.MusicSystem {
+    # staffLines: StaffLine[]
+    # graphicalMeasures: StaffMeasure[][]
+    # parent: GraphicalMusicPage
+}
+
+abstract Graphical.StaffLine {
+    # measures: StaffMeasure[]
+    # parentMusicSystem: MusicSystem
+}
+
+class Graphical.MusicSheet {
+    - title: Label
+    - subtitle: Label
+    - composer: Label
+    - lyricist: Label
+}
+
+class Graphical.VexFlow.VexFlowMusicSheetDrawer {
+    - backend: VexFlowBackend
+    - zoom: number
+}
+
+abstract class Graphical.MusicSheetDrawer {
+    # graphicalMusicSheet: GraphicalMusicSheet
+    + drawSheet(graphicalMusicSheet: GraphicalMusicSheet): void
+}
+
+class Graphical.VexFlow.VexFlowMeasure {
+    - vStave: Stave
+    + vfVoices: Voice
+    + getVFStave(): Stave
+}
+
+abstract class Graphical.GraphicalStaffEntry {
+    + parentMeasure: StaffMeasure;
+    + notes: GraphicalNote[][]
+}
+
+class Graphical.BoundingBox {
+    + ChildElements[]: BoundingBox
+}
+
+class Graphical.VexFlow.VexFlowStaffEntry
+class Graphical.VexFlow.VexFlowStaffLine
+class Graphical.VexFlow.VexFlowMusicSystem
+
+OSMD *-- Graphical.VexFlow.VexFlowBackend
+OSMD *-- Graphical.GraphicalMusicSheet
+OSMD *-- Graphical.MusicSheet
+OSMD *-- Graphical.VexFlow.VexFlowMusicSheetDrawer
+
+namespace Graphical {
+    GraphicalObject <|-- StaffMeasure
+    GraphicalObject <|-- GraphicalNote
+    GraphicalObject <|-- GraphicalStaffEntry
+    GraphicalObject <|-- MusicSystem
+    GraphicalObject <|-- StaffLine
+    GraphicalObject <|-- GraphicalMusicPage
+    GraphicalObject *-- BoundingBox
+    BoundingBox *-- BoundingBox
+    GraphicalMusicSheet *-- MusicSheetCalculator
+    GraphicalMusicSheet *-- MusicSheet
+    GraphicalMusicSheet *-- GraphicalMusicPage
+    GraphicalMusicSheet *-- StaffMeasure
+    MusicSheetDrawer *-- GraphicalMusicSheet
+    StaffLine *-- StaffMeasure
+    GraphicalStaffEntry *-- StaffMeasure
+    GraphicalStaffEntry *-- GraphicalNote
+    MusicSystem *-- GraphicalMusicPage
+    MusicSystem *--* StaffLine
+    MusicSystem *-- StaffMeasure
+}
+
+namespace Graphical {
+    StaffMeasure <|-- Graphical.VexFlow.VexFlowMeasure
+    GraphicalNote <|-- Graphical.VexFlow.VexFlowGraphicalNote
+    MusicSheetDrawer <|-- Graphical.VexFlow.VexFlowMusicSheetDrawer
+    MusicSheetCalculator <|-- Graphical.VexFlow.VexFlowMusicSheetCalculator
+    StaffLine <|-- Graphical.VexFlow.VexFlowStaffLine
+    GraphicalStaffEntry <|-- Graphical.VexFlow.VexFlowStaffEntry
+    MusicSystem <|-- Graphical.VexFlow.VexFlowMusicSystem
+}
+
+namespace Graphical.VexFlow {
+    VexFlowMusicSheetDrawer *-- VexFlowBackend
+    VexFlowBackend <|-- SvgVexFlowBackend
+    VexFlowBackend <|-- CanvasVexFlowBackend
+}
+
+namespace Vex.Flow {
+    Graphical.VexFlow.VexFlowMeasure *-- Stave
+    Graphical.VexFlow.VexFlowMeasure *-- Voice
+    Graphical.VexFlow.VexFlowGraphicalNote *-- .StaveNote
+}
+
+@enduml
