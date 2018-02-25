@@ -5,7 +5,6 @@ permalink: /demo/
 menu: main
 order: 4
 customJS:
-  - osmd-debug.js
   - demo.js
 ---
 
@@ -37,7 +36,9 @@ OSMD is able to display a simple cursor. You can control the visibility of the c
 <input type="button" value="Reset" id="reset-cursor-btn" class="btn btn-demo"/>
 
 ## Sheet music
-<div id="error-container" class="error-container"></div>
+<div id="error-tr" class="error-container">
+<div id="error-td"></div>
+</div>
 <div id="osmd-demo-canvas"></div>
 
 [0]: https://www.musicxml.com/
