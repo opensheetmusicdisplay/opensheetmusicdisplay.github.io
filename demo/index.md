@@ -5,7 +5,7 @@ permalink: /demo/
 menu: main
 order: 4
 customJS:
-  - demo.js
+  - demo.min.js
 ---
 
 ## MusicXML input
