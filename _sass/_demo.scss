@@ -52,11 +52,9 @@ select.btn.btn-demo {
 }
 
 .demo-canvas {
-  // TODO: Find way to be wider than main-content width
-  width: 100%;
-  max-width: 100%;
-  margin: 0 0;
-  padding: 0 0;
+  position: relative;
+  width: 100vw;
+  left: calc(-50vw + 50%);
 }
 
 .error-container {
