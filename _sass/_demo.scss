@@ -1,3 +1,13 @@
+:root {
+  --num-cols: 4;
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --num-cols: 2;
+  }
+}
+
 .btn.btn-demo {
   background-color: transparent;
   border-color: transparent;
@@ -11,6 +21,29 @@
 
 select.btn.btn-demo {
   border-color: $osmd-orange;
+  background-color: white;
+}
+
+.control-container {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  padding: 0.75rem 1rem;
+  color: darken($osmd-orange, 5%);
+  border-color: darken($osmd-orange, 5%);
+  background-color: transparentize(darken($osmd-orange, 5%), 0.95);
+  margin: 0.5rem !important;
+  text-align: center;
+  display: inline-block;
+}
+
+.button.group {
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), auto);
+}
+
+.centered {
+  text-align: center;
 }
 
 .error-container {
