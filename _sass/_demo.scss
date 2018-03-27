@@ -38,12 +38,25 @@ select.btn.btn-demo {
 }
 
 .button.group {
+  font-size: 0.8rem;
   display: grid;
   grid-template-columns: repeat(var(--num-cols), auto);
 }
 
+.button.group h4 {
+  font-size: 1.2rem;
+}
+
 .centered {
   text-align: center;
+}
+
+.demo-canvas {
+  // TODO: Find way to be wider than main-content width
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0;
+  padding: 0 0;
 }
 
 .error-container {

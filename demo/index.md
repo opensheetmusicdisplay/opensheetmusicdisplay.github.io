@@ -8,7 +8,7 @@ customJS:
   - demo.min.js
 ---
 
-## MusicXML input
+<!-- ## MusicXML input
 OSMD can display [MusicXML][0] in both `.xml` and `.mxl` containers. On this demo page, you can either choose from the list of music below or just drop your own MusicXML on this page.
 
 ## Renderer
@@ -18,9 +18,9 @@ You can select the rendering strategy, by choosing either the Canvas option, or 
 You control the zoom level of the music sheet displayed. Right now, OSMD is rendering the music piece at <span id="zoom-str">100</span>% on <span id="size-str">0</span>px width.
 
 ## Cursor
-OSMD is able to display a simple cursor. You can control the visibility of the cursor and navigate through the piece using the following controls. You can also use the right arrow key to step through the piece.
+OSMD is able to display a simple cursor. You can control the visibility of the cursor and navigate through the piece using the following controls. You can also use the right arrow key to step through the piece. -->
 
-## Sheet music
+## Demo
 <div class="button group">
   <div class="control-container">
     <h4 class="centered">Cursor</h4>
@@ -33,6 +33,8 @@ OSMD is able to display a simple cursor. You can control the visibility of the c
     <h4 class="centered">Zoom</h4>
     <input type="button" value="Zoom In" id="zoom-in-btn" class="btn btn-demo"/>
     <input type="button" value="Zoom Out" id="zoom-out-btn" class="btn btn-demo"/>
+    <p id="zoom-str">100</p>
+    <p id="size-str">0</p>
   </div>
   <div class="control-container">
     <h4 class="centered">Renderer</h4>
@@ -50,6 +52,6 @@ OSMD is able to display a simple cursor. You can control the visibility of the c
 <div id="error-tr" class="error-container">
   <div id="error-td"></div>
 </div>
-<div id="osmd-demo-canvas"></div>
+<div class="demo-canvas" id="osmd-demo-canvas"></div>
 
 [0]: https://www.musicxml.com/
