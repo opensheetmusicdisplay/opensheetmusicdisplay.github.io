@@ -29,26 +29,33 @@ permalink: /develop/roadmap/
 * Draw Dots
 * Draw Ties
 * Draw Tuplets
-
-
-## ToDo
 * Fix wrong Tuplets x spacing (data not correctly given to Vexflow?)
-* Fix drawing multiple ties of chords all above each other resulting in only one visible tie
-* Draw Repetitions
-  * Lines
-  * Repetition Endings (horizontal brackets with Number-Label)
+* Draw Chord Symbols
+* Draw Lyrics
   * Words
+  * Connecting dashes
+* Draw Repetitions
+  * Barlines
+  * Words (Segno, Fine)
 * Draw Articulations (staccato, accent...)
 * Draw Instrument Braces
 * Draw Group Brackets
+* Inhouse: Convert Stem Direction calculator code to TS
+* Draw Tabs
+  * read from Xml
+  * draw Tabs
+
+## ToDo
+* Fix drawing multiple ties of chords all above each other resulting in only one visible tie
+* Fix Tabs x-layout for rest notes for correct x alignment with normal notes
+* Draw Repetition Endings (horizontal brackets with Number-Label)
 * Draw In-Staff Clefs
 * Draw Grace notes (as small notes)
+* Implement Plugin Infrastructure
 * Inhouse: Convert Tuplet label placement code to TS
-* Inhouse: Convert Stem Direction calculator code to TS
 * Inhouse: Refactor and Convert SkyBottomLineCalculator for systems y-size calculation to TS
 * adapt y-layout code for using SkyBottomLineCalculator
 * Draw Measure numbers
-* Draw Chord Symbols
 * Inhouse: Refactor and convert Slur Handling (handling special cases from tied and beamed notes)
 * Draw Slurs
 * Draw Word Expressions
@@ -57,10 +64,20 @@ permalink: /develop/roadmap/
   * Other
 * Draw Wedges
 * Draw Lyrics
-  * Words
-  * Connecting dashes
   * extending underscores
 * Draw Ornaments (trill, turn, ...)
-* Tabs?
-  * read from Xml
-  * draw Tabs
+
+## ToDo - Plugins (licensable from us)
+* Implement Playback Plugin
+  * Set start position (via click onto a note on the score)
+  * set end position (for looping)
+  * set speed in BPM
+  * play back a metronome together with the music (with pre-count)
+  * Playback of given chord symbols
+  * Solo, Mute switches and volume settings for all instruments, the metronome and the chords (if avaliable)
+  * React on repetitions (backjumps), on dynamics (p, ff) and tempo instructions
+* Implement Transposition Plugin
+  * Transpose whole score by a given number of semitones
+  * Key signatures will be transposed
+* Implement Midi Import Plugin
+  * Read in a midi file for score rendering
