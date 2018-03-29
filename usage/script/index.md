@@ -8,9 +8,9 @@ permalink: /usage/script/
 
 Download the latest OpenSheetMusicDisplay bundle from [Github](https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/releases/latest) and include it in your page via script tag. The following snippet shows how to load and display a MusicXML from a remote location.
 ```html
-<script src="osmd.min.js"></script>
+<script src="opensheetmusicdisplay.min.js"></script>
 <script>
-  var osmd = new opensheetmusicdisplay.OSMD("container-id");
+  var osmd = new opensheetmusicdisplay.OpenSheetMusicDisplay("container-id");
   osmd
     .load("http://downloads2.makemusic.com/musicxml/MozaVeilSample.xml")
     .then(
