@@ -40,11 +40,11 @@ openSheetMusicDisplay
 [`load()`][load] returns a Promise, and as soon as loading the sheet music finishes successfully,
 [`OpenSheetMusicDisplay`][OpenSheetMusicDisplay] can be instructed to render it by calling [`render()`][render]. Note that [`render()`][render] returns a Promise too, which can be used to take further actions on finish or handle errors.
 
-[0]:           https://www.typescriptlang.org/
-[1]:           https://webpack.js.org/
-[2]:           https://github.com/systemjs/systemjs
-[3]:           http://browserify.org/
-[load]:        /classdoc/classes/osmd.html#load
-[OSMD]:        /classdoc/classes/osmd.html
-[constructor]: /classdoc/classes/osmd.html#constructor
-[render]:      /classdoc/classes/osmd.html#render
+[0]:                      https://www.typescriptlang.org/
+[1]:                      https://webpack.js.org/
+[2]:                      https://github.com/systemjs/systemjs
+[3]:                      http://browserify.org/
+[load]:                   /classdoc/classes/osmd.html#load
+[OpenSheetMusicDisplay]:  /classdoc/classes/osmd.html
+[constructor]:            /classdoc/classes/osmd.html#constructor
+[render]:                 /classdoc/classes/osmd.html#render
