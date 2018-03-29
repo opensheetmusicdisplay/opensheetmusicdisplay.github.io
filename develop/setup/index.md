@@ -20,7 +20,7 @@ $ npm install
 
 ## Build
 ```sh
-$ npm start # Build and run demo
+$ npm start # Build and run demo (served on localhost:8000)
 $ npm run test # Builds the tests
 $ npm run build # Builds for distribution on npm and Bower
 ```

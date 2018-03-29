@@ -10,12 +10,12 @@ Download the latest OpenSheetMusicDisplay bundle from [Github](https://github.co
 ```html
 <script src="opensheetmusicdisplay.min.js"></script>
 <script>
-  var osmd = new opensheetmusicdisplay.OpenSheetMusicDisplay("container-id");
-  osmd
+  var openSheetMusicDisplay = new opensheetmusicdisplay.OpenSheetMusicDisplay("container-id");
+  openSheetMusicDisplay
     .load("http://downloads2.makemusic.com/musicxml/MozaVeilSample.xml")
     .then(
       function() {
-        osmd.render();
+        openSheetMusicDisplay.render();
       }
     );
 </script>
