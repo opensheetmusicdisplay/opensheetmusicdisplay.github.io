@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MusicSheetReader | opensheetmusicdisplay</title>
+	<title>MusicSheetReader | OpenSheetMusicDisplay</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">opensheetmusicdisplay</a>
+					<a href="../index.html" class="title">OpenSheetMusicDisplay</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -78,9 +78,16 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="musicsheetreader.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="musicsheetreader.html#aftersheetreadingmodules" class="tsd-kind-icon">after<wbr>Sheet<wbr>Reading<wbr>Modules</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="musicsheetreader.html#completenumberofstaves" class="tsd-kind-icon">complete<wbr>Number<wbr>OfStaves</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="musicsheetreader.html#currentfraction" class="tsd-kind-icon">current<wbr>Fraction</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="musicsheetreader.html#currentmeasure" class="tsd-kind-icon">current<wbr>Measure</a></li>
@@ -128,15 +135,51 @@
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Music<wbr>Sheet<wbr>Reader<span class="tsd-signature-symbol">(</span>afterSheetReadingModules<span class="tsd-signature-symbol">?: </span><a href="../interfaces/iaftersheetreadingmodule.html" class="tsd-signature-type">IAfterSheetReadingModule</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="musicsheetreader.html" class="tsd-signature-type">MusicSheetReader</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L25">MusicalScore/ScoreIO/MusicSheetReader.ts:25</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> afterSheetReadingModules: <a href="../interfaces/iaftersheetreadingmodule.html" class="tsd-signature-type">IAfterSheetReadingModule</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;undefined</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="musicsheetreader.html" class="tsd-signature-type">MusicSheetReader</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="aftersheetreadingmodules" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> after<wbr>Sheet<wbr>Reading<wbr>Modules</h3>
+					<div class="tsd-signature tsd-kind-icon">after<wbr>Sheet<wbr>Reading<wbr>Modules<span class="tsd-signature-symbol">:</span> <a href="../interfaces/iaftersheetreadingmodule.html" class="tsd-signature-type">IAfterSheetReadingModule</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L39">MusicalScore/ScoreIO/MusicSheetReader.ts:39</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="completenumberofstaves" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> complete<wbr>Number<wbr>OfStaves</h3>
 					<div class="tsd-signature tsd-kind-icon">complete<wbr>Number<wbr>OfStaves<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L46">src/MusicalScore/ScoreIO/MusicSheetReader.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L41">MusicalScore/ScoreIO/MusicSheetReader.ts:41</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -146,7 +189,7 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Fraction<span class="tsd-signature-symbol">:</span> <a href="fraction.html" class="tsd-signature-type">Fraction</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L49">src/MusicalScore/ScoreIO/MusicSheetReader.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L44">MusicalScore/ScoreIO/MusicSheetReader.ts:44</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -156,7 +199,7 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Measure<span class="tsd-signature-symbol">:</span> <a href="sourcemeasure.html" class="tsd-signature-type">SourceMeasure</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L47">src/MusicalScore/ScoreIO/MusicSheetReader.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L42">MusicalScore/ScoreIO/MusicSheetReader.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -166,7 +209,7 @@
 					<div class="tsd-signature tsd-kind-icon">music<wbr>Sheet<span class="tsd-signature-symbol">:</span> <a href="musicsheet.html" class="tsd-signature-type">MusicSheet</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L45">src/MusicalScore/ScoreIO/MusicSheetReader.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L40">MusicalScore/ScoreIO/MusicSheetReader.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -176,27 +219,27 @@
 					<div class="tsd-signature tsd-kind-icon">previous<wbr>Measure<span class="tsd-signature-symbol">:</span> <a href="sourcemeasure.html" class="tsd-signature-type">SourceMeasure</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L48">src/MusicalScore/ScoreIO/MusicSheetReader.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L43">MusicalScore/ScoreIO/MusicSheetReader.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="repetitioncalculator" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> repetition<wbr>Calculator</h3>
-					<div class="tsd-signature tsd-kind-icon">repetition<wbr>Calculator<span class="tsd-signature-symbol">:</span> <a href="../globals.html#repetitioncalculator" class="tsd-signature-type">RepetitionCalculator</a></div>
+					<div class="tsd-signature tsd-kind-icon">repetition<wbr>Calculator<span class="tsd-signature-symbol">:</span> <a href="repetitioncalculator.html" class="tsd-signature-type">RepetitionCalculator</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L43">src/MusicalScore/ScoreIO/MusicSheetReader.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L38">MusicalScore/ScoreIO/MusicSheetReader.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="repetitioninstructionreader" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> repetition<wbr>Instruction<wbr>Reader</h3>
-					<div class="tsd-signature tsd-kind-icon">repetition<wbr>Instruction<wbr>Reader<span class="tsd-signature-symbol">:</span> <a href="../globals.html#repetitioninstructionreader" class="tsd-signature-type">RepetitionInstructionReader</a></div>
+					<div class="tsd-signature tsd-kind-icon">repetition<wbr>Instruction<wbr>Reader<span class="tsd-signature-symbol">:</span> <a href="repetitioninstructionreader.html" class="tsd-signature-type">RepetitionInstructionReader</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L42">src/MusicalScore/ScoreIO/MusicSheetReader.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L37">MusicalScore/ScoreIO/MusicSheetReader.ts:37</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -213,7 +256,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L51">src/MusicalScore/ScoreIO/MusicSheetReader.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L46">MusicalScore/ScoreIO/MusicSheetReader.ts:46</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -233,7 +276,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L118">src/MusicalScore/ScoreIO/MusicSheetReader.ts:118</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L113">MusicalScore/ScoreIO/MusicSheetReader.ts:113</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -259,7 +302,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L87">src/MusicalScore/ScoreIO/MusicSheetReader.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L82">MusicalScore/ScoreIO/MusicSheetReader.ts:82</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -288,7 +331,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L75">src/MusicalScore/ScoreIO/MusicSheetReader.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L70">MusicalScore/ScoreIO/MusicSheetReader.ts:70</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -314,7 +357,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L429">src/MusicalScore/ScoreIO/MusicSheetReader.ts:429</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L424">MusicalScore/ScoreIO/MusicSheetReader.ts:424</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -345,7 +388,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L323">src/MusicalScore/ScoreIO/MusicSheetReader.ts:323</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L318">MusicalScore/ScoreIO/MusicSheetReader.ts:318</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -373,7 +416,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L400">src/MusicalScore/ScoreIO/MusicSheetReader.ts:400</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L395">MusicalScore/ScoreIO/MusicSheetReader.ts:395</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -408,7 +451,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L413">src/MusicalScore/ScoreIO/MusicSheetReader.ts:413</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L408">MusicalScore/ScoreIO/MusicSheetReader.ts:408</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -439,7 +482,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L237">src/MusicalScore/ScoreIO/MusicSheetReader.ts:237</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L232">MusicalScore/ScoreIO/MusicSheetReader.ts:232</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -471,7 +514,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L454">src/MusicalScore/ScoreIO/MusicSheetReader.ts:454</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L449">MusicalScore/ScoreIO/MusicSheetReader.ts:449</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -494,7 +537,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L613">src/MusicalScore/ScoreIO/MusicSheetReader.ts:613</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L608">MusicalScore/ScoreIO/MusicSheetReader.ts:608</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -517,7 +560,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L700">src/MusicalScore/ScoreIO/MusicSheetReader.ts:700</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L695">MusicalScore/ScoreIO/MusicSheetReader.ts:695</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -550,7 +593,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L67">src/MusicalScore/ScoreIO/MusicSheetReader.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L62">MusicalScore/ScoreIO/MusicSheetReader.ts:62</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -581,7 +624,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L839">src/MusicalScore/ScoreIO/MusicSheetReader.ts:839</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L834">MusicalScore/ScoreIO/MusicSheetReader.ts:834</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -612,7 +655,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L872">src/MusicalScore/ScoreIO/MusicSheetReader.ts:872</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L867">MusicalScore/ScoreIO/MusicSheetReader.ts:867</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -640,7 +683,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L193">src/MusicalScore/ScoreIO/MusicSheetReader.ts:193</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L188">MusicalScore/ScoreIO/MusicSheetReader.ts:188</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -669,7 +712,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L513">src/MusicalScore/ScoreIO/MusicSheetReader.ts:513</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L508">MusicalScore/ScoreIO/MusicSheetReader.ts:508</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -695,7 +738,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L491">src/MusicalScore/ScoreIO/MusicSheetReader.ts:491</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L486">MusicalScore/ScoreIO/MusicSheetReader.ts:486</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -728,7 +771,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L522">src/MusicalScore/ScoreIO/MusicSheetReader.ts:522</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L517">MusicalScore/ScoreIO/MusicSheetReader.ts:517</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -751,7 +794,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L658">src/MusicalScore/ScoreIO/MusicSheetReader.ts:658</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L653">MusicalScore/ScoreIO/MusicSheetReader.ts:653</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -774,7 +817,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L541">src/MusicalScore/ScoreIO/MusicSheetReader.ts:541</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L536">MusicalScore/ScoreIO/MusicSheetReader.ts:536</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -797,7 +840,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L341">src/MusicalScore/ScoreIO/MusicSheetReader.ts:341</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L336">MusicalScore/ScoreIO/MusicSheetReader.ts:336</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -828,7 +871,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L440">src/MusicalScore/ScoreIO/MusicSheetReader.ts:440</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L435">MusicalScore/ScoreIO/MusicSheetReader.ts:435</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -851,7 +894,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L83">src/MusicalScore/ScoreIO/MusicSheetReader.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L78">MusicalScore/ScoreIO/MusicSheetReader.ts:78</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -874,7 +917,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L55">src/MusicalScore/ScoreIO/MusicSheetReader.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/MusicSheetReader.ts#L50">MusicalScore/ScoreIO/MusicSheetReader.ts:50</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -904,6 +947,12 @@
 					<li class="current tsd-kind-class">
 						<a href="musicsheetreader.html" class="tsd-kind-icon">Music<wbr>Sheet<wbr>Reader</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="musicsheetreader.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="musicsheetreader.html#aftersheetreadingmodules" class="tsd-kind-icon">after<wbr>Sheet<wbr>Reading<wbr>Modules</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="musicsheetreader.html#completenumberofstaves" class="tsd-kind-icon">complete<wbr>Number<wbr>OfStaves</a>
 							</li>

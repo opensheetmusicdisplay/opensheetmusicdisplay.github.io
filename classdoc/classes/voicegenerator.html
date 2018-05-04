@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>VoiceGenerator | opensheetmusicdisplay</title>
+	<title>VoiceGenerator | OpenSheetMusicDisplay</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">opensheetmusicdisplay</a>
+					<a href="../index.html" class="title">OpenSheetMusicDisplay</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -87,18 +87,19 @@
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="voicegenerator.html#articulationreader" class="tsd-kind-icon">articulation<wbr>Reader</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="voicegenerator.html#currentmeasure" class="tsd-kind-icon">current<wbr>Measure</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="voicegenerator.html#currentnote" class="tsd-kind-icon">current<wbr>Note</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="voicegenerator.html#currentoctaveshift" class="tsd-kind-icon">current<wbr>Octave<wbr>Shift</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="voicegenerator.html#currentstaffentry" class="tsd-kind-icon">current<wbr>Staff<wbr>Entry</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="voicegenerator.html#currentvoiceentry" class="tsd-kind-icon">current<wbr>Voice<wbr>Entry</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="voicegenerator.html#lastbeamtag" class="tsd-kind-icon">last<wbr>Beam<wbr>Tag</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="voicegenerator.html#lyricsreader" class="tsd-kind-icon">lyrics<wbr>Reader</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="voicegenerator.html#musicsheet" class="tsd-kind-icon">music<wbr>Sheet</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="voicegenerator.html#openbeam" class="tsd-kind-icon">open<wbr>Beam</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="voicegenerator.html#opengracebeam" class="tsd-kind-icon">open<wbr>Grace<wbr>Beam</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="voicegenerator.html#opentiedict" class="tsd-kind-icon">open<wbr>Tie<wbr>Dict</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="voicegenerator.html#opentupletnumber" class="tsd-kind-icon">open<wbr>Tuplet<wbr>Number</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="voicegenerator.html#slurreader" class="tsd-kind-icon">slur<wbr>Reader</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="voicegenerator.html#tupletdict" class="tsd-kind-icon">tuplet<wbr>Dict</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="voicegenerator.html#voice" class="tsd-kind-icon">voice</a></li>
 							</ul>
@@ -132,6 +133,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="voicegenerator.html#handletimemodificationnode" class="tsd-kind-icon">handle<wbr>Time<wbr>Modification<wbr>Node</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="voicegenerator.html#hasvoiceentry" class="tsd-kind-icon">has<wbr>Voice<wbr>Entry</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="voicegenerator.html#read" class="tsd-kind-icon">read</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="voicegenerator.html#readarticulations" class="tsd-kind-icon">read<wbr>Articulations</a></li>
 							</ul>
 						</section>
 					</div>
@@ -149,7 +151,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L36">src/MusicalScore/ScoreIO/VoiceGenerator.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L38">MusicalScore/ScoreIO/VoiceGenerator.ts:38</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -175,12 +177,22 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="articulationreader" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> articulation<wbr>Reader</h3>
+					<div class="tsd-signature tsd-kind-icon">articulation<wbr>Reader<span class="tsd-signature-symbol">:</span> <a href="articulationreader.html" class="tsd-signature-type">ArticulationReader</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L54">MusicalScore/ScoreIO/VoiceGenerator.ts:54</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="currentmeasure" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> current<wbr>Measure</h3>
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Measure<span class="tsd-signature-symbol">:</span> <a href="sourcemeasure.html" class="tsd-signature-type">SourceMeasure</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L57">src/MusicalScore/ScoreIO/VoiceGenerator.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L59">MusicalScore/ScoreIO/VoiceGenerator.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -190,7 +202,7 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Note<span class="tsd-signature-symbol">:</span> <a href="note.html" class="tsd-signature-type">Note</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L56">src/MusicalScore/ScoreIO/VoiceGenerator.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L58">MusicalScore/ScoreIO/VoiceGenerator.ts:58</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -200,7 +212,7 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Octave<wbr>Shift<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L63">src/MusicalScore/ScoreIO/VoiceGenerator.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L65">MusicalScore/ScoreIO/VoiceGenerator.ts:65</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -210,7 +222,7 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Staff<wbr>Entry<span class="tsd-signature-symbol">:</span> <a href="sourcestaffentry.html" class="tsd-signature-type">SourceStaffEntry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L58">src/MusicalScore/ScoreIO/VoiceGenerator.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L60">MusicalScore/ScoreIO/VoiceGenerator.ts:60</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -220,7 +232,7 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Voice<wbr>Entry<span class="tsd-signature-symbol">:</span> <a href="voiceentry.html" class="tsd-signature-type">VoiceEntry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L55">src/MusicalScore/ScoreIO/VoiceGenerator.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L57">MusicalScore/ScoreIO/VoiceGenerator.ts:57</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -230,7 +242,17 @@
 					<div class="tsd-signature tsd-kind-icon">last<wbr>Beam<wbr>Tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L59">src/MusicalScore/ScoreIO/VoiceGenerator.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L61">MusicalScore/ScoreIO/VoiceGenerator.ts:61</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="lyricsreader" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> lyrics<wbr>Reader</h3>
+					<div class="tsd-signature tsd-kind-icon">lyrics<wbr>Reader<span class="tsd-signature-symbol">:</span> <a href="lyricsreader.html" class="tsd-signature-type">LyricsReader</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L53">MusicalScore/ScoreIO/VoiceGenerator.ts:53</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -240,7 +262,7 @@
 					<div class="tsd-signature tsd-kind-icon">music<wbr>Sheet<span class="tsd-signature-symbol">:</span> <a href="musicsheet.html" class="tsd-signature-type">MusicSheet</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L53">src/MusicalScore/ScoreIO/VoiceGenerator.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L55">MusicalScore/ScoreIO/VoiceGenerator.ts:55</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -250,7 +272,7 @@
 					<div class="tsd-signature tsd-kind-icon">open<wbr>Beam<span class="tsd-signature-symbol">:</span> <a href="beam.html" class="tsd-signature-type">Beam</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L60">src/MusicalScore/ScoreIO/VoiceGenerator.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L62">MusicalScore/ScoreIO/VoiceGenerator.ts:62</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -260,7 +282,7 @@
 					<div class="tsd-signature tsd-kind-icon">open<wbr>Grace<wbr>Beam<span class="tsd-signature-symbol">:</span> <a href="beam.html" class="tsd-signature-type">Beam</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L61">src/MusicalScore/ScoreIO/VoiceGenerator.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L63">MusicalScore/ScoreIO/VoiceGenerator.ts:63</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -270,7 +292,7 @@
 					<div class="tsd-signature tsd-kind-icon">open<wbr>Tie<wbr>Dict<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L62">src/MusicalScore/ScoreIO/VoiceGenerator.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L64">MusicalScore/ScoreIO/VoiceGenerator.ts:64</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -288,17 +310,7 @@
 					<div class="tsd-signature tsd-kind-icon">open<wbr>Tuplet<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L65">src/MusicalScore/ScoreIO/VoiceGenerator.ts:65</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="slurreader" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> slur<wbr>Reader</h3>
-					<div class="tsd-signature tsd-kind-icon">slur<wbr>Reader<span class="tsd-signature-symbol">:</span> <a href="../globals.html#slurreader" class="tsd-signature-type">SlurReader</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L50">src/MusicalScore/ScoreIO/VoiceGenerator.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L67">MusicalScore/ScoreIO/VoiceGenerator.ts:67</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -308,7 +320,7 @@
 					<div class="tsd-signature tsd-kind-icon">tuplet<wbr>Dict<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L64">src/MusicalScore/ScoreIO/VoiceGenerator.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L66">MusicalScore/ScoreIO/VoiceGenerator.ts:66</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -326,7 +338,7 @@
 					<div class="tsd-signature tsd-kind-icon">voice<span class="tsd-signature-symbol">:</span> <a href="voice.html" class="tsd-signature-type">Voice</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L54">src/MusicalScore/ScoreIO/VoiceGenerator.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L56">MusicalScore/ScoreIO/VoiceGenerator.ts:56</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -343,7 +355,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L67">src/MusicalScore/ScoreIO/VoiceGenerator.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L69">MusicalScore/ScoreIO/VoiceGenerator.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="voice.html" class="tsd-signature-type">Voice</a></h4>
@@ -361,7 +373,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L70">src/MusicalScore/ScoreIO/VoiceGenerator.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L73">MusicalScore/ScoreIO/VoiceGenerator.ts:73</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -369,7 +381,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L73">src/MusicalScore/ScoreIO/VoiceGenerator.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L77">MusicalScore/ScoreIO/VoiceGenerator.ts:77</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -389,13 +401,13 @@
 					<a name="addrestnote" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> add<wbr>Rest<wbr>Note</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Rest<wbr>Note<span class="tsd-signature-symbol">(</span>noteDuration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, divisions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="note.html" class="tsd-signature-type">Note</a></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Rest<wbr>Note<span class="tsd-signature-symbol">(</span>noteDuration<span class="tsd-signature-symbol">: </span><a href="fraction.html" class="tsd-signature-type">Fraction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="note.html" class="tsd-signature-type">Note</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L419">src/MusicalScore/ScoreIO/VoiceGenerator.ts:419</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L432">MusicalScore/ScoreIO/VoiceGenerator.ts:432</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -406,10 +418,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>noteDuration: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>divisions: <span class="tsd-signature-type">number</span></h5>
+									<h5>noteDuration: <a href="fraction.html" class="tsd-signature-type">Fraction</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="note.html" class="tsd-signature-type">Note</a></h4>
@@ -420,13 +429,13 @@
 					<a name="addsinglenote" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> add<wbr>Single<wbr>Note</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Single<wbr>Note<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a>, noteDuration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, divisions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, graceNote<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, chord<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, guitarPro<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="note.html" class="tsd-signature-type">Note</a></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Single<wbr>Note<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a>, noteDuration<span class="tsd-signature-symbol">: </span><a href="fraction.html" class="tsd-signature-type">Fraction</a>, graceNote<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, chord<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, guitarPro<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="note.html" class="tsd-signature-type">Note</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L323">src/MusicalScore/ScoreIO/VoiceGenerator.ts:323</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L338">MusicalScore/ScoreIO/VoiceGenerator.ts:338</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -440,10 +449,7 @@
 									<h5>node: <a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a></h5>
 								</li>
 								<li>
-									<h5>noteDuration: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>divisions: <span class="tsd-signature-type">number</span></h5>
+									<h5>noteDuration: <a href="fraction.html" class="tsd-signature-type">Fraction</a></h5>
 								</li>
 								<li>
 									<h5>graceNote: <span class="tsd-signature-type">boolean</span></h5>
@@ -469,7 +475,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L771">src/MusicalScore/ScoreIO/VoiceGenerator.ts:771</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L793">MusicalScore/ScoreIO/VoiceGenerator.ts:793</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -498,7 +504,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L602">src/MusicalScore/ScoreIO/VoiceGenerator.ts:602</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L622">MusicalScore/ScoreIO/VoiceGenerator.ts:622</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -529,7 +535,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L232">src/MusicalScore/ScoreIO/VoiceGenerator.ts:232</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L241">MusicalScore/ScoreIO/VoiceGenerator.ts:241</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -546,7 +552,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L175">src/MusicalScore/ScoreIO/VoiceGenerator.ts:175</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L185">MusicalScore/ScoreIO/VoiceGenerator.ts:185</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -569,7 +575,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L214">src/MusicalScore/ScoreIO/VoiceGenerator.ts:214</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L224">MusicalScore/ScoreIO/VoiceGenerator.ts:224</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -606,7 +612,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L237">src/MusicalScore/ScoreIO/VoiceGenerator.ts:237</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L247">MusicalScore/ScoreIO/VoiceGenerator.ts:247</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -623,7 +629,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L435">src/MusicalScore/ScoreIO/VoiceGenerator.ts:435</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L448">MusicalScore/ScoreIO/VoiceGenerator.ts:448</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -659,7 +665,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L83">src/MusicalScore/ScoreIO/VoiceGenerator.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L87">MusicalScore/ScoreIO/VoiceGenerator.ts:87</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -695,7 +701,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L934">src/MusicalScore/ScoreIO/VoiceGenerator.ts:934</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L962">MusicalScore/ScoreIO/VoiceGenerator.ts:962</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -723,7 +729,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L917">src/MusicalScore/ScoreIO/VoiceGenerator.ts:917</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L943">MusicalScore/ScoreIO/VoiceGenerator.ts:943</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -745,7 +751,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L258">src/MusicalScore/ScoreIO/VoiceGenerator.ts:258</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L269">MusicalScore/ScoreIO/VoiceGenerator.ts:269</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -773,7 +779,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L952">src/MusicalScore/ScoreIO/VoiceGenerator.ts:952</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L980">MusicalScore/ScoreIO/VoiceGenerator.ts:980</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -801,7 +807,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L541">src/MusicalScore/ScoreIO/VoiceGenerator.ts:541</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L561">MusicalScore/ScoreIO/VoiceGenerator.ts:561</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -827,7 +833,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L506">src/MusicalScore/ScoreIO/VoiceGenerator.ts:506</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L523">MusicalScore/ScoreIO/VoiceGenerator.ts:523</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -849,12 +855,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L737">src/MusicalScore/ScoreIO/VoiceGenerator.ts:737</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L757">MusicalScore/ScoreIO/VoiceGenerator.ts:757</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Handle the time-modification <a href="ixmlelement.html">IXmlElement</a> for the <a href="tuplet.html">Tuplet</a> case (tupletNotes not at begin/end of <a href="tuplet.html">Tuplet</a>).</p>
+									<p>This method handles the time-modification IXmlElement for the Tuplet case (tupletNotes not at begin/end of Tuplet).</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -879,7 +885,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L249">src/MusicalScore/ScoreIO/VoiceGenerator.ts:249</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L260">MusicalScore/ScoreIO/VoiceGenerator.ts:260</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -890,13 +896,13 @@
 					<a name="read" class="tsd-anchor"></a>
 					<h3>read</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">read<span class="tsd-signature-symbol">(</span>noteNode<span class="tsd-signature-symbol">: </span><a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a>, noteDuration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, divisions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, restNote<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, graceNote<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, parentStaffEntry<span class="tsd-signature-symbol">: </span><a href="sourcestaffentry.html" class="tsd-signature-type">SourceStaffEntry</a>, parentMeasure<span class="tsd-signature-symbol">: </span><a href="sourcemeasure.html" class="tsd-signature-type">SourceMeasure</a>, measureStartAbsoluteTimestamp<span class="tsd-signature-symbol">: </span><a href="fraction.html" class="tsd-signature-type">Fraction</a>, maxTieNoteFraction<span class="tsd-signature-symbol">: </span><a href="fraction.html" class="tsd-signature-type">Fraction</a>, chord<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, guitarPro<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="note.html" class="tsd-signature-type">Note</a></li>
+						<li class="tsd-signature tsd-kind-icon">read<span class="tsd-signature-symbol">(</span>noteNode<span class="tsd-signature-symbol">: </span><a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a>, noteDuration<span class="tsd-signature-symbol">: </span><a href="fraction.html" class="tsd-signature-type">Fraction</a>, restNote<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, graceNote<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, parentStaffEntry<span class="tsd-signature-symbol">: </span><a href="sourcestaffentry.html" class="tsd-signature-type">SourceStaffEntry</a>, parentMeasure<span class="tsd-signature-symbol">: </span><a href="sourcemeasure.html" class="tsd-signature-type">SourceMeasure</a>, measureStartAbsoluteTimestamp<span class="tsd-signature-symbol">: </span><a href="fraction.html" class="tsd-signature-type">Fraction</a>, maxTieNoteFraction<span class="tsd-signature-symbol">: </span><a href="fraction.html" class="tsd-signature-type">Fraction</a>, chord<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, guitarPro<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="note.html" class="tsd-signature-type">Note</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L108">src/MusicalScore/ScoreIO/VoiceGenerator.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L112">MusicalScore/ScoreIO/VoiceGenerator.ts:112</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -910,10 +916,7 @@
 									<h5>noteNode: <a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a></h5>
 								</li>
 								<li>
-									<h5>noteDuration: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>divisions: <span class="tsd-signature-type">number</span></h5>
+									<h5>noteDuration: <a href="fraction.html" class="tsd-signature-type">Fraction</a></h5>
 								</li>
 								<li>
 									<h5>restNote: <span class="tsd-signature-type">boolean</span></h5>
@@ -944,6 +947,32 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="readarticulations" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Articulations</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Articulations<span class="tsd-signature-symbol">(</span>notationNode<span class="tsd-signature-symbol">: </span><a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a>, currentVoiceEntry<span class="tsd-signature-symbol">: </span><a href="voiceentry.html" class="tsd-signature-type">VoiceEntry</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L309">MusicalScore/ScoreIO/VoiceGenerator.ts:309</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>notationNode: <a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a></h5>
+								</li>
+								<li>
+									<h5>currentVoiceEntry: <a href="voiceentry.html" class="tsd-signature-type">VoiceEntry</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -965,6 +994,9 @@
 								<a href="voicegenerator.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="voicegenerator.html#articulationreader" class="tsd-kind-icon">articulation<wbr>Reader</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="voicegenerator.html#currentmeasure" class="tsd-kind-icon">current<wbr>Measure</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -983,6 +1015,9 @@
 								<a href="voicegenerator.html#lastbeamtag" class="tsd-kind-icon">last<wbr>Beam<wbr>Tag</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="voicegenerator.html#lyricsreader" class="tsd-kind-icon">lyrics<wbr>Reader</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="voicegenerator.html#musicsheet" class="tsd-kind-icon">music<wbr>Sheet</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -996,9 +1031,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="voicegenerator.html#opentupletnumber" class="tsd-kind-icon">open<wbr>Tuplet<wbr>Number</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="voicegenerator.html#slurreader" class="tsd-kind-icon">slur<wbr>Reader</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="voicegenerator.html#tupletdict" class="tsd-kind-icon">tuplet<wbr>Dict</a>
@@ -1068,6 +1100,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="voicegenerator.html#read" class="tsd-kind-icon">read</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="voicegenerator.html#readarticulations" class="tsd-kind-icon">read<wbr>Articulations</a>
 							</li>
 						</ul>
 					</li>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>VexFlowConverter | opensheetmusicdisplay</title>
+	<title>VexFlowConverter | OpenSheetMusicDisplay</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">opensheetmusicdisplay</a>
+					<a href="../index.html" class="title">OpenSheetMusicDisplay</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -95,6 +95,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="vexflowconverter.html#accidental" class="tsd-kind-icon">accidental</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="vexflowconverter.html#duration" class="tsd-kind-icon">duration</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="vexflowconverter.html#font" class="tsd-kind-icon">font</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="vexflowconverter.html#fontstyle" class="tsd-kind-icon">font<wbr>Style</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="vexflowconverter.html#generatearticulations" class="tsd-kind-icon">generate<wbr>Articulations</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="vexflowconverter.html#keysignature" class="tsd-kind-icon">key<wbr>Signature</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="vexflowconverter.html#line" class="tsd-kind-icon">line</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="vexflowconverter.html#pitch" class="tsd-kind-icon">pitch</a></li>
@@ -117,34 +119,53 @@
 					<a name="clef" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Clef</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">Clef<span class="tsd-signature-symbol">(</span>clef<span class="tsd-signature-symbol">: </span><a href="clefinstruction.html" class="tsd-signature-type">ClefInstruction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+						<li class="tsd-signature tsd-kind-icon">Clef<span class="tsd-signature-symbol">(</span>clef<span class="tsd-signature-symbol">: </span><a href="clefinstruction.html" class="tsd-signature-type">ClefInstruction</a>, size<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L169">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:169</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L283">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:283</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Convert a ClefInstruction to a string representing a clef type in VexFlow</p>
+									<p>Convert a ClefInstruction to a string represention of a clef type in VexFlow.</p>
 								</div>
 								<dl class="tsd-comment-tags">
-									<dt>constructor</dt>
-									<dd></dd>
+									<dt>see</dt>
+									<dd><p><a href="https://github.com/0xfe/vexflow/blob/master/src/clef.js">https://github.com/0xfe/vexflow/blob/master/src/clef.js</a></p>
+									</dd>
+									<dt>see</dt>
+									<dd><p><a href="https://github.com/0xfe/vexflow/blob/master/tests/clef_tests.js">https://github.com/0xfe/vexflow/blob/master/tests/clef_tests.js</a></p>
+									</dd>
 								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>clef: <a href="clefinstruction.html" class="tsd-signature-type">ClefInstruction</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The OSMD object to be converted representing the clef</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> size: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;default&quot;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The VexFlow size to be used. Can be <code>default</code> or <code>small</code>. As soon as</p>
+										<pre><code>        #<span class="hljs-number">118</span> <span class="hljs-keyword">is</span> done, <span class="hljs-keyword">this</span> parameter will be dispensable.
+</code></pre>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+							<p>A string representation of a VexFlow clef</p>
 							<ul class="tsd-parameters">
 								<li class="tsd-parameter">
 									<h5>annotation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li class="tsd-parameter">
 									<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
@@ -157,13 +178,13 @@
 					<a name="stavenote" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Stave<wbr>Note</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">Stave<wbr>Note<span class="tsd-signature-symbol">(</span>notes<span class="tsd-signature-symbol">: </span><a href="graphicalnote.html" class="tsd-signature-type">GraphicalNote</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StaveNote</span></li>
+						<li class="tsd-signature tsd-kind-icon">Stave<wbr>Note<span class="tsd-signature-symbol">(</span>notes<span class="tsd-signature-symbol">: </span><a href="graphicalnote.html" class="tsd-signature-type">GraphicalNote</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vex.Flow.StaveNote</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L111">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:111</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L145">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:145</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -180,7 +201,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">StaveNote</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Vex.Flow.StaveNote</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -188,13 +209,13 @@
 					<a name="timesignature" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Time<wbr>Signature</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">Time<wbr>Signature<span class="tsd-signature-symbol">(</span>rhythm<span class="tsd-signature-symbol">: </span><a href="rhythminstruction.html" class="tsd-signature-type">RhythmInstruction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TimeSignature</span></li>
+						<li class="tsd-signature tsd-kind-icon">Time<wbr>Signature<span class="tsd-signature-symbol">(</span>rhythm<span class="tsd-signature-symbol">: </span><a href="rhythminstruction.html" class="tsd-signature-type">RhythmInstruction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vex.Flow.TimeSignature</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L210">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:210</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L383">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:383</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -212,7 +233,7 @@
 									<h5>rhythm: <a href="rhythminstruction.html" class="tsd-signature-type">RhythmInstruction</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TimeSignature</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Vex.Flow.TimeSignature</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -226,7 +247,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L83">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L117">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:117</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -248,13 +269,13 @@
 					<a name="duration" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> duration</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">duration<span class="tsd-signature-symbol">(</span>fraction<span class="tsd-signature-symbol">: </span><a href="fraction.html" class="tsd-signature-type">Fraction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">duration<span class="tsd-signature-symbol">(</span>fraction<span class="tsd-signature-symbol">: </span><a href="fraction.html" class="tsd-signature-type">Fraction</a>, isTuplet<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L46">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L49">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:49</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -269,6 +290,9 @@
 									<div class="tsd-comment tsd-typography">
 										<p>a fraction representing the duration of a note</p>
 									</div>
+								</li>
+								<li>
+									<h5>isTuplet: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -285,7 +309,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L284">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:284</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L459">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:459</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -310,6 +334,61 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="fontstyle" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> font<wbr>Style</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">font<wbr>Style<span class="tsd-signature-symbol">(</span>style<span class="tsd-signature-symbol">: </span><a href="../enums/fontstyles.html" class="tsd-signature-type">FontStyles</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L497">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:497</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts the style into a string that VexFlow RenderContext can understand
+									as the weight of the font</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>style: <a href="../enums/fontstyles.html" class="tsd-signature-type">FontStyles</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="generatearticulations" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> generate<wbr>Articulations</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">generate<wbr>Articulations<span class="tsd-signature-symbol">(</span>vfnote<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vex.Flow.StaveNote</span>, articulations<span class="tsd-signature-symbol">: </span><a href="../enums/articulationenum.html" class="tsd-signature-type">ArticulationEnum</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L204">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:204</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>vfnote: <span class="tsd-signature-type">Vex.Flow.StaveNote</span></h5>
+								</li>
+								<li>
+									<h5>articulations: <a href="../enums/articulationenum.html" class="tsd-signature-type">ArticulationEnum</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a name="keysignature" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> key<wbr>Signature</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
@@ -319,7 +398,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L232">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:232</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L405">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:405</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -341,13 +420,13 @@
 					<a name="line" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> line</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">line<span class="tsd-signature-symbol">(</span>lineType<span class="tsd-signature-symbol">: </span><a href="../enums/systemlinesenum.html" class="tsd-signature-type">SystemLinesEnum</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">line<span class="tsd-signature-symbol">(</span>lineType<span class="tsd-signature-symbol">: </span><a href="../enums/systemlinesenum.html" class="tsd-signature-type">SystemLinesEnum</a>, linePosition<span class="tsd-signature-symbol">: </span><a href="../enums/systemlineposition.html" class="tsd-signature-type">SystemLinePosition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L256">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:256</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L429">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:429</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -359,6 +438,9 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>lineType: <a href="../enums/systemlinesenum.html" class="tsd-signature-type">SystemLinesEnum</a></h5>
+								</li>
+								<li>
+									<h5>linePosition: <a href="../enums/systemlineposition.html" class="tsd-signature-type">SystemLinePosition</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -375,7 +457,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L70">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L104">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:104</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -407,7 +489,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L323">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:323</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L515">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:515</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -434,7 +516,7 @@
 					<div class="tsd-signature tsd-kind-icon">major<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L28">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L31">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:31</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -453,7 +535,7 @@
 						<div class="tsd-signature tsd-kind-icon">-1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;F&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L29">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:29</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L32">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:32</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -463,7 +545,7 @@
 						<div class="tsd-signature tsd-kind-icon">-2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Bb&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L29">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:29</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L32">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:32</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -473,7 +555,7 @@
 						<div class="tsd-signature tsd-kind-icon">-3<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Eb&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L29">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:29</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L32">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:32</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -483,7 +565,7 @@
 						<div class="tsd-signature tsd-kind-icon">-4<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Ab&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L29">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:29</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L32">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:32</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -493,7 +575,7 @@
 						<div class="tsd-signature tsd-kind-icon">-5<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Db&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L29">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:29</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L32">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:32</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -503,7 +585,7 @@
 						<div class="tsd-signature tsd-kind-icon">-6<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Gb&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L29">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:29</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L32">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:32</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -513,7 +595,7 @@
 						<div class="tsd-signature tsd-kind-icon">-7<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Cb&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L29">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:29</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L32">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:32</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -523,7 +605,7 @@
 						<div class="tsd-signature tsd-kind-icon">-8<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Fb&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L29">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:29</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L32">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:32</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -533,7 +615,7 @@
 						<div class="tsd-signature tsd-kind-icon">0<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;C&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L30">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:30</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L33">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:33</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -543,7 +625,7 @@
 						<div class="tsd-signature tsd-kind-icon">1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;G&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L30">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:30</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L33">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:33</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -553,7 +635,7 @@
 						<div class="tsd-signature tsd-kind-icon">2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;D&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L30">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:30</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L33">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:33</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -563,7 +645,7 @@
 						<div class="tsd-signature tsd-kind-icon">3<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;A&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L30">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:30</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L33">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:33</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -573,7 +655,7 @@
 						<div class="tsd-signature tsd-kind-icon">4<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;E&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L30">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:30</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L33">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:33</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -583,7 +665,7 @@
 						<div class="tsd-signature tsd-kind-icon">5<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;B&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L30">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:30</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L33">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:33</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -593,7 +675,7 @@
 						<div class="tsd-signature tsd-kind-icon">6<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;F#&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L30">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:30</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L33">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:33</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -603,7 +685,7 @@
 						<div class="tsd-signature tsd-kind-icon">7<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;C#&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L30">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:30</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L33">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:33</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -613,7 +695,7 @@
 						<div class="tsd-signature tsd-kind-icon">8<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;G#&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L30">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:30</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L33">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:33</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -624,7 +706,7 @@
 					<div class="tsd-signature tsd-kind-icon">minor<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L36">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L39">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:39</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -643,7 +725,7 @@
 						<div class="tsd-signature tsd-kind-icon">-1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;D&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L37">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:37</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L40">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:40</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -653,7 +735,7 @@
 						<div class="tsd-signature tsd-kind-icon">-2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;G&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L37">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:37</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L40">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:40</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -663,7 +745,7 @@
 						<div class="tsd-signature tsd-kind-icon">-3<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;C&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L37">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:37</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L40">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:40</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -673,7 +755,7 @@
 						<div class="tsd-signature tsd-kind-icon">-4<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;F&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L37">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:37</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L40">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:40</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -683,7 +765,7 @@
 						<div class="tsd-signature tsd-kind-icon">-5<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Bb&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L37">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:37</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L40">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:40</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -693,7 +775,7 @@
 						<div class="tsd-signature tsd-kind-icon">-6<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Eb&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L37">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:37</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L40">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:40</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -703,7 +785,7 @@
 						<div class="tsd-signature tsd-kind-icon">-7<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Ab&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L37">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:37</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L40">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:40</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -713,7 +795,7 @@
 						<div class="tsd-signature tsd-kind-icon">-8<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Db&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L37">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:37</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L40">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:40</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -723,7 +805,7 @@
 						<div class="tsd-signature tsd-kind-icon">0<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;A&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L38">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:38</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L41">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:41</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -733,7 +815,7 @@
 						<div class="tsd-signature tsd-kind-icon">1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;E&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L38">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:38</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L41">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:41</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -743,7 +825,7 @@
 						<div class="tsd-signature tsd-kind-icon">2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;B&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L38">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:38</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L41">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:41</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -753,7 +835,7 @@
 						<div class="tsd-signature tsd-kind-icon">3<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;F#&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L38">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:38</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L41">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:41</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -763,7 +845,7 @@
 						<div class="tsd-signature tsd-kind-icon">4<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;C#&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L38">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:38</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L41">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:41</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -773,7 +855,7 @@
 						<div class="tsd-signature tsd-kind-icon">5<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;G#&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L38">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:38</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L41">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:41</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -783,7 +865,7 @@
 						<div class="tsd-signature tsd-kind-icon">6<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;D#&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L38">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:38</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L41">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:41</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -793,7 +875,7 @@
 						<div class="tsd-signature tsd-kind-icon">7<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;A#&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L38">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:38</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L41">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:41</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -803,7 +885,7 @@
 						<div class="tsd-signature tsd-kind-icon">8<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;E#&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L38">src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:38</a></li>
+								<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/VexFlow/VexFlowConverter.ts#L41">MusicalScore/Graphical/VexFlow/VexFlowConverter.ts:41</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -842,6 +924,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="vexflowconverter.html#font" class="tsd-kind-icon">font</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="vexflowconverter.html#fontstyle" class="tsd-kind-icon">font<wbr>Style</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="vexflowconverter.html#generatearticulations" class="tsd-kind-icon">generate<wbr>Articulations</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="vexflowconverter.html#keysignature" class="tsd-kind-icon">key<wbr>Signature</a>

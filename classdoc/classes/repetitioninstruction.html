@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>RepetitionInstruction | opensheetmusicdisplay</title>
+	<title>RepetitionInstruction | OpenSheetMusicDisplay</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">opensheetmusicdisplay</a>
+					<a href="../index.html" class="title">OpenSheetMusicDisplay</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -110,13 +110,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Repetition<wbr>Instruction<span class="tsd-signature-symbol">(</span>measureIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endingIndices<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, type<span class="tsd-signature-symbol">: </span><a href="../enums/repetitioninstructionenum.html" class="tsd-signature-type">RepetitionInstructionEnum</a>, alignment<span class="tsd-signature-symbol">: </span><a href="../enums/alignmenttype.html" class="tsd-signature-type">AlignmentType</a>, parentRepetition<span class="tsd-signature-symbol">: </span><a href="repetition.html" class="tsd-signature-type">Repetition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="repetitioninstruction.html" class="tsd-signature-type">RepetitionInstruction</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Repetition<wbr>Instruction<span class="tsd-signature-symbol">(</span>measureIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, type<span class="tsd-signature-symbol">: </span><a href="../enums/repetitioninstructionenum.html" class="tsd-signature-type">RepetitionInstructionEnum</a>, alignment<span class="tsd-signature-symbol">?: </span><a href="../enums/alignmenttype.html" class="tsd-signature-type">AlignmentType</a>, parentRepetition<span class="tsd-signature-symbol">?: </span><a href="repetition.html" class="tsd-signature-type">Repetition</a>, endingIndices<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="repetitioninstruction.html" class="tsd-signature-type">RepetitionInstruction</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts#L27">src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts#L27">MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -125,16 +125,16 @@
 									<h5>measureIndex: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>endingIndices: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-								<li>
 									<h5>type: <a href="../enums/repetitioninstructionenum.html" class="tsd-signature-type">RepetitionInstructionEnum</a></h5>
 								</li>
 								<li>
-									<h5>alignment: <a href="../enums/alignmenttype.html" class="tsd-signature-type">AlignmentType</a></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> alignment: <a href="../enums/alignmenttype.html" class="tsd-signature-type">AlignmentType</a><span class="tsd-signature-symbol"> =&nbsp;AlignmentType.End</span></h5>
 								</li>
 								<li>
-									<h5>parentRepetition: <a href="repetition.html" class="tsd-signature-type">Repetition</a></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> parentRepetition: <a href="repetition.html" class="tsd-signature-type">Repetition</a><span class="tsd-signature-symbol"> =&nbsp;undefined</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> endingIndices: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;undefined</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="repetitioninstruction.html" class="tsd-signature-type">RepetitionInstruction</a></h4>
@@ -150,17 +150,17 @@
 					<div class="tsd-signature tsd-kind-icon">alignment<span class="tsd-signature-symbol">:</span> <a href="../enums/alignmenttype.html" class="tsd-signature-type">AlignmentType</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts#L55">src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts#L58">MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts:58</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="endingindices" class="tsd-anchor"></a>
 					<h3>ending<wbr>Indices</h3>
-					<div class="tsd-signature tsd-kind-icon">ending<wbr>Indices<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">ending<wbr>Indices<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts#L53">src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts#L56">MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts:56</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -170,7 +170,7 @@
 					<div class="tsd-signature tsd-kind-icon">measure<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts#L52">src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts#L55">MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts:55</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -180,7 +180,7 @@
 					<div class="tsd-signature tsd-kind-icon">parent<wbr>Repetition<span class="tsd-signature-symbol">:</span> <a href="repetition.html" class="tsd-signature-type">Repetition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts#L56">src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts#L59">MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -190,7 +190,7 @@
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/repetitioninstructionenum.html" class="tsd-signature-type">RepetitionInstructionEnum</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts#L54">src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts#L57">MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts:57</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -207,7 +207,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts#L58">src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts#L61">MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts:61</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -230,7 +230,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts#L121">src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts:121</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts#L124">MusicalScore/VoiceData/Instructions/RepetitionInstruction.ts:124</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>

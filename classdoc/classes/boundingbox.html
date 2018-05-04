@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>BoundingBox | opensheetmusicdisplay</title>
+	<title>BoundingBox | OpenSheetMusicDisplay</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">opensheetmusicdisplay</a>
+					<a href="../index.html" class="title">OpenSheetMusicDisplay</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -71,6 +71,17 @@
 					<div class="lead">
 						<p>A bounding box delimits an area on the 2D plane.</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>param</dt>
+						<dd><p>Graphical object where the bounding box will be attached</p>
+						</dd>
+						<dt>param</dt>
+						<dd><p>Parent bounding box of an object in a higher hierarchy position</p>
+						</dd>
+						<dt>param</dt>
+						<dd><p>Create a child to parent relationship too. Will be true by default</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -149,6 +160,8 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="boundingbox.html#calculateabsoluteposition" class="tsd-kind-icon">calculate<wbr>Absolute<wbr>Position</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="boundingbox.html#calculateabsolutepositionsofchildren" class="tsd-kind-icon">calculate<wbr>Absolute<wbr>Positions<wbr>OfChildren</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="boundingbox.html#calculateabsolutepositionsrecursive" class="tsd-kind-icon">calculate<wbr>Absolute<wbr>Positions<wbr>Recursive</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="boundingbox.html#calculateabsolutepositionsrecursivewithouttopelement" class="tsd-kind-icon">calculate<wbr>Absolute<wbr>Positions<wbr>Recursive<wbr>Without<wbr>Topelement</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="boundingbox.html#calculateboundingbox" class="tsd-kind-icon">calculate<wbr>Bounding<wbr>Box</a></li>
@@ -185,16 +198,31 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L32">src/MusicalScore/Graphical/BoundingBox.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L35">MusicalScore/Graphical/BoundingBox.ts:35</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a bounding box</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> dataObject: <span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> =&nbsp;undefined</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Graphical object where the bounding box will be attached</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> parent: <a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a><span class="tsd-signature-symbol"> =&nbsp;undefined</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Parent bounding box of an object in a higher hierarchy position</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a></h4>
@@ -210,7 +238,7 @@
 					<div class="tsd-signature tsd-kind-icon">absolute<wbr>Position<span class="tsd-signature-symbol">:</span> <a href="pointf2d.html" class="tsd-signature-type">PointF2D</a><span class="tsd-signature-symbol"> =&nbsp;new PointF2D()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L14">src/MusicalScore/Graphical/BoundingBox.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L17">MusicalScore/Graphical/BoundingBox.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -220,7 +248,7 @@
 					<div class="tsd-signature tsd-kind-icon">border<wbr>Bottom<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L23">src/MusicalScore/Graphical/BoundingBox.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L26">MusicalScore/Graphical/BoundingBox.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -230,7 +258,7 @@
 					<div class="tsd-signature tsd-kind-icon">border<wbr>Left<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L20">src/MusicalScore/Graphical/BoundingBox.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L23">MusicalScore/Graphical/BoundingBox.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -240,7 +268,7 @@
 					<div class="tsd-signature tsd-kind-icon">border<wbr>Margin<wbr>Bottom<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L27">src/MusicalScore/Graphical/BoundingBox.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L30">MusicalScore/Graphical/BoundingBox.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -250,7 +278,7 @@
 					<div class="tsd-signature tsd-kind-icon">border<wbr>Margin<wbr>Left<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L24">src/MusicalScore/Graphical/BoundingBox.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L27">MusicalScore/Graphical/BoundingBox.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -260,7 +288,7 @@
 					<div class="tsd-signature tsd-kind-icon">border<wbr>Margin<wbr>Right<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L25">src/MusicalScore/Graphical/BoundingBox.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L28">MusicalScore/Graphical/BoundingBox.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -270,7 +298,7 @@
 					<div class="tsd-signature tsd-kind-icon">border<wbr>Margin<wbr>Top<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L26">src/MusicalScore/Graphical/BoundingBox.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L29">MusicalScore/Graphical/BoundingBox.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -280,7 +308,7 @@
 					<div class="tsd-signature tsd-kind-icon">border<wbr>Right<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L21">src/MusicalScore/Graphical/BoundingBox.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L24">MusicalScore/Graphical/BoundingBox.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -290,7 +318,7 @@
 					<div class="tsd-signature tsd-kind-icon">border<wbr>Top<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L22">src/MusicalScore/Graphical/BoundingBox.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L25">MusicalScore/Graphical/BoundingBox.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -300,7 +328,7 @@
 					<div class="tsd-signature tsd-kind-icon">bounding<wbr>Margin<wbr>Rectangle<span class="tsd-signature-symbol">:</span> <a href="rectanglef2d.html" class="tsd-signature-type">RectangleF2D</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L29">src/MusicalScore/Graphical/BoundingBox.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L32">MusicalScore/Graphical/BoundingBox.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -310,7 +338,7 @@
 					<div class="tsd-signature tsd-kind-icon">bounding<wbr>Rectangle<span class="tsd-signature-symbol">:</span> <a href="rectanglef2d.html" class="tsd-signature-type">RectangleF2D</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L28">src/MusicalScore/Graphical/BoundingBox.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L31">MusicalScore/Graphical/BoundingBox.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -320,7 +348,7 @@
 					<div class="tsd-signature tsd-kind-icon">child<wbr>Elements<span class="tsd-signature-symbol">:</span> <a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L30">src/MusicalScore/Graphical/BoundingBox.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L33">MusicalScore/Graphical/BoundingBox.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -330,7 +358,7 @@
 					<div class="tsd-signature tsd-kind-icon">data<wbr>Object<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L32">src/MusicalScore/Graphical/BoundingBox.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L35">MusicalScore/Graphical/BoundingBox.ts:35</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -340,17 +368,17 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Symbol<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L10">src/MusicalScore/Graphical/BoundingBox.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L13">MusicalScore/Graphical/BoundingBox.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="marginsize" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> margin<wbr>Size</h3>
-					<div class="tsd-signature tsd-kind-icon">margin<wbr>Size<span class="tsd-signature-symbol">:</span> <a href="sizef2d.html" class="tsd-signature-type">SizeF2D</a></div>
+					<div class="tsd-signature tsd-kind-icon">margin<wbr>Size<span class="tsd-signature-symbol">:</span> <a href="sizef2d.html" class="tsd-signature-type">SizeF2D</a><span class="tsd-signature-symbol"> =&nbsp;new SizeF2D()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L17">src/MusicalScore/Graphical/BoundingBox.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L20">MusicalScore/Graphical/BoundingBox.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -360,7 +388,7 @@
 					<div class="tsd-signature tsd-kind-icon">parent<span class="tsd-signature-symbol">:</span> <a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L31">src/MusicalScore/Graphical/BoundingBox.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L34">MusicalScore/Graphical/BoundingBox.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -370,7 +398,7 @@
 					<div class="tsd-signature tsd-kind-icon">relative<wbr>Position<span class="tsd-signature-symbol">:</span> <a href="pointf2d.html" class="tsd-signature-type">PointF2D</a><span class="tsd-signature-symbol"> =&nbsp;new PointF2D()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L15">src/MusicalScore/Graphical/BoundingBox.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L18">MusicalScore/Graphical/BoundingBox.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -380,7 +408,7 @@
 					<div class="tsd-signature tsd-kind-icon">relative<wbr>Position<wbr>Has<wbr>Been<wbr>Set<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L11">src/MusicalScore/Graphical/BoundingBox.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L14">MusicalScore/Graphical/BoundingBox.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -390,27 +418,27 @@
 					<div class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">:</span> <a href="sizef2d.html" class="tsd-signature-type">SizeF2D</a><span class="tsd-signature-symbol"> =&nbsp;new SizeF2D()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L16">src/MusicalScore/Graphical/BoundingBox.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L19">MusicalScore/Graphical/BoundingBox.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="upperleftcorner" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> upper<wbr>Left<wbr>Corner</h3>
-					<div class="tsd-signature tsd-kind-icon">upper<wbr>Left<wbr>Corner<span class="tsd-signature-symbol">:</span> <a href="pointf2d.html" class="tsd-signature-type">PointF2D</a></div>
+					<div class="tsd-signature tsd-kind-icon">upper<wbr>Left<wbr>Corner<span class="tsd-signature-symbol">:</span> <a href="pointf2d.html" class="tsd-signature-type">PointF2D</a><span class="tsd-signature-symbol"> =&nbsp;new PointF2D()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L18">src/MusicalScore/Graphical/BoundingBox.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L21">MusicalScore/Graphical/BoundingBox.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="upperleftmargincorner" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> upper<wbr>Left<wbr>Margin<wbr>Corner</h3>
-					<div class="tsd-signature tsd-kind-icon">upper<wbr>Left<wbr>Margin<wbr>Corner<span class="tsd-signature-symbol">:</span> <a href="pointf2d.html" class="tsd-signature-type">PointF2D</a></div>
+					<div class="tsd-signature tsd-kind-icon">upper<wbr>Left<wbr>Margin<wbr>Corner<span class="tsd-signature-symbol">:</span> <a href="pointf2d.html" class="tsd-signature-type">PointF2D</a><span class="tsd-signature-symbol"> =&nbsp;new PointF2D()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L19">src/MusicalScore/Graphical/BoundingBox.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L22">MusicalScore/Graphical/BoundingBox.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -420,7 +448,7 @@
 					<div class="tsd-signature tsd-kind-icon">x<wbr>Borders<wbr>Have<wbr>Been<wbr>Set<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L12">src/MusicalScore/Graphical/BoundingBox.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L15">MusicalScore/Graphical/BoundingBox.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -430,7 +458,7 @@
 					<div class="tsd-signature tsd-kind-icon">y<wbr>Borders<wbr>Have<wbr>Been<wbr>Set<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L13">src/MusicalScore/Graphical/BoundingBox.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L16">MusicalScore/Graphical/BoundingBox.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -448,7 +476,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L61">src/MusicalScore/Graphical/BoundingBox.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L72">MusicalScore/Graphical/BoundingBox.ts:72</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="pointf2d.html" class="tsd-signature-type">PointF2D</a></h4>
@@ -456,7 +484,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L65">src/MusicalScore/Graphical/BoundingBox.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L76">MusicalScore/Graphical/BoundingBox.ts:76</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -480,7 +508,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L125">src/MusicalScore/Graphical/BoundingBox.ts:125</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L136">MusicalScore/Graphical/BoundingBox.ts:136</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -488,7 +516,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L129">src/MusicalScore/Graphical/BoundingBox.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L140">MusicalScore/Graphical/BoundingBox.ts:140</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -512,7 +540,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L98">src/MusicalScore/Graphical/BoundingBox.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L109">MusicalScore/Graphical/BoundingBox.ts:109</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -520,7 +548,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L102">src/MusicalScore/Graphical/BoundingBox.ts:102</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L113">MusicalScore/Graphical/BoundingBox.ts:113</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -544,7 +572,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L161">src/MusicalScore/Graphical/BoundingBox.ts:161</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L172">MusicalScore/Graphical/BoundingBox.ts:172</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -552,7 +580,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L165">src/MusicalScore/Graphical/BoundingBox.ts:165</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L176">MusicalScore/Graphical/BoundingBox.ts:176</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -576,7 +604,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L134">src/MusicalScore/Graphical/BoundingBox.ts:134</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L145">MusicalScore/Graphical/BoundingBox.ts:145</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -584,7 +612,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L138">src/MusicalScore/Graphical/BoundingBox.ts:138</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L149">MusicalScore/Graphical/BoundingBox.ts:149</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -608,7 +636,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L143">src/MusicalScore/Graphical/BoundingBox.ts:143</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L154">MusicalScore/Graphical/BoundingBox.ts:154</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -616,7 +644,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L147">src/MusicalScore/Graphical/BoundingBox.ts:147</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L158">MusicalScore/Graphical/BoundingBox.ts:158</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -640,7 +668,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L152">src/MusicalScore/Graphical/BoundingBox.ts:152</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L163">MusicalScore/Graphical/BoundingBox.ts:163</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -648,7 +676,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L156">src/MusicalScore/Graphical/BoundingBox.ts:156</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L167">MusicalScore/Graphical/BoundingBox.ts:167</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -672,7 +700,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L107">src/MusicalScore/Graphical/BoundingBox.ts:107</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L118">MusicalScore/Graphical/BoundingBox.ts:118</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -680,7 +708,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L111">src/MusicalScore/Graphical/BoundingBox.ts:111</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L122">MusicalScore/Graphical/BoundingBox.ts:122</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -704,7 +732,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L116">src/MusicalScore/Graphical/BoundingBox.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L127">MusicalScore/Graphical/BoundingBox.ts:127</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -712,7 +740,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L120">src/MusicalScore/Graphical/BoundingBox.ts:120</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L131">MusicalScore/Graphical/BoundingBox.ts:131</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -735,7 +763,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L174">src/MusicalScore/Graphical/BoundingBox.ts:174</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L185">MusicalScore/Graphical/BoundingBox.ts:185</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="rectanglef2d.html" class="tsd-signature-type">RectangleF2D</a></h4>
@@ -752,7 +780,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L170">src/MusicalScore/Graphical/BoundingBox.ts:170</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L181">MusicalScore/Graphical/BoundingBox.ts:181</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="rectanglef2d.html" class="tsd-signature-type">RectangleF2D</a></h4>
@@ -770,7 +798,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L178">src/MusicalScore/Graphical/BoundingBox.ts:178</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L189">MusicalScore/Graphical/BoundingBox.ts:189</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -778,7 +806,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L182">src/MusicalScore/Graphical/BoundingBox.ts:182</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L193">MusicalScore/Graphical/BoundingBox.ts:193</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -801,7 +829,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L194">src/MusicalScore/Graphical/BoundingBox.ts:194</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L211">MusicalScore/Graphical/BoundingBox.ts:211</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Object</span></h4>
@@ -818,7 +846,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L86">src/MusicalScore/Graphical/BoundingBox.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L97">MusicalScore/Graphical/BoundingBox.ts:97</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="sizef2d.html" class="tsd-signature-type">SizeF2D</a></h4>
@@ -836,7 +864,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L186">src/MusicalScore/Graphical/BoundingBox.ts:186</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L197">MusicalScore/Graphical/BoundingBox.ts:197</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a></h4>
@@ -844,7 +872,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L190">src/MusicalScore/Graphical/BoundingBox.ts:190</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L201">MusicalScore/Graphical/BoundingBox.ts:201</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -868,7 +896,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L69">src/MusicalScore/Graphical/BoundingBox.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L80">MusicalScore/Graphical/BoundingBox.ts:80</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="pointf2d.html" class="tsd-signature-type">PointF2D</a></h4>
@@ -876,7 +904,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L73">src/MusicalScore/Graphical/BoundingBox.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L84">MusicalScore/Graphical/BoundingBox.ts:84</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -899,7 +927,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L41">src/MusicalScore/Graphical/BoundingBox.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L52">MusicalScore/Graphical/BoundingBox.ts:52</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -917,7 +945,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L78">src/MusicalScore/Graphical/BoundingBox.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L89">MusicalScore/Graphical/BoundingBox.ts:89</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="sizef2d.html" class="tsd-signature-type">SizeF2D</a></h4>
@@ -925,7 +953,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L82">src/MusicalScore/Graphical/BoundingBox.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L93">MusicalScore/Graphical/BoundingBox.ts:93</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -948,7 +976,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L90">src/MusicalScore/Graphical/BoundingBox.ts:90</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L101">MusicalScore/Graphical/BoundingBox.ts:101</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="pointf2d.html" class="tsd-signature-type">PointF2D</a></h4>
@@ -965,7 +993,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L94">src/MusicalScore/Graphical/BoundingBox.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L105">MusicalScore/Graphical/BoundingBox.ts:105</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="pointf2d.html" class="tsd-signature-type">PointF2D</a></h4>
@@ -983,7 +1011,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L45">src/MusicalScore/Graphical/BoundingBox.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L56">MusicalScore/Graphical/BoundingBox.ts:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -991,7 +1019,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L49">src/MusicalScore/Graphical/BoundingBox.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L60">MusicalScore/Graphical/BoundingBox.ts:60</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1015,7 +1043,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L53">src/MusicalScore/Graphical/BoundingBox.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L64">MusicalScore/Graphical/BoundingBox.ts:64</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1023,7 +1051,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L57">src/MusicalScore/Graphical/BoundingBox.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L68">MusicalScore/Graphical/BoundingBox.ts:68</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1040,6 +1068,50 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="calculateabsoluteposition" class="tsd-anchor"></a>
+					<h3>calculate<wbr>Absolute<wbr>Position</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">calculate<wbr>Absolute<wbr>Position<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L227">MusicalScore/Graphical/BoundingBox.ts:227</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Calculate the the absolute position by adding up all relative positions of all parents (including the own rel. pos.)</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="calculateabsolutepositionsofchildren" class="tsd-anchor"></a>
+					<h3>calculate<wbr>Absolute<wbr>Positions<wbr>OfChildren</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">calculate<wbr>Absolute<wbr>Positions<wbr>OfChildren<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L268">MusicalScore/Graphical/BoundingBox.ts:268</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>calculates the absolute positions of all children of this boundingBox</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="calculateabsolutepositionsrecursive" class="tsd-anchor"></a>
 					<h3>calculate<wbr>Absolute<wbr>Positions<wbr>Recursive</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -1049,12 +1121,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L224">src/MusicalScore/Graphical/BoundingBox.ts:224</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L256">MusicalScore/Graphical/BoundingBox.ts:256</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>This method calculates the Absolute Positions recursively</p>
+									<p>This method calculates the Absolute Positions recursively
+									from the root element down to the leaf elements</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1082,7 +1155,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L210">src/MusicalScore/Graphical/BoundingBox.ts:210</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L241">MusicalScore/Graphical/BoundingBox.ts:241</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1104,7 +1177,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L236">src/MusicalScore/Graphical/BoundingBox.ts:236</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L278">MusicalScore/Graphical/BoundingBox.ts:278</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1126,7 +1199,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L544">src/MusicalScore/Graphical/BoundingBox.ts:544</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L586">MusicalScore/Graphical/BoundingBox.ts:586</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1159,7 +1232,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L533">src/MusicalScore/Graphical/BoundingBox.ts:533</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L575">MusicalScore/Graphical/BoundingBox.ts:575</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1176,7 +1249,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L595">src/MusicalScore/Graphical/BoundingBox.ts:595</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L637">MusicalScore/Graphical/BoundingBox.ts:637</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1209,7 +1282,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L527">src/MusicalScore/Graphical/BoundingBox.ts:527</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L569">MusicalScore/Graphical/BoundingBox.ts:569</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1226,7 +1299,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L295">src/MusicalScore/Graphical/BoundingBox.ts:295</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L337">MusicalScore/Graphical/BoundingBox.ts:337</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1243,7 +1316,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L365">src/MusicalScore/Graphical/BoundingBox.ts:365</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L407">MusicalScore/Graphical/BoundingBox.ts:407</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1271,7 +1344,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L466">src/MusicalScore/Graphical/BoundingBox.ts:466</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L508">MusicalScore/Graphical/BoundingBox.ts:508</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1307,7 +1380,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L334">src/MusicalScore/Graphical/BoundingBox.ts:334</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L376">MusicalScore/Graphical/BoundingBox.ts:376</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1343,7 +1416,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L491">src/MusicalScore/Graphical/BoundingBox.ts:491</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L533">MusicalScore/Graphical/BoundingBox.ts:533</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1372,7 +1445,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L506">src/MusicalScore/Graphical/BoundingBox.ts:506</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L548">MusicalScore/Graphical/BoundingBox.ts:548</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1404,7 +1477,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L381">src/MusicalScore/Graphical/BoundingBox.ts:381</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L423">MusicalScore/Graphical/BoundingBox.ts:423</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1432,7 +1505,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L430">src/MusicalScore/Graphical/BoundingBox.ts:430</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L472">MusicalScore/Graphical/BoundingBox.ts:472</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1460,7 +1533,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L414">src/MusicalScore/Graphical/BoundingBox.ts:414</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L456">MusicalScore/Graphical/BoundingBox.ts:456</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1488,7 +1561,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L398">src/MusicalScore/Graphical/BoundingBox.ts:398</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L440">MusicalScore/Graphical/BoundingBox.ts:440</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1511,7 +1584,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L447">src/MusicalScore/Graphical/BoundingBox.ts:447</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L489">MusicalScore/Graphical/BoundingBox.ts:489</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1534,7 +1607,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0d5a3b1/src/MusicalScore/Graphical/BoundingBox.ts#L198">src/MusicalScore/Graphical/BoundingBox.ts:198</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/6f69694/src/MusicalScore/Graphical/BoundingBox.ts#L215">MusicalScore/Graphical/BoundingBox.ts:215</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1695,6 +1768,12 @@
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class">
 								<a href="boundingbox.html#ybordershavebeenset-1" class="tsd-kind-icon">YBorders<wbr>Have<wbr>Been<wbr>Set</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="boundingbox.html#calculateabsoluteposition" class="tsd-kind-icon">calculate<wbr>Absolute<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="boundingbox.html#calculateabsolutepositionsofchildren" class="tsd-kind-icon">calculate<wbr>Absolute<wbr>Positions<wbr>OfChildren</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="boundingbox.html#calculateabsolutepositionsrecursive" class="tsd-kind-icon">calculate<wbr>Absolute<wbr>Positions<wbr>Recursive</a>
