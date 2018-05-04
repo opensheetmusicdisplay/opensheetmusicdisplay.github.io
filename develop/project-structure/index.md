@@ -14,8 +14,7 @@ permalink: /develop/project-structure/
 ### Build Artifacts
 After insatlling and building OSMD, the following directories conatining build artifacts may appear:
 * **node_modules** contains the npm packages which OSMD depends on
-* **build** contains build outputs, like the bundled and minified JavaScript, class documentation and demo
-* **dist** contains the transpiled JavaScript that will be shipped with the npm bundle
+* **dist** contains build outputs, like the bundled and minified JavaScript, class documentation and demo
 
 ## Structure of the source code
 * **Common**
