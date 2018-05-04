@@ -24,4 +24,4 @@ $ npm start # Build and run demo (served on localhost:8000)
 $ npm run test # Builds the tests
 $ npm run build # Builds for distribution on npm and Bower
 ```
-All bundled build artifacts will be placed in `build/`. The compiled ES module will be located at `dist/`.
+All bundled build artifacts will be placed in `build/`.
