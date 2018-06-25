@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>LyricsReader | OpenSheetMusicDisplay</title>
+	<title>GraphicalVoiceEntry | OpenSheetMusicDisplay</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,21 +56,38 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="lyricsreader.html">LyricsReader</a>
+					<a href="graphicalvoiceentry.html">GraphicalVoiceEntry</a>
 				</li>
 			</ul>
-			<h1>Class LyricsReader</h1>
+			<h1>Class GraphicalVoiceEntry</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The graphical counterpart of a <a href="voiceentry.html">VoiceEntry</a>.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">LyricsReader</span>
+						<a href="graphicalobject.html" class="tsd-signature-type">GraphicalObject</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">GraphicalVoiceEntry</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="vexflowvoiceentry.html" class="tsd-signature-type">VexFlowVoiceEntry</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -81,21 +98,22 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="lyricsreader.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="lyricsreader.html#currentlyricword" class="tsd-kind-icon">current<wbr>Lyric<wbr>Word</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="lyricsreader.html#musicsheet" class="tsd-kind-icon">music<wbr>Sheet</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="lyricsreader.html#openlyricwords" class="tsd-kind-icon">open<wbr>Lyric<wbr>Words</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="graphicalvoiceentry.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
-							<h3>Methods</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="lyricsreader.html#addlyricentry" class="tsd-kind-icon">add<wbr>Lyric<wbr>Entry</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="graphicalvoiceentry.html#boundingbox" class="tsd-kind-icon">bounding<wbr>Box</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="graphicalvoiceentry.html#notes" class="tsd-kind-icon">notes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="graphicalvoiceentry.html#parentstaffentry" class="tsd-kind-icon">parent<wbr>Staff<wbr>Entry</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="graphicalvoiceentry.html#parentvoiceentry" class="tsd-kind-icon">parent<wbr>Voice<wbr>Entry</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-inherited">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="graphicalvoiceentry.html#positionandshape" class="tsd-kind-icon">Position<wbr>And<wbr>Shape</a></li>
 							</ul>
 						</section>
 					</div>
@@ -107,96 +125,103 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Lyrics<wbr>Reader<span class="tsd-signature-symbol">(</span>musicSheet<span class="tsd-signature-symbol">: </span><a href="musicsheet.html" class="tsd-signature-type">MusicSheet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="lyricsreader.html" class="tsd-signature-type">LyricsReader</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Graphical<wbr>Voice<wbr>Entry<span class="tsd-signature-symbol">(</span>parentVoiceEntry<span class="tsd-signature-symbol">: </span><a href="voiceentry.html" class="tsd-signature-type">VoiceEntry</a>, parentStaffEntry<span class="tsd-signature-symbol">: </span><a href="graphicalstaffentry.html" class="tsd-signature-type">GraphicalStaffEntry</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="graphicalvoiceentry.html" class="tsd-signature-type">GraphicalVoiceEntry</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/ScoreIO/MusicSymbolModules/LyricsReader.ts#L11">MusicalScore/ScoreIO/MusicSymbolModules/LyricsReader.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/Graphical/GraphicalVoiceEntry.ts#L10">MusicalScore/Graphical/GraphicalVoiceEntry.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>musicSheet: <a href="musicsheet.html" class="tsd-signature-type">MusicSheet</a></h5>
+									<h5>parentVoiceEntry: <a href="voiceentry.html" class="tsd-signature-type">VoiceEntry</a></h5>
+								</li>
+								<li>
+									<h5>parentStaffEntry: <a href="graphicalstaffentry.html" class="tsd-signature-type">GraphicalStaffEntry</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="lyricsreader.html" class="tsd-signature-type">LyricsReader</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="graphicalvoiceentry.html" class="tsd-signature-type">GraphicalVoiceEntry</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="currentlyricword" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> current<wbr>Lyric<wbr>Word</h3>
-					<div class="tsd-signature tsd-kind-icon">current<wbr>Lyric<wbr>Word<span class="tsd-signature-symbol">:</span> <a href="lyricword.html" class="tsd-signature-type">LyricWord</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="boundingbox" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> bounding<wbr>Box</h3>
+					<div class="tsd-signature tsd-kind-icon">bounding<wbr>Box<span class="tsd-signature-symbol">:</span> <a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="graphicalobject.html">GraphicalObject</a>.<a href="graphicalobject.html#boundingbox">boundingBox</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/ScoreIO/MusicSymbolModules/LyricsReader.ts#L10">MusicalScore/ScoreIO/MusicSymbolModules/LyricsReader.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/Graphical/GraphicalObject.ts#L5">MusicalScore/Graphical/GraphicalObject.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="musicsheet" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> music<wbr>Sheet</h3>
-					<div class="tsd-signature tsd-kind-icon">music<wbr>Sheet<span class="tsd-signature-symbol">:</span> <a href="musicsheet.html" class="tsd-signature-type">MusicSheet</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="notes" class="tsd-anchor"></a>
+					<h3>notes</h3>
+					<div class="tsd-signature tsd-kind-icon">notes<span class="tsd-signature-symbol">:</span> <a href="graphicalnote.html" class="tsd-signature-type">GraphicalNote</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/ScoreIO/MusicSymbolModules/LyricsReader.ts#L11">MusicalScore/ScoreIO/MusicSymbolModules/LyricsReader.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/Graphical/GraphicalVoiceEntry.ts#L21">MusicalScore/Graphical/GraphicalVoiceEntry.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="openlyricwords" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> open<wbr>Lyric<wbr>Words</h3>
-					<div class="tsd-signature tsd-kind-icon">open<wbr>Lyric<wbr>Words<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="parentstaffentry" class="tsd-anchor"></a>
+					<h3>parent<wbr>Staff<wbr>Entry</h3>
+					<div class="tsd-signature tsd-kind-icon">parent<wbr>Staff<wbr>Entry<span class="tsd-signature-symbol">:</span> <a href="graphicalstaffentry.html" class="tsd-signature-type">GraphicalStaffEntry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/ScoreIO/MusicSymbolModules/LyricsReader.ts#L9">MusicalScore/ScoreIO/MusicSymbolModules/LyricsReader.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/Graphical/GraphicalVoiceEntry.ts#L20">MusicalScore/Graphical/GraphicalVoiceEntry.ts:20</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>_: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]: </span><a href="lyricword.html" class="tsd-signature-type">LyricWord</a></h5>
-							</li>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="parentvoiceentry" class="tsd-anchor"></a>
+					<h3>parent<wbr>Voice<wbr>Entry</h3>
+					<div class="tsd-signature tsd-kind-icon">parent<wbr>Voice<wbr>Entry<span class="tsd-signature-symbol">:</span> <a href="voiceentry.html" class="tsd-signature-type">VoiceEntry</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/Graphical/GraphicalVoiceEntry.ts#L19">MusicalScore/Graphical/GraphicalVoiceEntry.ts:19</a></li>
 						</ul>
-					</div>
+					</aside>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="addlyricentry" class="tsd-anchor"></a>
-					<h3>add<wbr>Lyric<wbr>Entry</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Lyric<wbr>Entry<span class="tsd-signature-symbol">(</span>lyricNodeList<span class="tsd-signature-symbol">: </span><a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a><span class="tsd-signature-symbol">[]</span>, currentVoiceEntry<span class="tsd-signature-symbol">: </span><a href="voiceentry.html" class="tsd-signature-type">VoiceEntry</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
+					<a name="positionandshape" class="tsd-anchor"></a>
+					<h3>Position<wbr>And<wbr>Shape</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> PositionAndShape<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> PositionAndShape<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="graphicalobject.html">GraphicalObject</a>.<a href="graphicalobject.html#positionandshape">PositionAndShape</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/ScoreIO/MusicSymbolModules/LyricsReader.ts#L21">MusicalScore/ScoreIO/MusicSymbolModules/LyricsReader.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/Graphical/GraphicalObject.ts#L7">MusicalScore/Graphical/GraphicalObject.ts:7</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>This method adds a single LyricEntry to a VoiceEntry</p>
-								</div>
-							</div>
+							<h4 class="tsd-returns-title">Returns <a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="graphicalobject.html">GraphicalObject</a>.<a href="graphicalobject.html#positionandshape">PositionAndShape</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/Graphical/GraphicalObject.ts#L11">MusicalScore/Graphical/GraphicalObject.ts:11</a></li>
+								</ul>
+							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>lyricNodeList: <a href="ixmlelement.html" class="tsd-signature-type">IXmlElement</a><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-								<li>
-									<h5>currentVoiceEntry: <a href="voiceentry.html" class="tsd-signature-type">VoiceEntry</a></h5>
-									<div class="tsd-comment tsd-typography">
-									</div>
+									<h5>value: <a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -218,22 +243,25 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class">
-						<a href="lyricsreader.html" class="tsd-kind-icon">Lyrics<wbr>Reader</a>
+						<a href="graphicalvoiceentry.html" class="tsd-kind-icon">Graphical<wbr>Voice<wbr>Entry</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="lyricsreader.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="graphicalvoiceentry.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="lyricsreader.html#currentlyricword" class="tsd-kind-icon">current<wbr>Lyric<wbr>Word</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="graphicalvoiceentry.html#boundingbox" class="tsd-kind-icon">bounding<wbr>Box</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="lyricsreader.html#musicsheet" class="tsd-kind-icon">music<wbr>Sheet</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="graphicalvoiceentry.html#notes" class="tsd-kind-icon">notes</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="lyricsreader.html#openlyricwords" class="tsd-kind-icon">open<wbr>Lyric<wbr>Words</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="graphicalvoiceentry.html#parentstaffentry" class="tsd-kind-icon">parent<wbr>Staff<wbr>Entry</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="lyricsreader.html#addlyricentry" class="tsd-kind-icon">add<wbr>Lyric<wbr>Entry</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="graphicalvoiceentry.html#parentvoiceentry" class="tsd-kind-icon">parent<wbr>Voice<wbr>Entry</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
+								<a href="graphicalvoiceentry.html#positionandshape" class="tsd-kind-icon">Position<wbr>And<wbr>Shape</a>
 							</li>
 						</ul>
 					</li>
