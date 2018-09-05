@@ -66,6 +66,16 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Describes Accidental types.
+							Do not use the number values of these enum members directly for calculation anymore.
+							To use these for pitch calculation, use pitch.AccidentalHalfTones()
+						or Pitch.HalfTonesFromAccidental(accidentalEnum).</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -78,7 +88,11 @@
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="accidentalenum.html#flat" class="tsd-kind-icon">FLAT</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="accidentalenum.html#natural" class="tsd-kind-icon">NATURAL</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="accidentalenum.html#none" class="tsd-kind-icon">NONE</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="accidentalenum.html#quartertoneflat" class="tsd-kind-icon">QUARTERTONEFLAT</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="accidentalenum.html#quartertonesharp" class="tsd-kind-icon">QUARTERTONESHARP</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="accidentalenum.html#sharp" class="tsd-kind-icon">SHARP</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="accidentalenum.html#tripleflat" class="tsd-kind-icon">TRIPLEFLAT</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="accidentalenum.html#triplesharp" class="tsd-kind-icon">TRIPLESHARP</a></li>
 							</ul>
 						</section>
 					</div>
@@ -89,60 +103,100 @@
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="doubleflat" class="tsd-anchor"></a>
 					<h3>DOUBLEFLAT</h3>
-					<div class="tsd-signature tsd-kind-icon">DOUBLEFLAT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;-2</span></div>
+					<div class="tsd-signature tsd-kind-icon">DOUBLEFLAT<span class="tsd-signature-symbol">:</span> </div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/Common/DataObjects/Pitch.ts#L13">Common/DataObjects/Pitch.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/Common/DataObjects/Pitch.ts#L23">Common/DataObjects/Pitch.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="doublesharp" class="tsd-anchor"></a>
 					<h3>DOUBLESHARP</h3>
-					<div class="tsd-signature tsd-kind-icon">DOUBLESHARP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;2</span></div>
+					<div class="tsd-signature tsd-kind-icon">DOUBLESHARP<span class="tsd-signature-symbol">:</span> </div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/Common/DataObjects/Pitch.ts#L17">Common/DataObjects/Pitch.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/Common/DataObjects/Pitch.ts#L22">Common/DataObjects/Pitch.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="flat" class="tsd-anchor"></a>
 					<h3>FLAT</h3>
-					<div class="tsd-signature tsd-kind-icon">FLAT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;-1</span></div>
+					<div class="tsd-signature tsd-kind-icon">FLAT<span class="tsd-signature-symbol">:</span> </div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/Common/DataObjects/Pitch.ts#L14">Common/DataObjects/Pitch.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/Common/DataObjects/Pitch.ts#L19">Common/DataObjects/Pitch.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="natural" class="tsd-anchor"></a>
 					<h3>NATURAL</h3>
-					<div class="tsd-signature tsd-kind-icon">NATURAL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;3</span></div>
+					<div class="tsd-signature tsd-kind-icon">NATURAL<span class="tsd-signature-symbol">:</span> </div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/Common/DataObjects/Pitch.ts#L18">Common/DataObjects/Pitch.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/Common/DataObjects/Pitch.ts#L21">Common/DataObjects/Pitch.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="none" class="tsd-anchor"></a>
 					<h3>NONE</h3>
-					<div class="tsd-signature tsd-kind-icon">NONE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;0</span></div>
+					<div class="tsd-signature tsd-kind-icon">NONE<span class="tsd-signature-symbol">:</span> </div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/Common/DataObjects/Pitch.ts#L15">Common/DataObjects/Pitch.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/Common/DataObjects/Pitch.ts#L20">Common/DataObjects/Pitch.ts:20</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="quartertoneflat" class="tsd-anchor"></a>
+					<h3>QUARTERTONEFLAT</h3>
+					<div class="tsd-signature tsd-kind-icon">QUARTERTONEFLAT<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/Common/DataObjects/Pitch.ts#L27">Common/DataObjects/Pitch.ts:27</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="quartertonesharp" class="tsd-anchor"></a>
+					<h3>QUARTERTONESHARP</h3>
+					<div class="tsd-signature tsd-kind-icon">QUARTERTONESHARP<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/Common/DataObjects/Pitch.ts#L26">Common/DataObjects/Pitch.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="sharp" class="tsd-anchor"></a>
 					<h3>SHARP</h3>
-					<div class="tsd-signature tsd-kind-icon">SHARP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
+					<div class="tsd-signature tsd-kind-icon">SHARP<span class="tsd-signature-symbol">:</span> </div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/Common/DataObjects/Pitch.ts#L16">Common/DataObjects/Pitch.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/Common/DataObjects/Pitch.ts#L18">Common/DataObjects/Pitch.ts:18</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="tripleflat" class="tsd-anchor"></a>
+					<h3>TRIPLEFLAT</h3>
+					<div class="tsd-signature tsd-kind-icon">TRIPLEFLAT<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/Common/DataObjects/Pitch.ts#L25">Common/DataObjects/Pitch.ts:25</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="triplesharp" class="tsd-anchor"></a>
+					<h3>TRIPLESHARP</h3>
+					<div class="tsd-signature tsd-kind-icon">TRIPLESHARP<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/Common/DataObjects/Pitch.ts#L24">Common/DataObjects/Pitch.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -179,7 +233,19 @@
 								<a href="accidentalenum.html#none" class="tsd-kind-icon">NONE</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="accidentalenum.html#quartertoneflat" class="tsd-kind-icon">QUARTERTONEFLAT</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="accidentalenum.html#quartertonesharp" class="tsd-kind-icon">QUARTERTONESHARP</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
 								<a href="accidentalenum.html#sharp" class="tsd-kind-icon">SHARP</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="accidentalenum.html#tripleflat" class="tsd-kind-icon">TRIPLEFLAT</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="accidentalenum.html#triplesharp" class="tsd-kind-icon">TRIPLESHARP</a>
 							</li>
 						</ul>
 					</li>

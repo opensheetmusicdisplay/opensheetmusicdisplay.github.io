@@ -67,6 +67,12 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Modules</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-module tsd-is-not-exported"><a href="modules/__global.html" class="tsd-kind-icon">__global</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section ">
 							<h3>Enumerations</h3>
 							<ul class="tsd-index-list">
@@ -81,6 +87,7 @@
 								<li class="tsd-kind-enum"><a href="enums/coldirenum.html" class="tsd-kind-icon">Col<wbr>Dir<wbr>Enum</a></li>
 								<li class="tsd-kind-enum"><a href="enums/contdynamicenum.html" class="tsd-kind-icon">Cont<wbr>Dynamic<wbr>Enum</a></li>
 								<li class="tsd-kind-enum"><a href="enums/continuoustempotype.html" class="tsd-kind-icon">Continuous<wbr>Tempo<wbr>Type</a></li>
+								<li class="tsd-kind-enum"><a href="enums/curvepositionenum.html" class="tsd-kind-icon">Curve<wbr>Position<wbr>Enum</a></li>
 								<li class="tsd-kind-enum"><a href="enums/drawingmode.html" class="tsd-kind-icon">Drawing<wbr>Mode</a></li>
 								<li class="tsd-kind-enum"><a href="enums/dynamicenum.html" class="tsd-kind-icon">Dynamic<wbr>Enum</a></li>
 								<li class="tsd-kind-enum"><a href="enums/dynamicexpressionsymbolenum.html" class="tsd-kind-icon">Dynamic<wbr>Expression<wbr>Symbol<wbr>Enum</a></li>
@@ -93,6 +100,7 @@
 								<li class="tsd-kind-enum"><a href="enums/musicsymbol.html" class="tsd-kind-icon">Music<wbr>Symbol</a></li>
 								<li class="tsd-kind-enum"><a href="enums/musicsymboldrawingstyle.html" class="tsd-kind-icon">Music<wbr>Symbol<wbr>Drawing<wbr>Style</a></li>
 								<li class="tsd-kind-enum"><a href="enums/noteenum.html" class="tsd-kind-icon">Note<wbr>Enum</a></li>
+								<li class="tsd-kind-enum"><a href="enums/noteheadshape.html" class="tsd-kind-icon">Note<wbr>Head<wbr>Shape</a></li>
 								<li class="tsd-kind-enum"><a href="enums/notestate.html" class="tsd-kind-icon">Note<wbr>State</a></li>
 								<li class="tsd-kind-enum"><a href="enums/octaveenum.html" class="tsd-kind-icon">Octave<wbr>Enum</a></li>
 								<li class="tsd-kind-enum"><a href="enums/ornamentenum.html" class="tsd-kind-icon">Ornament<wbr>Enum</a></li>
@@ -102,13 +110,14 @@
 								<li class="tsd-kind-enum"><a href="enums/placementenum.html" class="tsd-kind-icon">Placement<wbr>Enum</a></li>
 								<li class="tsd-kind-enum"><a href="enums/repetitioninstructionenum.html" class="tsd-kind-icon">Repetition<wbr>Instruction<wbr>Enum</a></li>
 								<li class="tsd-kind-enum"><a href="enums/rhythmsymbolenum.html" class="tsd-kind-icon">Rhythm<wbr>Symbol<wbr>Enum</a></li>
+								<li class="tsd-kind-enum"><a href="enums/stavepositionenum.html" class="tsd-kind-icon">Stave<wbr>Position<wbr>Enum</a></li>
 								<li class="tsd-kind-enum"><a href="enums/stemdirectiontype.html" class="tsd-kind-icon">Stem<wbr>Direction<wbr>Type</a></li>
 								<li class="tsd-kind-enum"><a href="enums/stylesets.html" class="tsd-kind-icon">Style<wbr>Sets</a></li>
 								<li class="tsd-kind-enum"><a href="enums/systemlineposition.html" class="tsd-kind-icon">System<wbr>Line<wbr>Position</a></li>
 								<li class="tsd-kind-enum"><a href="enums/systemlinesenum.html" class="tsd-kind-icon">System<wbr>Lines<wbr>Enum</a></li>
 								<li class="tsd-kind-enum"><a href="enums/technicalinstructiontype.html" class="tsd-kind-icon">Technical<wbr>Instruction<wbr>Type</a></li>
 								<li class="tsd-kind-enum"><a href="enums/tempoenum.html" class="tsd-kind-icon">Tempo<wbr>Enum</a></li>
-								<li class="tsd-kind-enum"><a href="enums/textalignment.html" class="tsd-kind-icon">Text<wbr>Alignment</a></li>
+								<li class="tsd-kind-enum"><a href="enums/textalignmentandplacement.html" class="tsd-kind-icon">Text<wbr>Alignment<wbr>And<wbr>Placement</a></li>
 								<li class="tsd-kind-enum"><a href="enums/vexflowbarlinetype.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Barline<wbr>Type</a></li>
 								<li class="tsd-kind-enum"><a href="enums/vexflowrepetitiontype.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Repetition<wbr>Type</a></li>
 							</ul>
@@ -140,28 +149,35 @@
 								<li class="tsd-kind-class"><a href="classes/drawingparameters.html" class="tsd-kind-icon">Drawing<wbr>Parameters</a></li>
 								<li class="tsd-kind-class"><a href="classes/dynamicscontainer.html" class="tsd-kind-icon">Dynamics<wbr>Container</a></li>
 								<li class="tsd-kind-class"><a href="classes/engravingrules.html" class="tsd-kind-icon">Engraving<wbr>Rules</a></li>
+								<li class="tsd-kind-class"><a href="classes/expressionreader.html" class="tsd-kind-icon">Expression<wbr>Reader</a></li>
 								<li class="tsd-kind-class"><a href="classes/fraction.html" class="tsd-kind-icon">Fraction</a></li>
 								<li class="tsd-kind-class"><a href="classes/graphicalchordsymbolcontainer.html" class="tsd-kind-icon">Graphical<wbr>Chord<wbr>Symbol<wbr>Container</a></li>
 								<li class="tsd-kind-class"><a href="classes/graphicalcomment.html" class="tsd-kind-icon">Graphical<wbr>Comment</a></li>
+								<li class="tsd-kind-class"><a href="classes/graphicalcurve.html" class="tsd-kind-icon">Graphical<wbr>Curve</a></li>
+								<li class="tsd-kind-class"><a href="classes/graphicalinstantaneousdynamicexpression.html" class="tsd-kind-icon">Graphical<wbr>Instantaneous<wbr>Dynamic<wbr>Expression</a></li>
+								<li class="tsd-kind-class"><a href="classes/graphicalinstantaneoustempoexpression.html" class="tsd-kind-icon">Graphical<wbr>Instantaneous<wbr>Tempo<wbr>Expression</a></li>
 								<li class="tsd-kind-class"><a href="classes/graphicallabel.html" class="tsd-kind-icon">Graphical<wbr>Label</a></li>
 								<li class="tsd-kind-class"><a href="classes/graphicalline.html" class="tsd-kind-icon">Graphical<wbr>Line</a></li>
 								<li class="tsd-kind-class"><a href="classes/graphicallyricentry.html" class="tsd-kind-icon">Graphical<wbr>Lyric<wbr>Entry</a></li>
 								<li class="tsd-kind-class"><a href="classes/graphicallyricword.html" class="tsd-kind-icon">Graphical<wbr>Lyric<wbr>Word</a></li>
 								<li class="tsd-kind-class"><a href="classes/graphicalmarkedarea.html" class="tsd-kind-icon">Graphical<wbr>Marked<wbr>Area</a></li>
+								<li class="tsd-kind-class"><a href="classes/graphicalmeasure.html" class="tsd-kind-icon">Graphical<wbr>Measure</a></li>
 								<li class="tsd-kind-class"><a href="classes/graphicalmusicpage.html" class="tsd-kind-icon">Graphical<wbr>Music<wbr>Page</a></li>
 								<li class="tsd-kind-class"><a href="classes/graphicalmusicsheet.html" class="tsd-kind-icon">Graphical<wbr>Music<wbr>Sheet</a></li>
 								<li class="tsd-kind-class"><a href="classes/graphicalnote.html" class="tsd-kind-icon">Graphical<wbr>Note</a></li>
 								<li class="tsd-kind-class"><a href="classes/graphicalobject.html" class="tsd-kind-icon">Graphical<wbr>Object</a></li>
 								<li class="tsd-kind-class"><a href="classes/graphicaloctaveshift.html" class="tsd-kind-icon">Graphical<wbr>Octave<wbr>Shift</a></li>
 								<li class="tsd-kind-class"><a href="classes/graphicalrectangle.html" class="tsd-kind-icon">Graphical<wbr>Rectangle</a></li>
+								<li class="tsd-kind-class"><a href="classes/graphicalslur.html" class="tsd-kind-icon">Graphical<wbr>Slur</a></li>
+								<li class="tsd-kind-class"><a href="classes/graphicalslursorter.html" class="tsd-kind-icon">Graphical<wbr>Slur<wbr>Sorter</a></li>
 								<li class="tsd-kind-class"><a href="classes/graphicalstaffentry.html" class="tsd-kind-icon">Graphical<wbr>Staff<wbr>Entry</a></li>
 								<li class="tsd-kind-class"><a href="classes/graphicalstaffentrylink.html" class="tsd-kind-icon">Graphical<wbr>Staff<wbr>Entry<wbr>Link</a></li>
 								<li class="tsd-kind-class"><a href="classes/graphicaltie.html" class="tsd-kind-icon">Graphical<wbr>Tie</a></li>
 								<li class="tsd-kind-class"><a href="classes/graphicalvoiceentry.html" class="tsd-kind-icon">Graphical<wbr>Voice<wbr>Entry</a></li>
 								<li class="tsd-kind-class"><a href="classes/itexttranslation.html" class="tsd-kind-icon">IText<wbr>Translation</a></li>
 								<li class="tsd-kind-class"><a href="classes/ixmlelement.html" class="tsd-kind-icon">IXml<wbr>Element</a></li>
-								<li class="tsd-kind-class"><a href="classes/instantaniousdynamicexpression.html" class="tsd-kind-icon">Instantanious<wbr>Dynamic<wbr>Expression</a></li>
-								<li class="tsd-kind-class"><a href="classes/instantanioustempoexpression.html" class="tsd-kind-icon">Instantanious<wbr>Tempo<wbr>Expression</a></li>
+								<li class="tsd-kind-class"><a href="classes/instantaneousdynamicexpression.html" class="tsd-kind-icon">Instantaneous<wbr>Dynamic<wbr>Expression</a></li>
+								<li class="tsd-kind-class"><a href="classes/instantaneoustempoexpression.html" class="tsd-kind-icon">Instantaneous<wbr>Tempo<wbr>Expression</a></li>
 								<li class="tsd-kind-class"><a href="classes/instrument.html" class="tsd-kind-icon">Instrument</a></li>
 								<li class="tsd-kind-class"><a href="classes/instrumentreader.html" class="tsd-kind-icon">Instrument<wbr>Reader</a></li>
 								<li class="tsd-kind-class"><a href="classes/instrumentalgroup.html" class="tsd-kind-icon">Instrumental<wbr>Group</a></li>
@@ -174,6 +190,7 @@
 								<li class="tsd-kind-class"><a href="classes/lyricsreader.html" class="tsd-kind-icon">Lyrics<wbr>Reader</a></li>
 								<li class="tsd-kind-class"><a href="classes/mxlhelper.html" class="tsd-kind-icon">MXLHelper</a></li>
 								<li class="tsd-kind-class"><a href="classes/mappingsourcemusicpart.html" class="tsd-kind-icon">Mapping<wbr>Source<wbr>Music<wbr>Part</a></li>
+								<li class="tsd-kind-class"><a href="classes/matrix2d.html" class="tsd-kind-icon">Matrix2D</a></li>
 								<li class="tsd-kind-class"><a href="classes/measurebuildparameters.html" class="tsd-kind-icon">Measure<wbr>Build<wbr>Parameters</a></li>
 								<li class="tsd-kind-class"><a href="classes/moodexpression.html" class="tsd-kind-icon">Mood<wbr>Expression</a></li>
 								<li class="tsd-kind-class"><a href="classes/multiexpression.html" class="tsd-kind-icon">Multi<wbr>Expression</a></li>
@@ -192,6 +209,7 @@
 								<li class="tsd-kind-class"><a href="classes/musicsystembuilder.html" class="tsd-kind-icon">Music<wbr>System<wbr>Builder</a></li>
 								<li class="tsd-kind-class"><a href="classes/note.html" class="tsd-kind-icon">Note</a></li>
 								<li class="tsd-kind-class"><a href="classes/noteenumtohalftonelink.html" class="tsd-kind-icon">Note<wbr>Enum<wbr>ToHalf<wbr>Tone<wbr>Link</a></li>
+								<li class="tsd-kind-class"><a href="classes/notehead.html" class="tsd-kind-icon">Note<wbr>Head</a></li>
 								<li class="tsd-kind-class"><a href="classes/osmdcolor.html" class="tsd-kind-icon">OSMDColor</a></li>
 								<li class="tsd-kind-class"><a href="classes/octaveshift.html" class="tsd-kind-icon">Octave<wbr>Shift</a></li>
 								<li class="tsd-kind-class"><a href="classes/octaveshiftparams.html" class="tsd-kind-icon">Octave<wbr>Shift<wbr>Params</a></li>
@@ -213,7 +231,9 @@
 								<li class="tsd-kind-class"><a href="classes/selectionendsymbol.html" class="tsd-kind-icon">Selection<wbr>End<wbr>Symbol</a></li>
 								<li class="tsd-kind-class"><a href="classes/selectionstartsymbol.html" class="tsd-kind-icon">Selection<wbr>Start<wbr>Symbol</a></li>
 								<li class="tsd-kind-class"><a href="classes/sizef2d.html" class="tsd-kind-icon">Size<wbr>F2D</a></li>
+								<li class="tsd-kind-class"><a href="classes/skybottomlinecalculator.html" class="tsd-kind-icon">Sky<wbr>Bottom<wbr>Line<wbr>Calculator</a></li>
 								<li class="tsd-kind-class"><a href="classes/slur.html" class="tsd-kind-icon">Slur</a></li>
+								<li class="tsd-kind-class"><a href="classes/slurreader.html" class="tsd-kind-icon">Slur<wbr>Reader</a></li>
 								<li class="tsd-kind-class"><a href="classes/sourcemeasure.html" class="tsd-kind-icon">Source<wbr>Measure</a></li>
 								<li class="tsd-kind-class"><a href="classes/sourcemusicpart.html" class="tsd-kind-icon">Source<wbr>Music<wbr>Part</a></li>
 								<li class="tsd-kind-class"><a href="classes/sourcestaffentry.html" class="tsd-kind-icon">Source<wbr>Staff<wbr>Entry</a></li>
@@ -221,7 +241,6 @@
 								<li class="tsd-kind-class"><a href="classes/staffentrylink.html" class="tsd-kind-icon">Staff<wbr>Entry<wbr>Link</a></li>
 								<li class="tsd-kind-class"><a href="classes/staffline.html" class="tsd-kind-icon">Staff<wbr>Line</a></li>
 								<li class="tsd-kind-class"><a href="classes/stafflineactivitysymbol.html" class="tsd-kind-icon">Staff<wbr>Line<wbr>Activity<wbr>Symbol</a></li>
-								<li class="tsd-kind-class"><a href="classes/staffmeasure.html" class="tsd-kind-icon">Staff<wbr>Measure</a></li>
 								<li class="tsd-kind-class"><a href="classes/stringutil.html" class="tsd-kind-icon">String<wbr>Util</a></li>
 								<li class="tsd-kind-class"><a href="classes/subinstrument.html" class="tsd-kind-icon">Sub<wbr>Instrument</a></li>
 								<li class="tsd-kind-class"><a href="classes/svgvexflowbackend.html" class="tsd-kind-icon">Svg<wbr>Vex<wbr>Flow<wbr>Backend</a></li>
@@ -230,6 +249,7 @@
 								<li class="tsd-kind-class"><a href="classes/systemline.html" class="tsd-kind-icon">System<wbr>Line</a></li>
 								<li class="tsd-kind-class"><a href="classes/technicalinstruction.html" class="tsd-kind-icon">Technical<wbr>Instruction</a></li>
 								<li class="tsd-kind-class"><a href="classes/tempoexpressionentry.html" class="tsd-kind-icon">Tempo<wbr>Expression<wbr>Entry</a></li>
+								<li class="tsd-kind-class"><a href="classes/textalignment.html" class="tsd-kind-icon">Text<wbr>Alignment</a></li>
 								<li class="tsd-kind-class"><a href="classes/tie.html" class="tsd-kind-icon">Tie</a></li>
 								<li class="tsd-kind-class"><a href="classes/timestamptransform.html" class="tsd-kind-icon">Timestamp<wbr>Transform</a></li>
 								<li class="tsd-kind-class"><a href="classes/tuplet.html" class="tsd-kind-icon">Tuplet</a></li>
@@ -241,12 +261,15 @@
 								<li class="tsd-kind-class"><a href="classes/vexflowconverter.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Converter</a></li>
 								<li class="tsd-kind-class"><a href="classes/vexflowgraphicalnote.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Graphical<wbr>Note</a></li>
 								<li class="tsd-kind-class"><a href="classes/vexflowgraphicalsymbolfactory.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Graphical<wbr>Symbol<wbr>Factory</a></li>
+								<li class="tsd-kind-class"><a href="classes/vexflowinstantaneousdynamicexpression.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Instantaneous<wbr>Dynamic<wbr>Expression</a></li>
 								<li class="tsd-kind-class"><a href="classes/vexflowinstrumentbrace.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Instrument<wbr>Brace</a></li>
 								<li class="tsd-kind-class"><a href="classes/vexflowinstrumentbracket.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Instrument<wbr>Bracket</a></li>
 								<li class="tsd-kind-class"><a href="classes/vexflowmeasure.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Measure</a></li>
 								<li class="tsd-kind-class"><a href="classes/vexflowmusicsheetcalculator.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Music<wbr>Sheet<wbr>Calculator</a></li>
 								<li class="tsd-kind-class"><a href="classes/vexflowmusicsheetdrawer.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Music<wbr>Sheet<wbr>Drawer</a></li>
 								<li class="tsd-kind-class"><a href="classes/vexflowmusicsystem.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Music<wbr>System</a></li>
+								<li class="tsd-kind-class"><a href="classes/vexflowoctaveshift.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Octave<wbr>Shift</a></li>
+								<li class="tsd-kind-class"><a href="classes/vexflowslur.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Slur</a></li>
 								<li class="tsd-kind-class"><a href="classes/vexflowstaffentry.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Staff<wbr>Entry</a></li>
 								<li class="tsd-kind-class"><a href="classes/vexflowstaffline.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Staff<wbr>Line</a></li>
 								<li class="tsd-kind-class"><a href="classes/vexflowtextmeasurer.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Text<wbr>Measurer</a></li>
@@ -259,7 +282,9 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface"><a href="interfaces/graphicalslursorterkeyvaluepair.html" class="tsd-kind-icon">Graphical<wbr>Slur<wbr>Sorter<wbr>Key<wbr>Value<wbr>Pair</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/iaftersheetreadingmodule.html" class="tsd-kind-icon">IAfter<wbr>Sheet<wbr>Reading<wbr>Module</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/icurveoptions.html" class="tsd-kind-icon">ICurve<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/igraphicalsymbolfactory.html" class="tsd-kind-icon">IGraphical<wbr>Symbol<wbr>Factory</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/iqualityfeedbacktone.html" class="tsd-kind-icon">IQuality<wbr>Feedback<wbr>Tone</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/itextmeasurer.html" class="tsd-kind-icon">IText<wbr>Measurer</a></li>
@@ -270,7 +295,6 @@
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias"><a href="globals.html#ixmlattribute" class="tsd-kind-icon">IXml<wbr>Attribute</a></li>
-								<li class="tsd-kind-type-alias"><a href="globals.html#slurreader" class="tsd-kind-icon">Slur<wbr>Reader</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -291,27 +315,12 @@
 					<div class="tsd-signature tsd-kind-icon">IXml<wbr>Attribute<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Attr</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/Common/FileIO/Xml.ts#L4">Common/FileIO/Xml.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/Common/FileIO/Xml.ts#L4">Common/FileIO/Xml.ts:4</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>IXmlAttribute is just the standard Attr</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="slurreader" class="tsd-anchor"></a>
-					<h3>Slur<wbr>Reader</h3>
-					<div class="tsd-signature tsd-kind-icon">Slur<wbr>Reader<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/ScoreIO/VoiceGenerator.ts#L31">MusicalScore/ScoreIO/VoiceGenerator.ts:31</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>To be implemented</p>
 						</div>
 					</div>
 				</section>
@@ -324,7 +333,7 @@
 					<div class="tsd-signature tsd-kind-icon">OUTLINE_<wbr>AND_<wbr>FILL_<wbr>STYLE_<wbr>DICT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><a href="enums/outlineandfillstyleenum.html" class="tsd-signature-type">OutlineAndFillStyleEnum</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Collections.Dictionary&lt;OutlineAndFillStyleEnum, string&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/Graphical/DrawingEnums.ts#L43">MusicalScore/Graphical/DrawingEnums.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/MusicalScore/Graphical/DrawingEnums.ts#L43">MusicalScore/Graphical/DrawingEnums.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -334,7 +343,7 @@
 					<div class="tsd-signature tsd-kind-icon">unit<wbr>InPixels<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;10</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/Graphical/VexFlow/VexFlowMusicSheetDrawer.ts#L21">MusicalScore/Graphical/VexFlow/VexFlowMusicSheetDrawer.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/MusicalScore/Graphical/VexFlow/VexFlowMusicSheetDrawer.ts#L32">MusicalScore/Graphical/VexFlow/VexFlowMusicSheetDrawer.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -356,6 +365,9 @@
 				<ul>
 					<li class="globals current ">
 						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="modules/__global.html">__global</a>
 					</li>
 				</ul>
 			</nav>
@@ -395,6 +407,9 @@
 						<a href="enums/continuoustempotype.html" class="tsd-kind-icon">Continuous<wbr>Tempo<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-enum">
+						<a href="enums/curvepositionenum.html" class="tsd-kind-icon">Curve<wbr>Position<wbr>Enum</a>
+					</li>
+					<li class=" tsd-kind-enum">
 						<a href="enums/drawingmode.html" class="tsd-kind-icon">Drawing<wbr>Mode</a>
 					</li>
 					<li class=" tsd-kind-enum">
@@ -431,6 +446,9 @@
 						<a href="enums/noteenum.html" class="tsd-kind-icon">Note<wbr>Enum</a>
 					</li>
 					<li class=" tsd-kind-enum">
+						<a href="enums/noteheadshape.html" class="tsd-kind-icon">Note<wbr>Head<wbr>Shape</a>
+					</li>
+					<li class=" tsd-kind-enum">
 						<a href="enums/notestate.html" class="tsd-kind-icon">Note<wbr>State</a>
 					</li>
 					<li class=" tsd-kind-enum">
@@ -458,6 +476,9 @@
 						<a href="enums/rhythmsymbolenum.html" class="tsd-kind-icon">Rhythm<wbr>Symbol<wbr>Enum</a>
 					</li>
 					<li class=" tsd-kind-enum">
+						<a href="enums/stavepositionenum.html" class="tsd-kind-icon">Stave<wbr>Position<wbr>Enum</a>
+					</li>
+					<li class=" tsd-kind-enum">
 						<a href="enums/stemdirectiontype.html" class="tsd-kind-icon">Stem<wbr>Direction<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-enum">
@@ -476,7 +497,7 @@
 						<a href="enums/tempoenum.html" class="tsd-kind-icon">Tempo<wbr>Enum</a>
 					</li>
 					<li class=" tsd-kind-enum">
-						<a href="enums/textalignment.html" class="tsd-kind-icon">Text<wbr>Alignment</a>
+						<a href="enums/textalignmentandplacement.html" class="tsd-kind-icon">Text<wbr>Alignment<wbr>And<wbr>Placement</a>
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="enums/vexflowbarlinetype.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Barline<wbr>Type</a>
@@ -557,6 +578,9 @@
 						<a href="classes/engravingrules.html" class="tsd-kind-icon">Engraving<wbr>Rules</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/expressionreader.html" class="tsd-kind-icon">Expression<wbr>Reader</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/fraction.html" class="tsd-kind-icon">Fraction</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -564,6 +588,15 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/graphicalcomment.html" class="tsd-kind-icon">Graphical<wbr>Comment</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/graphicalcurve.html" class="tsd-kind-icon">Graphical<wbr>Curve</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/graphicalinstantaneousdynamicexpression.html" class="tsd-kind-icon">Graphical<wbr>Instantaneous<wbr>Dynamic<wbr>Expression</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/graphicalinstantaneoustempoexpression.html" class="tsd-kind-icon">Graphical<wbr>Instantaneous<wbr>Tempo<wbr>Expression</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/graphicallabel.html" class="tsd-kind-icon">Graphical<wbr>Label</a>
@@ -579,6 +612,9 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/graphicalmarkedarea.html" class="tsd-kind-icon">Graphical<wbr>Marked<wbr>Area</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/graphicalmeasure.html" class="tsd-kind-icon">Graphical<wbr>Measure</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/graphicalmusicpage.html" class="tsd-kind-icon">Graphical<wbr>Music<wbr>Page</a>
@@ -599,6 +635,12 @@
 						<a href="classes/graphicalrectangle.html" class="tsd-kind-icon">Graphical<wbr>Rectangle</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/graphicalslur.html" class="tsd-kind-icon">Graphical<wbr>Slur</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/graphicalslursorter.html" class="tsd-kind-icon">Graphical<wbr>Slur<wbr>Sorter</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/graphicalstaffentry.html" class="tsd-kind-icon">Graphical<wbr>Staff<wbr>Entry</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -617,10 +659,10 @@
 						<a href="classes/ixmlelement.html" class="tsd-kind-icon">IXml<wbr>Element</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/instantaniousdynamicexpression.html" class="tsd-kind-icon">Instantanious<wbr>Dynamic<wbr>Expression</a>
+						<a href="classes/instantaneousdynamicexpression.html" class="tsd-kind-icon">Instantaneous<wbr>Dynamic<wbr>Expression</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/instantanioustempoexpression.html" class="tsd-kind-icon">Instantanious<wbr>Tempo<wbr>Expression</a>
+						<a href="classes/instantaneoustempoexpression.html" class="tsd-kind-icon">Instantaneous<wbr>Tempo<wbr>Expression</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/instrument.html" class="tsd-kind-icon">Instrument</a>
@@ -657,6 +699,9 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/mappingsourcemusicpart.html" class="tsd-kind-icon">Mapping<wbr>Source<wbr>Music<wbr>Part</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/matrix2d.html" class="tsd-kind-icon">Matrix2D</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/measurebuildparameters.html" class="tsd-kind-icon">Measure<wbr>Build<wbr>Parameters</a>
@@ -711,6 +756,9 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/noteenumtohalftonelink.html" class="tsd-kind-icon">Note<wbr>Enum<wbr>ToHalf<wbr>Tone<wbr>Link</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/notehead.html" class="tsd-kind-icon">Note<wbr>Head</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/osmdcolor.html" class="tsd-kind-icon">OSMDColor</a>
@@ -776,7 +824,13 @@
 						<a href="classes/sizef2d.html" class="tsd-kind-icon">Size<wbr>F2D</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/skybottomlinecalculator.html" class="tsd-kind-icon">Sky<wbr>Bottom<wbr>Line<wbr>Calculator</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/slur.html" class="tsd-kind-icon">Slur</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/slurreader.html" class="tsd-kind-icon">Slur<wbr>Reader</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/sourcemeasure.html" class="tsd-kind-icon">Source<wbr>Measure</a>
@@ -798,9 +852,6 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/stafflineactivitysymbol.html" class="tsd-kind-icon">Staff<wbr>Line<wbr>Activity<wbr>Symbol</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/staffmeasure.html" class="tsd-kind-icon">Staff<wbr>Measure</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/stringutil.html" class="tsd-kind-icon">String<wbr>Util</a>
@@ -825,6 +876,9 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/tempoexpressionentry.html" class="tsd-kind-icon">Tempo<wbr>Expression<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/textalignment.html" class="tsd-kind-icon">Text<wbr>Alignment</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/tie.html" class="tsd-kind-icon">Tie</a>
@@ -860,6 +914,9 @@
 						<a href="classes/vexflowgraphicalsymbolfactory.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Graphical<wbr>Symbol<wbr>Factory</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/vexflowinstantaneousdynamicexpression.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Instantaneous<wbr>Dynamic<wbr>Expression</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/vexflowinstrumentbrace.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Instrument<wbr>Brace</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -876,6 +933,12 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/vexflowmusicsystem.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Music<wbr>System</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/vexflowoctaveshift.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Octave<wbr>Shift</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/vexflowslur.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Slur</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/vexflowstaffentry.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Staff<wbr>Entry</a>
@@ -899,7 +962,13 @@
 						<a href="classes/voicegenerator.html" class="tsd-kind-icon">Voice<wbr>Generator</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/graphicalslursorterkeyvaluepair.html" class="tsd-kind-icon">Graphical<wbr>Slur<wbr>Sorter<wbr>Key<wbr>Value<wbr>Pair</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/iaftersheetreadingmodule.html" class="tsd-kind-icon">IAfter<wbr>Sheet<wbr>Reading<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/icurveoptions.html" class="tsd-kind-icon">ICurve<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/igraphicalsymbolfactory.html" class="tsd-kind-icon">IGraphical<wbr>Symbol<wbr>Factory</a>
@@ -915,9 +984,6 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#ixmlattribute" class="tsd-kind-icon">IXml<wbr>Attribute</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#slurreader" class="tsd-kind-icon">Slur<wbr>Reader</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#outline_and_fill_style_dict" class="tsd-kind-icon">OUTLINE_<wbr>AND_<wbr>FILL_<wbr>STYLE_<wbr>DICT</a>

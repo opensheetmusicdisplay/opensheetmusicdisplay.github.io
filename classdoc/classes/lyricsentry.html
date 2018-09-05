@@ -89,6 +89,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="lyricsentry.html#extend" class="tsd-kind-icon">extend</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="lyricsentry.html#parent" class="tsd-kind-icon">parent</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="lyricsentry.html#syllableindex" class="tsd-kind-icon">syllable<wbr>Index</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="lyricsentry.html#text" class="tsd-kind-icon">text</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="lyricsentry.html#versenumber" class="tsd-kind-icon">verse<wbr>Number</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="lyricsentry.html#word" class="tsd-kind-icon">word</a></li>
@@ -98,6 +99,7 @@
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="lyricsentry.html#parent-1" class="tsd-kind-icon">Parent</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="lyricsentry.html#syllableindex-1" class="tsd-kind-icon">Syllable<wbr>Index</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="lyricsentry.html#text-1" class="tsd-kind-icon">Text</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="lyricsentry.html#versenumber-1" class="tsd-kind-icon">Verse<wbr>Number</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="lyricsentry.html#word-1" class="tsd-kind-icon">Word</a></li>
@@ -112,13 +114,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Lyrics<wbr>Entry<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, verseNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, word<span class="tsd-signature-symbol">: </span><a href="lyricword.html" class="tsd-signature-type">LyricWord</a>, parent<span class="tsd-signature-symbol">: </span><a href="voiceentry.html" class="tsd-signature-type">VoiceEntry</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="lyricsentry.html" class="tsd-signature-type">LyricsEntry</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Lyrics<wbr>Entry<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, verseNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, word<span class="tsd-signature-symbol">: </span><a href="lyricword.html" class="tsd-signature-type">LyricWord</a>, parent<span class="tsd-signature-symbol">: </span><a href="voiceentry.html" class="tsd-signature-type">VoiceEntry</a>, syllableNumber<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="lyricsentry.html" class="tsd-signature-type">LyricsEntry</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L4">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L4">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:4</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -135,6 +137,9 @@
 								<li>
 									<h5>parent: <a href="voiceentry.html" class="tsd-signature-type">VoiceEntry</a></h5>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> syllableNumber: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></h5>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="lyricsentry.html" class="tsd-signature-type">LyricsEntry</a></h4>
 						</li>
@@ -149,7 +154,7 @@
 					<div class="tsd-signature tsd-kind-icon">extend<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L15">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L19">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -159,7 +164,17 @@
 					<div class="tsd-signature tsd-kind-icon">parent<span class="tsd-signature-symbol">:</span> <a href="voiceentry.html" class="tsd-signature-type">VoiceEntry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L13">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L16">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="syllableindex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> syllable<wbr>Index</h3>
+					<div class="tsd-signature tsd-kind-icon">syllable<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L18">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -169,7 +184,7 @@
 					<div class="tsd-signature tsd-kind-icon">text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L11">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L14">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -179,7 +194,7 @@
 					<div class="tsd-signature tsd-kind-icon">verse<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L14">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L17">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -189,7 +204,7 @@
 					<div class="tsd-signature tsd-kind-icon">word<span class="tsd-signature-symbol">:</span> <a href="lyricword.html" class="tsd-signature-type">LyricWord</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L12">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L15">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -207,7 +222,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L26">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L30">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="voiceentry.html" class="tsd-signature-type">VoiceEntry</a></h4>
@@ -215,7 +230,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L29">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L33">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:33</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -225,6 +240,23 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="syllableindex-1" class="tsd-anchor"></a>
+					<h3>Syllable<wbr>Index</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> SyllableIndex<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L41">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:41</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -239,7 +271,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L17">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L21">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:21</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -247,7 +279,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L20">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L24">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:24</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -270,7 +302,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L33">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L37">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -287,7 +319,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/b57494c/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L23">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/4ca13b8/src/MusicalScore/VoiceData/Lyrics/LyricsEntry.ts#L27">MusicalScore/VoiceData/Lyrics/LyricsEntry.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="lyricword.html" class="tsd-signature-type">LyricWord</a></h4>
@@ -321,6 +353,9 @@
 								<a href="lyricsentry.html#parent" class="tsd-kind-icon">parent</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="lyricsentry.html#syllableindex" class="tsd-kind-icon">syllable<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="lyricsentry.html#text" class="tsd-kind-icon">text</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -331,6 +366,9 @@
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class">
 								<a href="lyricsentry.html#parent-1" class="tsd-kind-icon">Parent</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="lyricsentry.html#syllableindex-1" class="tsd-kind-icon">Syllable<wbr>Index</a>
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class">
 								<a href="lyricsentry.html#text-1" class="tsd-kind-icon">Text</a>
