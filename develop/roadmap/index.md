@@ -4,7 +4,7 @@ title: Roadmap
 permalink: /develop/roadmap/
 ---
 
-## Done
+## Done (OSMD 0.5.0):
 * Draw layouted measures
 * Draw Beams
 * Draw Key, Clef, Rhythm Instructions
@@ -44,35 +44,40 @@ permalink: /develop/roadmap/
 * Draw Tabs
   * read from Xml
   * draw Tabs
-
-## ToDo
-* Fix drawing multiple ties of chords all above each other resulting in only one visible tie
-* Fix Tabs x-layout for rest notes for correct x alignment with normal notes
+* Draw Measure numbers
+<!-- OSMD 0.5.0 -->
 * Draw Repetition Endings (horizontal brackets with Number-Label)
 * Draw In-Staff Clefs
 * Draw Grace notes (as small notes)
-* Implement Plugin Infrastructure
-* Inhouse: Convert Tuplet label placement code to TS
-* Inhouse: Refactor and Convert SkyBottomLineCalculator for systems y-size calculation to TS
-* adapt y-layout code for using SkyBottomLineCalculator
-* Draw Measure numbers
-* Inhouse: Refactor and convert Slur Handling (handling special cases from tied and beamed notes)
 * Draw Slurs
-* Draw Word Expressions
+* Draw Word Expressions (mostly done)
   * Dynamics
   * Tempo
   * Other
-* Draw Wedges
 * Draw Lyrics
   * extending underscores
 * Draw Ornaments (trill, turn, ...)
 
+## ToDo
+* 1.0 feature set: See [OSMD 1.0 Github project](https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/projects/3)
+
+* Fix drawing multiple ties of chords all above each other resulting in only one visible tie
+* Fix Tabs x-layout for rest notes for correct x alignment with normal notes
+
+* Implement Plugin Infrastructure
+* Inhouse: Convert Tuplet label placement code to TS
+* Inhouse: Refactor and Convert SkyBottomLineCalculator for systems y-size calculation to TS
+* adapt y-layout code for using SkyBottomLineCalculator
+* Inhouse: Refactor and convert Slur Handling (handling special cases from tied and beamed notes)
+* Draw Wedges
+* Draw Arpeggios
+
 ## ToDo - Plugins (licensable from us)
 * Implement Playback Plugin
   * Set start position (via click onto a note on the score)
-  * set end position (for looping)
-  * set speed in BPM
-  * play back a metronome together with the music (with pre-count)
+  * Set end position (for looping)
+  * Set speed in BPM
+  * Play back a metronome together with the music (with pre-count)
   * Playback of given chord symbols
   * Solo, Mute switches and volume settings for all instruments, the metronome and the chords (if avaliable)
   * React on repetitions (backjumps), on dynamics (p, ff) and tempo instructions
