@@ -20,7 +20,7 @@ You control the zoom level of the music sheet displayed. Right now, OSMD is rend
 ## Cursor
 OSMD is able to display a simple cursor. You can control the visibility of the cursor and navigate through the piece using the following controls. You can also use the right arrow key to step through the piece. -->
 
-<h4 class="centered"> <img alt="OSMD logo" src="https://osmd.org/wp-content/uploads/2016/05/OSMD_3_icon_only.svg" height="60"/> OpenSheetMusicDisplay Demo </h4>
+<h3 class="centered"> <img alt="OSMD logo" src="https://osmd.org/wp-content/uploads/2016/05/OSMD_3_icon_only.svg" height="60"/> OpenSheetMusicDisplay Demo </h3>
 <div class="button group">
   <div class="control-container">
     <h4 class="centered">Cursor</h4>
