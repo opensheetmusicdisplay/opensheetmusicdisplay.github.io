@@ -34,7 +34,6 @@ OSMD is able to display a simple cursor. You can control the visibility of the c
     <input type="button" value="Zoom In" id="zoom-in-btn" class="btn btn-demo"/>
     <input type="button" value="Zoom Out" id="zoom-out-btn" class="btn btn-demo"/>
     <p id="zoom-str">100</p>
-    <p id="size-str">0</p>
   </div>
   <div class="control-container">
     <h4 class="centered">Renderer</h4>
