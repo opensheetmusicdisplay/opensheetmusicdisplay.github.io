@@ -12,41 +12,4 @@ MusicXML is the de facto standard for sharing sheet music on the internet. VexFl
 
 OpenSheetMusicDisplay brings the two together and offers an open source turnkey solution for your digital sheet music project.
 
-
-## Quick start
-
-### Script tag
-```html
-<script src="opensheetmusicdisplay.min.js"></script>
-<script>
-var osmd = new opensheetmusicdisplay.OpenSheetMusicDisplay("container-id");
-osmd.load("http://downloads2.makemusic.com/musicxml/MozaVeilSample.xml").then(
-  function() {
-    osmd.render();
-  }
-);
-</script>
-```
-
-### NPM & TypeScript
-```sh
-# Install the global CLI and its peer dependency
-npm install --save opensheetmusicdisplay
-```
-
-```typescript
-// In your TypeScript source file
-import { OpenSheetMusicDisplay } from "opensheetmusicdisplay";
-
-let osmd = new OpenSheetMusicDisplay(container, false);
-osmd
-  .load(...)
-  .then(
-    () => osmd.render(),
-    (err) => console.log(err)
-  );
-```
-
-Check out [the full usage guide](usage/script) to learn more.
-
-[0]: http://www.typescriptlang.org/
+Please visit our new website [www.opensheetmusicdisplay.org](www.opensheetmusicdisplay.org).
