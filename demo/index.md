@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: demo
 title: Demo
 permalink: /demo/
 menu: main
