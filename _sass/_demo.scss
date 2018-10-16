@@ -38,13 +38,13 @@ select.btn.btn-demo {
 }
 
 .button.group {
-  font-size: 0.8rem;
+  font-size: 1.0rem;
   display: grid;
   grid-template-columns: repeat(var(--num-cols), auto);
 }
 
 .button.group h4 {
-  font-size: 1.9rem;
+  font-size: 1.2rem;
 }
 
 .centered {
