@@ -65,6 +65,7 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<img alt="OSMD logo" src="https://osmd.org/wp-content/uploads/2016/05/OSMD_3_icon_only.svg" width="200"/>
+				<!--img alt="Brought to you by PhonicScore" src="https://phonicscore.com/neu/wp-content/uploads/2018/06/phonicscore_brown.svg"/-->
 				<h1 id="opensheetmusicdisplay">OpenSheetMusicDisplay</h1>
 				<p><a href="https://greenkeeper.io/"><img src="https://badges.greenkeeper.io/opensheetmusicdisplay/opensheetmusicdisplay.svg" alt="Greenkeeper badge"></a>
 					<a href="https://travis-ci.org/opensheetmusicdisplay/opensheetmusicdisplay"><img src="https://travis-ci.org/opensheetmusicdisplay/opensheetmusicdisplay.svg?branch=master" alt="Travis Build Status"></a>
@@ -80,6 +81,8 @@
 				<p>Written in <a href="https://www.typescriptlang.org">TypeScript</a> and released under <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/develop/LICENSE">MIT license</a>.</p>
 				<p>See the <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/wiki">Wiki</a> for information about the source code and how to use OSMD.</p>
 				<p>Try the <a href="https://opensheetmusicdisplay.github.io/demo/">Demo</a> to see what OSMD can do.</p>
+				<p>Brought to you by <a href="https://phonicscore.com/">PhonicScore</a> and <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/graphs/contributors">our Github Contributors</a><br>
+				(Creators of <a href="https://itunes.apple.com/us/app/practice-bird-pro/id1253492926?ls=1&amp;mt=8">PracticeBird for iOS</a> and <a href="https://play.google.com/store/apps/details?id=phonicscore.phonicscore_lite">PhonicScore for Android</a>)</p>
 				<!--# <a name="license"></a>License
 The MIT License (MIT)
 
@@ -114,6 +117,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="enums/appearance.html" class="tsd-kind-icon">Appearance</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/arpeggiotype.html" class="tsd-kind-icon">Arpeggio<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="enums/articulationenum.html" class="tsd-kind-icon">Articulation<wbr>Enum</a>
@@ -248,6 +254,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 						<a href="classes/abstractexpression.html" class="tsd-kind-icon">Abstract<wbr>Expression</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/abstractgraphicalexpression.html" class="tsd-kind-icon">Abstract<wbr>Graphical<wbr>Expression</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/abstractgraphicalinstruction.html" class="tsd-kind-icon">Abstract<wbr>Graphical<wbr>Instruction</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -260,7 +269,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 						<a href="classes/accidentalcalculator.html" class="tsd-kind-icon">Accidental<wbr>Calculator</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/alignmentmanager.html" class="tsd-kind-icon">Alignment<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/argumentoutofrangeexception.html" class="tsd-kind-icon">Argument<wbr>Out<wbr>OfRange<wbr>Exception</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/arpeggio.html" class="tsd-kind-icon">Arpeggio</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/articulationreader.html" class="tsd-kind-icon">Articulation<wbr>Reader</a>
@@ -326,6 +341,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 						<a href="classes/graphicalcomment.html" class="tsd-kind-icon">Graphical<wbr>Comment</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/graphicalcontinuousdynamicexpression.html" class="tsd-kind-icon">Graphical<wbr>Continuous<wbr>Dynamic<wbr>Expression</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/graphicalcurve.html" class="tsd-kind-icon">Graphical<wbr>Curve</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -372,9 +390,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/graphicalslur.html" class="tsd-kind-icon">Graphical<wbr>Slur</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/graphicalslursorter.html" class="tsd-kind-icon">Graphical<wbr>Slur<wbr>Sorter</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/graphicalstaffentry.html" class="tsd-kind-icon">Graphical<wbr>Staff<wbr>Entry</a>
@@ -644,6 +659,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 						<a href="classes/vexflowbackends.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Backends</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/vexflowcontinuousdynamicexpression.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Continuous<wbr>Dynamic<wbr>Expression</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/vexflowconverter.html" class="tsd-kind-icon">Vex<wbr>Flow<wbr>Converter</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -701,7 +719,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 						<a href="classes/voicegenerator.html" class="tsd-kind-icon">Voice<wbr>Generator</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/graphicalslursorterkeyvaluepair.html" class="tsd-kind-icon">Graphical<wbr>Slur<wbr>Sorter<wbr>Key<wbr>Value<wbr>Pair</a>
+						<a href="interfaces/autobeamoptions.html" class="tsd-kind-icon">Auto<wbr>Beam<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/iaftersheetreadingmodule.html" class="tsd-kind-icon">IAfter<wbr>Sheet<wbr>Reading<wbr>Module</a>
@@ -717,6 +735,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/iqualityfeedbacktone.html" class="tsd-kind-icon">IQuality<wbr>Feedback<wbr>Tone</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/isqueezable.html" class="tsd-kind-icon">ISqueezable</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/itextmeasurer.html" class="tsd-kind-icon">IText<wbr>Measurer</a>

@@ -89,6 +89,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#autobeam" class="tsd-kind-icon">auto<wbr>Beam</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#autobeamoptions" class="tsd-kind-icon">auto<wbr>Beam<wbr>Options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#autoresize" class="tsd-kind-icon">auto<wbr>Resize</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#autostem" class="tsd-kind-icon">auto<wbr>Stem</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#backend" class="tsd-kind-icon">backend</a></li>
@@ -96,12 +97,16 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#defaultcolorstem" class="tsd-kind-icon">default<wbr>Color<wbr>Stem</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#disablecursor" class="tsd-kind-icon">disable<wbr>Cursor</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#drawcredits" class="tsd-kind-icon">draw<wbr>Credits</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#drawfingerings" class="tsd-kind-icon">draw<wbr>Fingerings</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#drawhiddennotes" class="tsd-kind-icon">draw<wbr>Hidden<wbr>Notes</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#drawlyricist" class="tsd-kind-icon">draw<wbr>Lyricist</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#drawpartnames" class="tsd-kind-icon">draw<wbr>Part<wbr>Names</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#drawsubtitle" class="tsd-kind-icon">draw<wbr>Subtitle</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#drawtitle" class="tsd-kind-icon">draw<wbr>Title</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#drawingparameters" class="tsd-kind-icon">drawing<wbr>Parameters</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#fingeringinsidestafflines" class="tsd-kind-icon">fingering<wbr>Inside<wbr>Stafflines</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#fingeringposition" class="tsd-kind-icon">fingering<wbr>Position</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#setwantedstemdirectionbyxml" class="tsd-kind-icon">set<wbr>Wanted<wbr>Stem<wbr>Direction<wbr>ByXml</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#tripletsbracketed" class="tsd-kind-icon">triplets<wbr>Bracketed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#tupletsbracketed" class="tsd-kind-icon">tuplets<wbr>Bracketed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iosmdoptions.html#tupletsratioed" class="tsd-kind-icon">tuplets<wbr>Ratioed</a></li>
@@ -118,12 +123,27 @@
 					<div class="tsd-signature tsd-kind-icon">auto<wbr>Beam<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/14ff5fd/src/OpenSheetMusicDisplay/OSMDOptions.ts#L6">OpenSheetMusicDisplay/OSMDOptions.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L6">OpenSheetMusicDisplay/OSMDOptions.ts:6</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Not yet supported. Will always beam automatically.</p>
+							<p>Whether to automatically create beams for notes that don&#39;t have beams set in XML.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="autobeamoptions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> auto<wbr>Beam<wbr>Options</h3>
+					<div class="tsd-signature tsd-kind-icon">auto<wbr>Beam<wbr>Options<span class="tsd-signature-symbol">:</span> <a href="autobeamoptions.html" class="tsd-signature-type">AutoBeamOptions</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L8">OpenSheetMusicDisplay/OSMDOptions.ts:8</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Options for autoBeaming like whether to beam over rests. See AutoBeamOptions interface.</p>
 						</div>
 					</div>
 				</section>
@@ -133,7 +153,7 @@
 					<div class="tsd-signature tsd-kind-icon">auto<wbr>Resize<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/14ff5fd/src/OpenSheetMusicDisplay/OSMDOptions.ts#L8">OpenSheetMusicDisplay/OSMDOptions.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L10">OpenSheetMusicDisplay/OSMDOptions.ts:10</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -148,7 +168,7 @@
 					<div class="tsd-signature tsd-kind-icon">auto<wbr>Stem<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/14ff5fd/src/OpenSheetMusicDisplay/OSMDOptions.ts#L10">OpenSheetMusicDisplay/OSMDOptions.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L12">OpenSheetMusicDisplay/OSMDOptions.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -163,7 +183,7 @@
 					<div class="tsd-signature tsd-kind-icon">backend<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/14ff5fd/src/OpenSheetMusicDisplay/OSMDOptions.ts#L12">OpenSheetMusicDisplay/OSMDOptions.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L14">OpenSheetMusicDisplay/OSMDOptions.ts:14</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -178,7 +198,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Color<wbr>Note<wbr>Head<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/14ff5fd/src/OpenSheetMusicDisplay/OSMDOptions.ts#L20">OpenSheetMusicDisplay/OSMDOptions.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L53">OpenSheetMusicDisplay/OSMDOptions.ts:53</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -193,7 +213,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Color<wbr>Stem<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/14ff5fd/src/OpenSheetMusicDisplay/OSMDOptions.ts#L22">OpenSheetMusicDisplay/OSMDOptions.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L55">OpenSheetMusicDisplay/OSMDOptions.ts:55</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -208,7 +228,7 @@
 					<div class="tsd-signature tsd-kind-icon">disable<wbr>Cursor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/14ff5fd/src/OpenSheetMusicDisplay/OSMDOptions.ts#L14">OpenSheetMusicDisplay/OSMDOptions.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L16">OpenSheetMusicDisplay/OSMDOptions.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -223,7 +243,7 @@
 					<div class="tsd-signature tsd-kind-icon">draw<wbr>Credits<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/14ff5fd/src/OpenSheetMusicDisplay/OSMDOptions.ts#L28">OpenSheetMusicDisplay/OSMDOptions.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L24">OpenSheetMusicDisplay/OSMDOptions.ts:24</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -233,12 +253,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="drawfingerings" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> draw<wbr>Fingerings</h3>
+					<div class="tsd-signature tsd-kind-icon">draw<wbr>Fingerings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L30">OpenSheetMusicDisplay/OSMDOptions.ts:30</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Whether to draw fingerings (only left to the note for now). Default true.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="drawhiddennotes" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> draw<wbr>Hidden<wbr>Notes</h3>
 					<div class="tsd-signature tsd-kind-icon">draw<wbr>Hidden<wbr>Notes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/14ff5fd/src/OpenSheetMusicDisplay/OSMDOptions.ts#L18">OpenSheetMusicDisplay/OSMDOptions.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L51">OpenSheetMusicDisplay/OSMDOptions.ts:51</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -253,7 +288,7 @@
 					<div class="tsd-signature tsd-kind-icon">draw<wbr>Lyricist<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/14ff5fd/src/OpenSheetMusicDisplay/OSMDOptions.ts#L32">OpenSheetMusicDisplay/OSMDOptions.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L26">OpenSheetMusicDisplay/OSMDOptions.ts:26</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -268,7 +303,7 @@
 					<div class="tsd-signature tsd-kind-icon">draw<wbr>Part<wbr>Names<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/14ff5fd/src/OpenSheetMusicDisplay/OSMDOptions.ts#L30">OpenSheetMusicDisplay/OSMDOptions.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L28">OpenSheetMusicDisplay/OSMDOptions.ts:28</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -283,7 +318,7 @@
 					<div class="tsd-signature tsd-kind-icon">draw<wbr>Subtitle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/14ff5fd/src/OpenSheetMusicDisplay/OSMDOptions.ts#L26">OpenSheetMusicDisplay/OSMDOptions.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L22">OpenSheetMusicDisplay/OSMDOptions.ts:22</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -298,7 +333,7 @@
 					<div class="tsd-signature tsd-kind-icon">draw<wbr>Title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/14ff5fd/src/OpenSheetMusicDisplay/OSMDOptions.ts#L24">OpenSheetMusicDisplay/OSMDOptions.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L20">OpenSheetMusicDisplay/OSMDOptions.ts:20</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -313,7 +348,7 @@
 					<div class="tsd-signature tsd-kind-icon">drawing<wbr>Parameters<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../enums/drawingparametersenum.html" class="tsd-signature-type">DrawingParametersEnum</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/14ff5fd/src/OpenSheetMusicDisplay/OSMDOptions.ts#L16">OpenSheetMusicDisplay/OSMDOptions.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L18">OpenSheetMusicDisplay/OSMDOptions.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -323,12 +358,58 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="fingeringinsidestafflines" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> fingering<wbr>Inside<wbr>Stafflines</h3>
+					<div class="tsd-signature tsd-kind-icon">fingering<wbr>Inside<wbr>Stafflines<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L36">OpenSheetMusicDisplay/OSMDOptions.ts:36</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>For above/below fingerings, whether to draw them directly above/below notes (default), or above/below staffline.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="fingeringposition" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> fingering<wbr>Position</h3>
+					<div class="tsd-signature tsd-kind-icon">fingering<wbr>Position<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L34">OpenSheetMusicDisplay/OSMDOptions.ts:34</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Where to draw fingerings (left, right, above, below, auto).
+							Default left. Auto, above, below experimental (potential collisions because bounding box not correct)</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="setwantedstemdirectionbyxml" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> set<wbr>Wanted<wbr>Stem<wbr>Direction<wbr>ByXml</h3>
+					<div class="tsd-signature tsd-kind-icon">set<wbr>Wanted<wbr>Stem<wbr>Direction<wbr>ByXml<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L38">OpenSheetMusicDisplay/OSMDOptions.ts:38</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Whether to set the wanted stem direction by xml (default) or automatically.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="tripletsbracketed" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> triplets<wbr>Bracketed</h3>
 					<div class="tsd-signature tsd-kind-icon">triplets<wbr>Bracketed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/14ff5fd/src/OpenSheetMusicDisplay/OSMDOptions.ts#L43">OpenSheetMusicDisplay/OSMDOptions.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L49">OpenSheetMusicDisplay/OSMDOptions.ts:49</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -345,7 +426,7 @@
 					<div class="tsd-signature tsd-kind-icon">tuplets<wbr>Bracketed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/14ff5fd/src/OpenSheetMusicDisplay/OSMDOptions.ts#L38">OpenSheetMusicDisplay/OSMDOptions.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L44">OpenSheetMusicDisplay/OSMDOptions.ts:44</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -361,7 +442,7 @@
 					<div class="tsd-signature tsd-kind-icon">tuplets<wbr>Ratioed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/14ff5fd/src/OpenSheetMusicDisplay/OSMDOptions.ts#L34">OpenSheetMusicDisplay/OSMDOptions.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/da680e5/src/OpenSheetMusicDisplay/OSMDOptions.ts#L40">OpenSheetMusicDisplay/OSMDOptions.ts:40</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -391,6 +472,9 @@
 								<a href="iosmdoptions.html#autobeam" class="tsd-kind-icon">auto<wbr>Beam</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="iosmdoptions.html#autobeamoptions" class="tsd-kind-icon">auto<wbr>Beam<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="iosmdoptions.html#autoresize" class="tsd-kind-icon">auto<wbr>Resize</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -412,6 +496,9 @@
 								<a href="iosmdoptions.html#drawcredits" class="tsd-kind-icon">draw<wbr>Credits</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="iosmdoptions.html#drawfingerings" class="tsd-kind-icon">draw<wbr>Fingerings</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="iosmdoptions.html#drawhiddennotes" class="tsd-kind-icon">draw<wbr>Hidden<wbr>Notes</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -428,6 +515,15 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="iosmdoptions.html#drawingparameters" class="tsd-kind-icon">drawing<wbr>Parameters</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="iosmdoptions.html#fingeringinsidestafflines" class="tsd-kind-icon">fingering<wbr>Inside<wbr>Stafflines</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="iosmdoptions.html#fingeringposition" class="tsd-kind-icon">fingering<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="iosmdoptions.html#setwantedstemdirectionbyxml" class="tsd-kind-icon">set<wbr>Wanted<wbr>Stem<wbr>Direction<wbr>ByXml</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="iosmdoptions.html#tripletsbracketed" class="tsd-kind-icon">triplets<wbr>Bracketed</a>
