@@ -5,6 +5,7 @@ permalink: /develop/roadmap/
 ---
 
 ## Done (OSMD 0.5.0):
+(list may be incomplete, see [Changelog](https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/develop/CHANGELOG.md))
 * Draw layouted measures
 * Draw Beams
 * Draw Key, Clef, Rhythm Instructions
@@ -57,22 +58,24 @@ permalink: /develop/roadmap/
 * Draw Lyrics
   * extending underscores
 * Draw Ornaments (trill, turn, ...)
+* Draw Arpeggios
+* Draw Wedges
 
 ## ToDo
+(list may be incomplete, see [OSMD Issues](https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/issues) and try filtering for the Feature Label)
 * 1.0 feature set: See [OSMD 1.0 Github project](https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/projects/3)
 
 * Fix drawing multiple ties of chords all above each other resulting in only one visible tie
 * Fix Tabs x-layout for rest notes for correct x alignment with normal notes
 
+* Ability to combine two notes into one notehead (e.g. one notehead with two stems, one up, one down)
 * Implement Plugin Infrastructure
 * Inhouse: Convert Tuplet label placement code to TS
 * Inhouse: Refactor and Convert SkyBottomLineCalculator for systems y-size calculation to TS
 * adapt y-layout code for using SkyBottomLineCalculator
 * Inhouse: Refactor and convert Slur Handling (handling special cases from tied and beamed notes)
-* Draw Wedges
-* Draw Arpeggios
 
-## ToDo - Plugins (licensable from us)
+## ToDo - Plugins (licensable?)
 * Implement Playback Plugin
   * Set start position (via click onto a note on the score)
   * Set end position (for looping)
