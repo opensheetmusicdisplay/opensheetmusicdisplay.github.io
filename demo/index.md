@@ -41,6 +41,8 @@ OSMD is able to display a simple cursor. You can control the visibility of the c
         <option value="svg">SVG</option>
         <option value="canvas">Canvas</option>>
     </select>
+    <input type="button" value="Re-Render" id="debug-re-render-btn" class="btn btn-demo"/>
+    <input type="button" value="Clear" id="debug-clear-btn" class="btn btn-demo"/>
   </div>
   <div class="control-container">
     <h4 class="centered">Select score</h4>

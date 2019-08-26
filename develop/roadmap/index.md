@@ -4,7 +4,7 @@ title: Roadmap
 permalink: /develop/roadmap/
 ---
 
-## Done (OSMD 0.7.8):
+## Done (OSMD 0.6.8):
 (list may be incomplete, see [Changelog](https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/develop/CHANGELOG.md))
 * Draw layouted measures
 * Draw Beams
