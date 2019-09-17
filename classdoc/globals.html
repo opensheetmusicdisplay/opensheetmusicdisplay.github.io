@@ -105,6 +105,7 @@
 								<li class="tsd-kind-enum"><a href="enums/noteenum.html" class="tsd-kind-icon">Note<wbr>Enum</a></li>
 								<li class="tsd-kind-enum"><a href="enums/noteheadshape.html" class="tsd-kind-icon">Note<wbr>Head<wbr>Shape</a></li>
 								<li class="tsd-kind-enum"><a href="enums/notestate.html" class="tsd-kind-icon">Note<wbr>State</a></li>
+								<li class="tsd-kind-enum"><a href="enums/notetype.html" class="tsd-kind-icon">Note<wbr>Type</a></li>
 								<li class="tsd-kind-enum"><a href="enums/octaveenum.html" class="tsd-kind-icon">Octave<wbr>Enum</a></li>
 								<li class="tsd-kind-enum"><a href="enums/ornamentenum.html" class="tsd-kind-icon">Ornament<wbr>Enum</a></li>
 								<li class="tsd-kind-enum"><a href="enums/outlineandfillstyleenum.html" class="tsd-kind-icon">Outline<wbr>And<wbr>Fill<wbr>Style<wbr>Enum</a></li>
@@ -213,6 +214,7 @@
 								<li class="tsd-kind-class"><a href="classes/musicsystembuilder.html" class="tsd-kind-icon">Music<wbr>System<wbr>Builder</a></li>
 								<li class="tsd-kind-class"><a href="classes/note.html" class="tsd-kind-icon">Note</a></li>
 								<li class="tsd-kind-class"><a href="classes/noteenumtohalftonelink.html" class="tsd-kind-icon">Note<wbr>Enum<wbr>ToHalf<wbr>Tone<wbr>Link</a></li>
+								<li class="tsd-kind-class"><a href="classes/notetypehandler.html" class="tsd-kind-icon">Note<wbr>Type<wbr>Handler</a></li>
 								<li class="tsd-kind-class"><a href="classes/notehead.html" class="tsd-kind-icon">Notehead</a></li>
 								<li class="tsd-kind-class"><a href="classes/osmdcolor.html" class="tsd-kind-icon">OSMDColor</a></li>
 								<li class="tsd-kind-class"><a href="classes/osmdoptions.html" class="tsd-kind-icon">OSMDOptions</a></li>
@@ -323,7 +325,7 @@
 					<div class="tsd-signature tsd-kind-icon">IXml<wbr>Attribute<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Attr</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/772be0d/src/Common/FileIO/Xml.ts#L4">Common/FileIO/Xml.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f15ce03/src/Common/FileIO/Xml.ts#L4">Common/FileIO/Xml.ts:4</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -341,7 +343,7 @@
 					<div class="tsd-signature tsd-kind-icon">OUTLINE_<wbr>AND_<wbr>FILL_<wbr>STYLE_<wbr>DICT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><a href="enums/outlineandfillstyleenum.html" class="tsd-signature-type">OutlineAndFillStyleEnum</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Collections.Dictionary&lt;OutlineAndFillStyleEnum, string&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/772be0d/src/MusicalScore/Graphical/DrawingEnums.ts#L43">MusicalScore/Graphical/DrawingEnums.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f15ce03/src/MusicalScore/Graphical/DrawingEnums.ts#L43">MusicalScore/Graphical/DrawingEnums.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -351,7 +353,7 @@
 					<div class="tsd-signature tsd-kind-icon">unit<wbr>InPixels<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;10</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/772be0d/src/MusicalScore/Graphical/VexFlow/VexFlowMusicSheetDrawer.ts#L35">MusicalScore/Graphical/VexFlow/VexFlowMusicSheetDrawer.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f15ce03/src/MusicalScore/Graphical/VexFlow/VexFlowMusicSheetDrawer.ts#L35">MusicalScore/Graphical/VexFlow/VexFlowMusicSheetDrawer.ts:35</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -467,6 +469,9 @@
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="enums/notestate.html" class="tsd-kind-icon">Note<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/notetype.html" class="tsd-kind-icon">Note<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="enums/octaveenum.html" class="tsd-kind-icon">Octave<wbr>Enum</a>
@@ -776,6 +781,9 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/noteenumtohalftonelink.html" class="tsd-kind-icon">Note<wbr>Enum<wbr>ToHalf<wbr>Tone<wbr>Link</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/notetypehandler.html" class="tsd-kind-icon">Note<wbr>Type<wbr>Handler</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/notehead.html" class="tsd-kind-icon">Notehead</a>
