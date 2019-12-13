@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>StavePositionEnum | OpenSheetMusicDisplay</title>
+	<title>FillEmptyMeasuresWithWholeRests | OpenSheetMusicDisplay</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="stavepositionenum.html">StavePositionEnum</a>
+					<a href="fillemptymeasureswithwholerests.html">FillEmptyMeasuresWithWholeRests</a>
 				</li>
 			</ul>
-			<h1>Enumeration StavePositionEnum</h1>
+			<h1>Enumeration FillEmptyMeasuresWithWholeRests</h1>
 		</div>
 	</div>
 </header>
@@ -73,12 +73,9 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="stavepositionenum.html#above" class="tsd-kind-icon">ABOVE</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="stavepositionenum.html#begin" class="tsd-kind-icon">BEGIN</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="stavepositionenum.html#below" class="tsd-kind-icon">BELOW</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="stavepositionenum.html#end" class="tsd-kind-icon">END</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="stavepositionenum.html#left" class="tsd-kind-icon">LEFT</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="stavepositionenum.html#right" class="tsd-kind-icon">RIGHT</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="fillemptymeasureswithwholerests.html#no" class="tsd-kind-icon">No</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="fillemptymeasureswithwholerests.html#yesinvisible" class="tsd-kind-icon">Yes<wbr>Invisible</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="fillemptymeasureswithwholerests.html#yesvisible" class="tsd-kind-icon">Yes<wbr>Visible</a></li>
 							</ul>
 						</section>
 					</div>
@@ -87,62 +84,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="above" class="tsd-anchor"></a>
-					<h3>ABOVE</h3>
-					<div class="tsd-signature tsd-kind-icon">ABOVE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;3</span></div>
+					<a name="no" class="tsd-anchor"></a>
+					<h3>No</h3>
+					<div class="tsd-signature tsd-kind-icon">No<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0afba88/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L1145">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:1145</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0afba88/src/OpenSheetMusicDisplay/OSMDOptions.ts#L122">OpenSheetMusicDisplay/OSMDOptions.ts:122</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="begin" class="tsd-anchor"></a>
-					<h3>BEGIN</h3>
-					<div class="tsd-signature tsd-kind-icon">BEGIN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;5</span></div>
+					<a name="yesinvisible" class="tsd-anchor"></a>
+					<h3>Yes<wbr>Invisible</h3>
+					<div class="tsd-signature tsd-kind-icon">Yes<wbr>Invisible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0afba88/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L1147">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:1147</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0afba88/src/OpenSheetMusicDisplay/OSMDOptions.ts#L124">OpenSheetMusicDisplay/OSMDOptions.ts:124</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="below" class="tsd-anchor"></a>
-					<h3>BELOW</h3>
-					<div class="tsd-signature tsd-kind-icon">BELOW<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;4</span></div>
+					<a name="yesvisible" class="tsd-anchor"></a>
+					<h3>Yes<wbr>Visible</h3>
+					<div class="tsd-signature tsd-kind-icon">Yes<wbr>Visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0afba88/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L1146">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:1146</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="end" class="tsd-anchor"></a>
-					<h3>END</h3>
-					<div class="tsd-signature tsd-kind-icon">END<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;6</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0afba88/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L1148">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:1148</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="left" class="tsd-anchor"></a>
-					<h3>LEFT</h3>
-					<div class="tsd-signature tsd-kind-icon">LEFT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0afba88/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L1143">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:1143</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="right" class="tsd-anchor"></a>
-					<h3>RIGHT</h3>
-					<div class="tsd-signature tsd-kind-icon">RIGHT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;2</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0afba88/src/MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts#L1144">MusicalScore/Graphical/VexFlow/VexFlowMeasure.ts:1144</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0afba88/src/OpenSheetMusicDisplay/OSMDOptions.ts#L123">OpenSheetMusicDisplay/OSMDOptions.ts:123</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -161,25 +128,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum">
-						<a href="stavepositionenum.html" class="tsd-kind-icon">Stave<wbr>Position<wbr>Enum</a>
+						<a href="fillemptymeasureswithwholerests.html" class="tsd-kind-icon">Fill<wbr>Empty<wbr>Measures<wbr>With<wbr>Whole<wbr>Rests</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="stavepositionenum.html#above" class="tsd-kind-icon">ABOVE</a>
+								<a href="fillemptymeasureswithwholerests.html#no" class="tsd-kind-icon">No</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="stavepositionenum.html#begin" class="tsd-kind-icon">BEGIN</a>
+								<a href="fillemptymeasureswithwholerests.html#yesinvisible" class="tsd-kind-icon">Yes<wbr>Invisible</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="stavepositionenum.html#below" class="tsd-kind-icon">BELOW</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="stavepositionenum.html#end" class="tsd-kind-icon">END</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="stavepositionenum.html#left" class="tsd-kind-icon">LEFT</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="stavepositionenum.html#right" class="tsd-kind-icon">RIGHT</a>
+								<a href="fillemptymeasureswithwholerests.html#yesvisible" class="tsd-kind-icon">Yes<wbr>Visible</a>
 							</li>
 						</ul>
 					</li>
