@@ -12,4 +12,4 @@ MusicXML is the de facto standard for sharing sheet music on the internet. VexFl
 
 OpenSheetMusicDisplay brings the two together and offers an open source turnkey solution for your digital sheet music project.
 
-Please visit our new website [www.opensheetmusicdisplay.org](www.opensheetmusicdisplay.org).
+Please visit our new website [www.opensheetmusicdisplay.org](https://www.opensheetmusicdisplay.org).
