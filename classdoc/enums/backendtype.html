@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ArpeggioType | OpenSheetMusicDisplay</title>
+	<title>BackendType | OpenSheetMusicDisplay</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,23 +56,16 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="arpeggiotype.html">ArpeggioType</a>
+					<a href="backendtype.html">BackendType</a>
 				</li>
 			</ul>
-			<h1>Enumeration ArpeggioType</h1>
+			<h1>Enumeration BackendType</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Corresponds to Vex.Flow.Stroke.Type for now. But we don&#39;t want VexFlow as a dependency here.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -80,13 +73,8 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="arpeggiotype.html#arpeggio_directionless" class="tsd-kind-icon">ARPEGGIO_<wbr>DIRECTIONLESS</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="arpeggiotype.html#brush_down" class="tsd-kind-icon">BRUSH_<wbr>DOWN</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="arpeggiotype.html#brush_up" class="tsd-kind-icon">BRUSH_<wbr>UP</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="arpeggiotype.html#rasquedo_down" class="tsd-kind-icon">RASQUEDO_<wbr>DOWN</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="arpeggiotype.html#rasquedo_up" class="tsd-kind-icon">RASQUEDO_<wbr>UP</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="arpeggiotype.html#roll_down" class="tsd-kind-icon">ROLL_<wbr>DOWN</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="arpeggiotype.html#roll_up" class="tsd-kind-icon">ROLL_<wbr>UP</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="backendtype.html#canvas" class="tsd-kind-icon">Canvas</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="backendtype.html#svg" class="tsd-kind-icon">SVG</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,72 +83,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="arpeggio_directionless" class="tsd-anchor"></a>
-					<h3>ARPEGGIO_<wbr>DIRECTIONLESS</h3>
-					<div class="tsd-signature tsd-kind-icon">ARPEGGIO_<wbr>DIRECTIONLESS<span class="tsd-signature-symbol">:</span></div>
+					<a name="canvas" class="tsd-anchor"></a>
+					<h3>Canvas</h3>
+					<div class="tsd-signature tsd-kind-icon">Canvas<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/VoiceData/Arpeggio.ts#L29">MusicalScore/VoiceData/Arpeggio.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/OpenSheetMusicDisplay/OSMDOptions.ts#L142">OpenSheetMusicDisplay/OSMDOptions.ts:142</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="brush_down" class="tsd-anchor"></a>
-					<h3>BRUSH_<wbr>DOWN</h3>
-					<div class="tsd-signature tsd-kind-icon">BRUSH_<wbr>DOWN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
+					<a name="svg" class="tsd-anchor"></a>
+					<h3>SVG</h3>
+					<div class="tsd-signature tsd-kind-icon">SVG<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/VoiceData/Arpeggio.ts#L23">MusicalScore/VoiceData/Arpeggio.ts:23</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="brush_up" class="tsd-anchor"></a>
-					<h3>BRUSH_<wbr>UP</h3>
-					<div class="tsd-signature tsd-kind-icon">BRUSH_<wbr>UP<span class="tsd-signature-symbol">:</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/VoiceData/Arpeggio.ts#L24">MusicalScore/VoiceData/Arpeggio.ts:24</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="rasquedo_down" class="tsd-anchor"></a>
-					<h3>RASQUEDO_<wbr>DOWN</h3>
-					<div class="tsd-signature tsd-kind-icon">RASQUEDO_<wbr>DOWN<span class="tsd-signature-symbol">:</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/VoiceData/Arpeggio.ts#L27">MusicalScore/VoiceData/Arpeggio.ts:27</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="rasquedo_up" class="tsd-anchor"></a>
-					<h3>RASQUEDO_<wbr>UP</h3>
-					<div class="tsd-signature tsd-kind-icon">RASQUEDO_<wbr>UP<span class="tsd-signature-symbol">:</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/VoiceData/Arpeggio.ts#L28">MusicalScore/VoiceData/Arpeggio.ts:28</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="roll_down" class="tsd-anchor"></a>
-					<h3>ROLL_<wbr>DOWN</h3>
-					<div class="tsd-signature tsd-kind-icon">ROLL_<wbr>DOWN<span class="tsd-signature-symbol">:</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/VoiceData/Arpeggio.ts#L25">MusicalScore/VoiceData/Arpeggio.ts:25</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="roll_up" class="tsd-anchor"></a>
-					<h3>ROLL_<wbr>UP</h3>
-					<div class="tsd-signature tsd-kind-icon">ROLL_<wbr>UP<span class="tsd-signature-symbol">:</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/VoiceData/Arpeggio.ts#L26">MusicalScore/VoiceData/Arpeggio.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/OpenSheetMusicDisplay/OSMDOptions.ts#L141">OpenSheetMusicDisplay/OSMDOptions.ts:141</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -179,28 +117,13 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum">
-						<a href="arpeggiotype.html" class="tsd-kind-icon">Arpeggio<wbr>Type</a>
+						<a href="backendtype.html" class="tsd-kind-icon">Backend<wbr>Type</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="arpeggiotype.html#arpeggio_directionless" class="tsd-kind-icon">ARPEGGIO_<wbr>DIRECTIONLESS</a>
+								<a href="backendtype.html#canvas" class="tsd-kind-icon">Canvas</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="arpeggiotype.html#brush_down" class="tsd-kind-icon">BRUSH_<wbr>DOWN</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="arpeggiotype.html#brush_up" class="tsd-kind-icon">BRUSH_<wbr>UP</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="arpeggiotype.html#rasquedo_down" class="tsd-kind-icon">RASQUEDO_<wbr>DOWN</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="arpeggiotype.html#rasquedo_up" class="tsd-kind-icon">RASQUEDO_<wbr>UP</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="arpeggiotype.html#roll_down" class="tsd-kind-icon">ROLL_<wbr>DOWN</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="arpeggiotype.html#roll_up" class="tsd-kind-icon">ROLL_<wbr>UP</a>
+								<a href="backendtype.html#svg" class="tsd-kind-icon">SVG</a>
 							</li>
 						</ul>
 					</li>

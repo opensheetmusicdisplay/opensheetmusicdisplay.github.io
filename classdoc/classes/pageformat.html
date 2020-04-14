@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Tie | OpenSheetMusicDisplay</title>
+	<title>PageFormat | OpenSheetMusicDisplay</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,28 +56,21 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="tie.html">Tie</a>
+					<a href="pageformat.html">PageFormat</a>
 				</li>
 			</ul>
-			<h1>Class Tie</h1>
+			<h1>Class PageFormat</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>A <a href="tie.html">Tie</a> connects two notes of the same pitch and name, indicating that they have to be played as a single note.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Tie</span>
+						<span class="target">PageFormat</span>
 					</li>
 				</ul>
 			</section>
@@ -88,28 +81,29 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="tie.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="pageformat.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="tie.html#notes" class="tsd-kind-icon">notes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pageformat.html#height" class="tsd-kind-icon">height</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pageformat.html#idstring" class="tsd-kind-icon">id<wbr>String</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pageformat.html#width" class="tsd-kind-icon">width</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="tie.html#duration" class="tsd-kind-icon">Duration</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="tie.html#notes-1" class="tsd-kind-icon">Notes</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="tie.html#pitch" class="tsd-kind-icon">Pitch</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="tie.html#startnote" class="tsd-kind-icon">Start<wbr>Note</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="pageformat.html#isundefined" class="tsd-kind-icon">Is<wbr>Undefined</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="pageformat.html#aspectratio" class="tsd-kind-icon">aspect<wbr>Ratio</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-static"><a href="pageformat.html#undefinedpageformat" class="tsd-kind-icon">Undefined<wbr>Page<wbr>Format</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="tie.html#addnote" class="tsd-kind-icon">Add<wbr>Note</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="pageformat.html#equals" class="tsd-kind-icon">Equals</a></li>
 							</ul>
 						</section>
 					</div>
@@ -121,35 +115,61 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Tie<span class="tsd-signature-symbol">(</span>note<span class="tsd-signature-symbol">: </span><a href="note.html" class="tsd-signature-type">Note</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="tie.html" class="tsd-signature-type">Tie</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Page<wbr>Format<span class="tsd-signature-symbol">(</span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, idString<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pageformat.html" class="tsd-signature-type">PageFormat</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/VoiceData/Tie.ts#L8">MusicalScore/VoiceData/Tie.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/EngravingRules.ts#L1650">MusicalScore/Graphical/EngravingRules.ts:1650</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>note: <a href="note.html" class="tsd-signature-type">Note</a></h5>
+									<h5>width: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>height: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> idString: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;noIdStringGiven&quot;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="tie.html" class="tsd-signature-type">Tie</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="pageformat.html" class="tsd-signature-type">PageFormat</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="notes" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> notes</h3>
-					<div class="tsd-signature tsd-kind-icon">notes<span class="tsd-signature-symbol">:</span> <a href="note.html" class="tsd-signature-type">Note</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="height" class="tsd-anchor"></a>
+					<h3>height</h3>
+					<div class="tsd-signature tsd-kind-icon">height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/VoiceData/Tie.ts#L14">MusicalScore/VoiceData/Tie.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/EngravingRules.ts#L1657">MusicalScore/Graphical/EngravingRules.ts:1657</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="idstring" class="tsd-anchor"></a>
+					<h3>id<wbr>String</h3>
+					<div class="tsd-signature tsd-kind-icon">id<wbr>String<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/EngravingRules.ts#L1658">MusicalScore/Graphical/EngravingRules.ts:1658</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="width" class="tsd-anchor"></a>
+					<h3>width</h3>
+					<div class="tsd-signature tsd-kind-icon">width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/EngravingRules.ts#L1656">MusicalScore/Graphical/EngravingRules.ts:1656</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -157,70 +177,58 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="duration" class="tsd-anchor"></a>
-					<h3>Duration</h3>
+					<a name="isundefined" class="tsd-anchor"></a>
+					<h3>Is<wbr>Undefined</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> Duration<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fraction.html" class="tsd-signature-type">Fraction</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> IsUndefined<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/VoiceData/Tie.ts#L24">MusicalScore/VoiceData/Tie.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/EngravingRules.ts#L1667">MusicalScore/Graphical/EngravingRules.ts:1667</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="fraction.html" class="tsd-signature-type">Fraction</a></h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Undefined page format: use default page format.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="notes-1" class="tsd-anchor"></a>
-					<h3>Notes</h3>
+					<a name="aspectratio" class="tsd-anchor"></a>
+					<h3>aspect<wbr>Ratio</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> Notes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="note.html" class="tsd-signature-type">Note</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> aspectRatio<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/VoiceData/Tie.ts#L16">MusicalScore/VoiceData/Tie.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/EngravingRules.ts#L1659">MusicalScore/Graphical/EngravingRules.ts:1659</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="note.html" class="tsd-signature-type">Note</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="pitch" class="tsd-anchor"></a>
-					<h3>Pitch</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> Pitch<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pitch.html" class="tsd-signature-type">Pitch</a></li>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
+					<a name="undefinedpageformat" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Undefined<wbr>Page<wbr>Format</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> UndefinedPageFormat<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pageformat.html" class="tsd-signature-type">PageFormat</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/VoiceData/Tie.ts#L32">MusicalScore/VoiceData/Tie.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/EngravingRules.ts#L1671">MusicalScore/Graphical/EngravingRules.ts:1671</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="pitch.html" class="tsd-signature-type">Pitch</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="startnote" class="tsd-anchor"></a>
-					<h3>Start<wbr>Note</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> StartNote<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="note.html" class="tsd-signature-type">Note</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/VoiceData/Tie.ts#L20">MusicalScore/VoiceData/Tie.ts:20</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="note.html" class="tsd-signature-type">Note</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="pageformat.html" class="tsd-signature-type">PageFormat</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -228,25 +236,25 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="addnote" class="tsd-anchor"></a>
-					<h3>Add<wbr>Note</h3>
+					<a name="equals" class="tsd-anchor"></a>
+					<h3>Equals</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">Add<wbr>Note<span class="tsd-signature-symbol">(</span>note<span class="tsd-signature-symbol">: </span><a href="note.html" class="tsd-signature-type">Note</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">Equals<span class="tsd-signature-symbol">(</span>otherPageFormat<span class="tsd-signature-symbol">: </span><a href="pageformat.html" class="tsd-signature-type">PageFormat</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/VoiceData/Tie.ts#L36">MusicalScore/VoiceData/Tie.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/EngravingRules.ts#L1675">MusicalScore/Graphical/EngravingRules.ts:1675</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>note: <a href="note.html" class="tsd-signature-type">Note</a></h5>
+									<h5>otherPageFormat: <a href="pageformat.html" class="tsd-signature-type">PageFormat</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -265,28 +273,31 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class">
-						<a href="tie.html" class="tsd-kind-icon">Tie</a>
+						<a href="pageformat.html" class="tsd-kind-icon">Page<wbr>Format</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="tie.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="pageformat.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="tie.html#notes" class="tsd-kind-icon">notes</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="pageformat.html#height" class="tsd-kind-icon">height</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="tie.html#duration" class="tsd-kind-icon">Duration</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="pageformat.html#idstring" class="tsd-kind-icon">id<wbr>String</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="tie.html#notes-1" class="tsd-kind-icon">Notes</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="tie.html#pitch" class="tsd-kind-icon">Pitch</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="pageformat.html#width" class="tsd-kind-icon">width</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="tie.html#startnote" class="tsd-kind-icon">Start<wbr>Note</a>
+								<a href="pageformat.html#isundefined" class="tsd-kind-icon">Is<wbr>Undefined</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="pageformat.html#aspectratio" class="tsd-kind-icon">aspect<wbr>Ratio</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
+								<a href="pageformat.html#undefinedpageformat" class="tsd-kind-icon">Undefined<wbr>Page<wbr>Format</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="tie.html#addnote" class="tsd-kind-icon">Add<wbr>Note</a>
+								<a href="pageformat.html#equals" class="tsd-kind-icon">Equals</a>
 							</li>
 						</ul>
 					</li>
