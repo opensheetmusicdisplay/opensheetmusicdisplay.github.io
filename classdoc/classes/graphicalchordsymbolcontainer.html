@@ -95,6 +95,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="graphicalchordsymbolcontainer.html#boundingbox" class="tsd-kind-icon">bounding<wbr>Box</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="graphicalchordsymbolcontainer.html#chordsymbolcontainer" class="tsd-kind-icon">chord<wbr>Symbol<wbr>Container</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="graphicalchordsymbolcontainer.html#graphicallabel" class="tsd-kind-icon">graphical<wbr>Label</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="graphicalchordsymbolcontainer.html#rules" class="tsd-kind-icon">rules</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -120,13 +121,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Graphical<wbr>Chord<wbr>Symbol<wbr>Container<span class="tsd-signature-symbol">(</span>chordSymbolContainer<span class="tsd-signature-symbol">: </span><a href="chordsymbolcontainer.html" class="tsd-signature-type">ChordSymbolContainer</a>, parent<span class="tsd-signature-symbol">: </span><a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a>, textHeight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, transposeHalftones<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="graphicalchordsymbolcontainer.html" class="tsd-signature-type">GraphicalChordSymbolContainer</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Graphical<wbr>Chord<wbr>Symbol<wbr>Container<span class="tsd-signature-symbol">(</span>chordSymbolContainer<span class="tsd-signature-symbol">: </span><a href="chordsymbolcontainer.html" class="tsd-signature-type">ChordSymbolContainer</a>, parent<span class="tsd-signature-symbol">: </span><a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a>, textHeight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, transposeHalftones<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, rules<span class="tsd-signature-symbol">: </span><a href="engravingrules.html" class="tsd-signature-type">EngravingRules</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="graphicalchordsymbolcontainer.html" class="tsd-signature-type">GraphicalChordSymbolContainer</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/GraphicalChordSymbolContainer.ts#L11">MusicalScore/Graphical/GraphicalChordSymbolContainer.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/GraphicalChordSymbolContainer.ts#L13">MusicalScore/Graphical/GraphicalChordSymbolContainer.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -143,6 +144,9 @@
 								<li>
 									<h5>transposeHalftones: <span class="tsd-signature-type">number</span></h5>
 								</li>
+								<li>
+									<h5>rules: <a href="engravingrules.html" class="tsd-signature-type">EngravingRules</a></h5>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="graphicalchordsymbolcontainer.html" class="tsd-signature-type">GraphicalChordSymbolContainer</a></h4>
 						</li>
@@ -156,9 +160,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> bounding<wbr>Box</h3>
 					<div class="tsd-signature tsd-kind-icon">bounding<wbr>Box<span class="tsd-signature-symbol">:</span> <a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="graphicalvoiceentry.html">GraphicalVoiceEntry</a>.<a href="graphicalvoiceentry.html#boundingbox">boundingBox</a></p>
+						<p>Inherited from <a href="abstractgraphicalinstruction.html">AbstractGraphicalInstruction</a>.<a href="abstractgraphicalinstruction.html#boundingbox">boundingBox</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/GraphicalObject.ts#L5">MusicalScore/Graphical/GraphicalObject.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/GraphicalObject.ts#L5">MusicalScore/Graphical/GraphicalObject.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -168,7 +172,7 @@
 					<div class="tsd-signature tsd-kind-icon">chord<wbr>Symbol<wbr>Container<span class="tsd-signature-symbol">:</span> <a href="chordsymbolcontainer.html" class="tsd-signature-type">ChordSymbolContainer</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/GraphicalChordSymbolContainer.ts#L10">MusicalScore/Graphical/GraphicalChordSymbolContainer.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/GraphicalChordSymbolContainer.ts#L11">MusicalScore/Graphical/GraphicalChordSymbolContainer.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -178,7 +182,17 @@
 					<div class="tsd-signature tsd-kind-icon">graphical<wbr>Label<span class="tsd-signature-symbol">:</span> <a href="graphicallabel.html" class="tsd-signature-type">GraphicalLabel</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/GraphicalChordSymbolContainer.ts#L11">MusicalScore/Graphical/GraphicalChordSymbolContainer.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/GraphicalChordSymbolContainer.ts#L12">MusicalScore/Graphical/GraphicalChordSymbolContainer.ts:12</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="rules" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> rules</h3>
+					<div class="tsd-signature tsd-kind-icon">rules<span class="tsd-signature-symbol">:</span> <a href="engravingrules.html" class="tsd-signature-type">EngravingRules</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/GraphicalChordSymbolContainer.ts#L13">MusicalScore/Graphical/GraphicalChordSymbolContainer.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -195,7 +209,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/GraphicalChordSymbolContainer.ts#L18">MusicalScore/Graphical/GraphicalChordSymbolContainer.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/GraphicalChordSymbolContainer.ts#L23">MusicalScore/Graphical/GraphicalChordSymbolContainer.ts:23</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="chordsymbolcontainer.html" class="tsd-signature-type">ChordSymbolContainer</a></h4>
@@ -212,7 +226,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/GraphicalChordSymbolContainer.ts#L21">MusicalScore/Graphical/GraphicalChordSymbolContainer.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/GraphicalChordSymbolContainer.ts#L26">MusicalScore/Graphical/GraphicalChordSymbolContainer.ts:26</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="graphicallabel.html" class="tsd-signature-type">GraphicalLabel</a></h4>
@@ -229,18 +243,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="graphicalvoiceentry.html">GraphicalVoiceEntry</a>.<a href="graphicalvoiceentry.html#positionandshape">PositionAndShape</a></p>
+								<p>Inherited from <a href="abstractgraphicalinstruction.html">AbstractGraphicalInstruction</a>.<a href="abstractgraphicalinstruction.html#positionandshape">PositionAndShape</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/GraphicalObject.ts#L7">MusicalScore/Graphical/GraphicalObject.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/GraphicalObject.ts#L7">MusicalScore/Graphical/GraphicalObject.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="graphicalvoiceentry.html">GraphicalVoiceEntry</a>.<a href="graphicalvoiceentry.html#positionandshape">PositionAndShape</a></p>
+								<p>Inherited from <a href="abstractgraphicalinstruction.html">AbstractGraphicalInstruction</a>.<a href="abstractgraphicalinstruction.html#positionandshape">PositionAndShape</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/GraphicalObject.ts#L11">MusicalScore/Graphical/GraphicalObject.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/GraphicalObject.ts#L11">MusicalScore/Graphical/GraphicalObject.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -266,7 +280,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/GraphicalChordSymbolContainer.ts#L24">MusicalScore/Graphical/GraphicalChordSymbolContainer.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/GraphicalChordSymbolContainer.ts#L29">MusicalScore/Graphical/GraphicalChordSymbolContainer.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -310,6 +324,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="graphicalchordsymbolcontainer.html#graphicallabel" class="tsd-kind-icon">graphical<wbr>Label</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="graphicalchordsymbolcontainer.html#rules" class="tsd-kind-icon">rules</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="graphicalchordsymbolcontainer.html#getchordsymbolcontainer" class="tsd-kind-icon">Get<wbr>Chord<wbr>Symbol<wbr>Container</a>

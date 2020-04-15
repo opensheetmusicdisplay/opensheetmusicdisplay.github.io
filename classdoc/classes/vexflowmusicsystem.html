@@ -105,6 +105,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="vexflowmusicsystem.html#needstoberedrawn" class="tsd-kind-icon">needs<wbr>ToBe<wbr>Redrawn</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="vexflowmusicsystem.html#objectstoredraw" class="tsd-kind-icon">objects<wbr>ToRedraw</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="vexflowmusicsystem.html#parent" class="tsd-kind-icon">parent</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="vexflowmusicsystem.html#rules" class="tsd-kind-icon">rules</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="vexflowmusicsystem.html#stafflines" class="tsd-kind-icon">staff<wbr>Lines</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="vexflowmusicsystem.html#systemlines" class="tsd-kind-icon">system<wbr>Lines</a></li>
 							</ul>
@@ -163,20 +164,23 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Vex<wbr>Flow<wbr>Music<wbr>System<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vexflowmusicsystem.html" class="tsd-signature-type">VexFlowMusicSystem</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Vex<wbr>Flow<wbr>Music<wbr>System<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, rules<span class="tsd-signature-symbol">: </span><a href="engravingrules.html" class="tsd-signature-type">EngravingRules</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vexflowmusicsystem.html" class="tsd-signature-type">VexFlowMusicSystem</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts#L15">MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts#L15">MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts:15</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>id: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>rules: <a href="engravingrules.html" class="tsd-signature-type">EngravingRules</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="vexflowmusicsystem.html" class="tsd-signature-type">VexFlowMusicSystem</a></h4>
@@ -191,9 +195,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> bounding<wbr>Box</h3>
 					<div class="tsd-signature tsd-kind-icon">bounding<wbr>Box<span class="tsd-signature-symbol">:</span> <a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="graphicalvoiceentry.html">GraphicalVoiceEntry</a>.<a href="graphicalvoiceentry.html#boundingbox">boundingBox</a></p>
+						<p>Inherited from <a href="abstractgraphicalinstruction.html">AbstractGraphicalInstruction</a>.<a href="abstractgraphicalinstruction.html#boundingbox">boundingBox</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/GraphicalObject.ts#L5">MusicalScore/Graphical/GraphicalObject.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/GraphicalObject.ts#L5">MusicalScore/Graphical/GraphicalObject.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -202,9 +206,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> graphical<wbr>Comments</h3>
 					<div class="tsd-signature tsd-kind-icon">graphical<wbr>Comments<span class="tsd-signature-symbol">:</span> <a href="graphicalcomment.html" class="tsd-signature-type">GraphicalComment</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#graphicalcomments">graphicalComments</a></p>
+						<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#graphicalcomments">graphicalComments</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L44">MusicalScore/Graphical/MusicSystem.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L45">MusicalScore/Graphical/MusicSystem.ts:45</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -213,9 +217,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> graphical<wbr>Marked<wbr>Areas</h3>
 					<div class="tsd-signature tsd-kind-icon">graphical<wbr>Marked<wbr>Areas<span class="tsd-signature-symbol">:</span> <a href="graphicalmarkedarea.html" class="tsd-signature-type">GraphicalMarkedArea</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#graphicalmarkedareas">graphicalMarkedAreas</a></p>
+						<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#graphicalmarkedareas">graphicalMarkedAreas</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L43">MusicalScore/Graphical/MusicSystem.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L44">MusicalScore/Graphical/MusicSystem.ts:44</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -224,9 +228,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> graphical<wbr>Measures</h3>
 					<div class="tsd-signature tsd-kind-icon">graphical<wbr>Measures<span class="tsd-signature-symbol">:</span> <a href="graphicalmeasure.html" class="tsd-signature-type">GraphicalMeasure</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#graphicalmeasures">graphicalMeasures</a></p>
+						<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#graphicalmeasures">graphicalMeasures</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L32">MusicalScore/Graphical/MusicSystem.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L33">MusicalScore/Graphical/MusicSystem.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -235,9 +239,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> group<wbr>Brackets</h3>
 					<div class="tsd-signature tsd-kind-icon">group<wbr>Brackets<span class="tsd-signature-symbol">:</span> <a href="graphicalobject.html" class="tsd-signature-type">GraphicalObject</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#groupbrackets">groupBrackets</a></p>
+						<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#groupbrackets">groupBrackets</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L42">MusicalScore/Graphical/MusicSystem.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L43">MusicalScore/Graphical/MusicSystem.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -246,9 +250,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> id</h3>
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#id">id</a></p>
+						<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#id">id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L30">MusicalScore/Graphical/MusicSystem.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L31">MusicalScore/Graphical/MusicSystem.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -257,9 +261,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> instrument<wbr>Brackets</h3>
 					<div class="tsd-signature tsd-kind-icon">instrument<wbr>Brackets<span class="tsd-signature-symbol">:</span> <a href="graphicalobject.html" class="tsd-signature-type">GraphicalObject</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#instrumentbrackets">instrumentBrackets</a></p>
+						<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#instrumentbrackets">instrumentBrackets</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L41">MusicalScore/Graphical/MusicSystem.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L42">MusicalScore/Graphical/MusicSystem.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -268,9 +272,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> labels</h3>
 					<div class="tsd-signature tsd-kind-icon">labels<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><a href="instrument.html" class="tsd-signature-type">Instrument</a><span class="tsd-signature-symbol">, </span><a href="graphicallabel.html" class="tsd-signature-type">GraphicalLabel</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Dictionary&lt;Instrument, GraphicalLabel&gt;()</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#labels">labels</a></p>
+						<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#labels">labels</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L37">MusicalScore/Graphical/MusicSystem.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L38">MusicalScore/Graphical/MusicSystem.ts:38</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -286,9 +290,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> max<wbr>Label<wbr>Length</h3>
 					<div class="tsd-signature tsd-kind-icon">max<wbr>Label<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#maxlabellength">maxLabelLength</a></p>
+						<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#maxlabellength">maxLabelLength</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L39">MusicalScore/Graphical/MusicSystem.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L40">MusicalScore/Graphical/MusicSystem.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -297,9 +301,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> measure<wbr>Number<wbr>Labels</h3>
 					<div class="tsd-signature tsd-kind-icon">measure<wbr>Number<wbr>Labels<span class="tsd-signature-symbol">:</span> <a href="graphicallabel.html" class="tsd-signature-type">GraphicalLabel</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#measurenumberlabels">measureNumberLabels</a></p>
+						<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#measurenumberlabels">measureNumberLabels</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L38">MusicalScore/Graphical/MusicSystem.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L39">MusicalScore/Graphical/MusicSystem.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -308,9 +312,9 @@
 					<h3>needs<wbr>ToBe<wbr>Redrawn</h3>
 					<div class="tsd-signature tsd-kind-icon">needs<wbr>ToBe<wbr>Redrawn<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#needstoberedrawn">needsToBeRedrawn</a></p>
+						<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#needstoberedrawn">needsToBeRedrawn</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L28">MusicalScore/Graphical/MusicSystem.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L28">MusicalScore/Graphical/MusicSystem.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -319,9 +323,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> objects<wbr>ToRedraw</h3>
 					<div class="tsd-signature tsd-kind-icon">objects<wbr>ToRedraw<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#objectstoredraw">objectsToRedraw</a></p>
+						<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#objectstoredraw">objectsToRedraw</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L40">MusicalScore/Graphical/MusicSystem.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L41">MusicalScore/Graphical/MusicSystem.ts:41</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -330,9 +334,20 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> parent</h3>
 					<div class="tsd-signature tsd-kind-icon">parent<span class="tsd-signature-symbol">:</span> <a href="graphicalmusicpage.html" class="tsd-signature-type">GraphicalMusicPage</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#parent">parent</a></p>
+						<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#parent">parent</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L29">MusicalScore/Graphical/MusicSystem.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L30">MusicalScore/Graphical/MusicSystem.ts:30</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="rules" class="tsd-anchor"></a>
+					<h3>rules</h3>
+					<div class="tsd-signature tsd-kind-icon">rules<span class="tsd-signature-symbol">:</span> <a href="engravingrules.html" class="tsd-signature-type">EngravingRules</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#rules">rules</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L29">MusicalScore/Graphical/MusicSystem.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -341,9 +356,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> staff<wbr>Lines</h3>
 					<div class="tsd-signature tsd-kind-icon">staff<wbr>Lines<span class="tsd-signature-symbol">:</span> <a href="staffline.html" class="tsd-signature-type">StaffLine</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#stafflines">staffLines</a></p>
+						<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#stafflines">staffLines</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L31">MusicalScore/Graphical/MusicSystem.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L32">MusicalScore/Graphical/MusicSystem.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -352,9 +367,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> system<wbr>Lines</h3>
 					<div class="tsd-signature tsd-kind-icon">system<wbr>Lines<span class="tsd-signature-symbol">:</span> <a href="systemline.html" class="tsd-signature-type">SystemLine</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#systemlines">systemLines</a></p>
+						<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#systemlines">systemLines</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L45">MusicalScore/Graphical/MusicSystem.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L46">MusicalScore/Graphical/MusicSystem.ts:46</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -370,9 +385,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#graphicalcomments-1">GraphicalComments</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#graphicalcomments-1">GraphicalComments</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L108">MusicalScore/Graphical/MusicSystem.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L109">MusicalScore/Graphical/MusicSystem.ts:109</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="graphicalcomment.html" class="tsd-signature-type">GraphicalComment</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -388,9 +403,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#graphicalmarkedareas-1">GraphicalMarkedAreas</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#graphicalmarkedareas-1">GraphicalMarkedAreas</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L104">MusicalScore/Graphical/MusicSystem.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L105">MusicalScore/Graphical/MusicSystem.ts:105</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="graphicalmarkedarea.html" class="tsd-signature-type">GraphicalMarkedArea</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -406,9 +421,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#graphicalmeasures-1">GraphicalMeasures</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#graphicalmeasures-1">GraphicalMeasures</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L80">MusicalScore/Graphical/MusicSystem.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L81">MusicalScore/Graphical/MusicSystem.ts:81</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="graphicalmeasure.html" class="tsd-signature-type">GraphicalMeasure</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -424,9 +439,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#groupbrackets-1">GroupBrackets</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#groupbrackets-1">GroupBrackets</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L100">MusicalScore/Graphical/MusicSystem.ts:100</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L101">MusicalScore/Graphical/MusicSystem.ts:101</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="graphicalobject.html" class="tsd-signature-type">GraphicalObject</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -442,9 +457,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#id-1">Id</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#id-1">Id</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L116">MusicalScore/Graphical/MusicSystem.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L117">MusicalScore/Graphical/MusicSystem.ts:117</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -460,9 +475,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#instrumentbrackets-1">InstrumentBrackets</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#instrumentbrackets-1">InstrumentBrackets</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L96">MusicalScore/Graphical/MusicSystem.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L97">MusicalScore/Graphical/MusicSystem.ts:97</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="graphicalobject.html" class="tsd-signature-type">GraphicalObject</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -478,9 +493,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#labels-1">Labels</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#labels-1">Labels</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L88">MusicalScore/Graphical/MusicSystem.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L89">MusicalScore/Graphical/MusicSystem.ts:89</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="graphicallabel.html" class="tsd-signature-type">GraphicalLabel</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -496,9 +511,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#measurenumberlabels-1">MeasureNumberLabels</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#measurenumberlabels-1">MeasureNumberLabels</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L84">MusicalScore/Graphical/MusicSystem.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L85">MusicalScore/Graphical/MusicSystem.ts:85</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="graphicallabel.html" class="tsd-signature-type">GraphicalLabel</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -514,9 +529,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#nextsystem">NextSystem</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#nextsystem">NextSystem</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L71">MusicalScore/Graphical/MusicSystem.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L72">MusicalScore/Graphical/MusicSystem.ts:72</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="musicsystem.html" class="tsd-signature-type">MusicSystem</a></h4>
@@ -532,9 +547,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#objectstoredraw-1">ObjectsToRedraw</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#objectstoredraw-1">ObjectsToRedraw</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L92">MusicalScore/Graphical/MusicSystem.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L93">MusicalScore/Graphical/MusicSystem.ts:93</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -551,18 +566,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#parent-1">Parent</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#parent-1">Parent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L54">MusicalScore/Graphical/MusicSystem.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L55">MusicalScore/Graphical/MusicSystem.ts:55</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="graphicalmusicpage.html" class="tsd-signature-type">GraphicalMusicPage</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#parent-1">Parent</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#parent-1">Parent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L58">MusicalScore/Graphical/MusicSystem.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L59">MusicalScore/Graphical/MusicSystem.ts:59</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -585,18 +600,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="graphicalvoiceentry.html">GraphicalVoiceEntry</a>.<a href="graphicalvoiceentry.html#positionandshape">PositionAndShape</a></p>
+								<p>Inherited from <a href="abstractgraphicalinstruction.html">AbstractGraphicalInstruction</a>.<a href="abstractgraphicalinstruction.html#positionandshape">PositionAndShape</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/GraphicalObject.ts#L7">MusicalScore/Graphical/GraphicalObject.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/GraphicalObject.ts#L7">MusicalScore/Graphical/GraphicalObject.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="graphicalvoiceentry.html">GraphicalVoiceEntry</a>.<a href="graphicalvoiceentry.html#positionandshape">PositionAndShape</a></p>
+								<p>Inherited from <a href="abstractgraphicalinstruction.html">AbstractGraphicalInstruction</a>.<a href="abstractgraphicalinstruction.html#positionandshape">PositionAndShape</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/GraphicalObject.ts#L11">MusicalScore/Graphical/GraphicalObject.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/GraphicalObject.ts#L11">MusicalScore/Graphical/GraphicalObject.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -618,9 +633,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#stafflines-1">StaffLines</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#stafflines-1">StaffLines</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L76">MusicalScore/Graphical/MusicSystem.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L77">MusicalScore/Graphical/MusicSystem.ts:77</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="staffline.html" class="tsd-signature-type">StaffLine</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -636,9 +651,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#systemlines-1">SystemLines</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#systemlines-1">SystemLines</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L112">MusicalScore/Graphical/MusicSystem.ts:112</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L113">MusicalScore/Graphical/MusicSystem.ts:113</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="systemline.html" class="tsd-signature-type">SystemLine</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -657,9 +672,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#addgraphicalmeasures">AddGraphicalMeasures</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#addgraphicalmeasures">AddGraphicalMeasures</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L201">MusicalScore/Graphical/MusicSystem.ts:201</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L202">MusicalScore/Graphical/MusicSystem.ts:202</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -681,9 +696,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#getleftborderabsolutexposition">GetLeftBorderAbsoluteXPosition</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#getleftborderabsolutexposition">GetLeftBorderAbsoluteXPosition</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L193">MusicalScore/Graphical/MusicSystem.ts:193</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L194">MusicalScore/Graphical/MusicSystem.ts:194</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -699,9 +714,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#getrightborderabsolutexposition">GetRightBorderAbsoluteXPosition</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#getrightborderabsolutexposition">GetRightBorderAbsoluteXPosition</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L197">MusicalScore/Graphical/MusicSystem.ts:197</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L198">MusicalScore/Graphical/MusicSystem.ts:198</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -717,9 +732,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#getsystemsfirsttimestamp">GetSystemsFirstTimeStamp</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#getsystemsfirsttimestamp">GetSystemsFirstTimeStamp</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L209">MusicalScore/Graphical/MusicSystem.ts:209</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L210">MusicalScore/Graphical/MusicSystem.ts:210</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="fraction.html" class="tsd-signature-type">Fraction</a></h4>
@@ -735,9 +750,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#getsystemslasttimestamp">GetSystemsLastTimeStamp</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#getsystemslasttimestamp">GetSystemsLastTimeStamp</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L213">MusicalScore/Graphical/MusicSystem.ts:213</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L214">MusicalScore/Graphical/MusicSystem.ts:214</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="fraction.html" class="tsd-signature-type">Fraction</a></h4>
@@ -753,9 +768,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#alignbegininstructions">alignBeginInstructions</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#alignbegininstructions">alignBeginInstructions</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L189">MusicalScore/Graphical/MusicSystem.ts:189</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L190">MusicalScore/Graphical/MusicSystem.ts:190</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -771,9 +786,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#calcbracketswidth">calcBracketsWidth</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#calcbracketswidth">calcBracketsWidth</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L432">MusicalScore/Graphical/MusicSystem.ts:432</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L433">MusicalScore/Graphical/MusicSystem.ts:433</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -797,7 +812,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#calculateborders">calculateBorders</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts#L21">MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts#L21">MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts:21</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -819,9 +834,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#checkstaffentriesforstaffentrylink">checkStaffEntriesForStaffEntryLink</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#checkstaffentriesforstaffentrylink">checkStaffEntriesForStaffEntryLink</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L364">MusicalScore/Graphical/MusicSystem.ts:364</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L365">MusicalScore/Graphical/MusicSystem.ts:365</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -845,7 +860,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#creategroupbracket">createGroupBracket</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts#L92">MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts#L92">MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts:92</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -888,9 +903,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#creategroupbrackets">createGroupBrackets</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#creategroupbrackets">createGroupBrackets</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L250">MusicalScore/Graphical/MusicSystem.ts:250</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L251">MusicalScore/Graphical/MusicSystem.ts:251</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -927,7 +942,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#createinstrumentbracket">createInstrumentBracket</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts#L75">MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts#L75">MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -964,9 +979,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#createinstrumentbrackets">createInstrumentBrackets</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#createinstrumentbrackets">createInstrumentBrackets</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L223">MusicalScore/Graphical/MusicSystem.ts:223</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L224">MusicalScore/Graphical/MusicSystem.ts:224</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -998,9 +1013,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#createlinesforsystemline">createLinesForSystemLine</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#createlinesforsystemline">createLinesForSystemLine</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L424">MusicalScore/Graphical/MusicSystem.ts:424</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L425">MusicalScore/Graphical/MusicSystem.ts:425</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1029,9 +1044,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#createmusicsystemlabel">createMusicSystemLabel</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#createmusicsystemlabel">createMusicSystemLabel</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L288">MusicalScore/Graphical/MusicSystem.ts:288</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L289">MusicalScore/Graphical/MusicSystem.ts:289</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1069,9 +1084,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#createsystemleftline">createSystemLeftLine</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#createsystemleftline">createSystemLeftLine</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L125">MusicalScore/Graphical/MusicSystem.ts:125</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L126">MusicalScore/Graphical/MusicSystem.ts:126</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1108,7 +1123,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#createsystemline">createSystemLine</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts#L56">MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts#L56">MusicalScore/Graphical/VexFlow/VexFlowMusicSystem.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1158,9 +1173,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#createverticallineformeasure">createVerticalLineForMeasure</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#createverticallineformeasure">createVerticalLineForMeasure</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L155">MusicalScore/Graphical/MusicSystem.ts:155</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L156">MusicalScore/Graphical/MusicSystem.ts:156</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1210,9 +1225,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#getbottomstaffline">getBottomStaffLine</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#getbottomstaffline">getBottomStaffLine</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L393">MusicalScore/Graphical/MusicSystem.ts:393</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L394">MusicalScore/Graphical/MusicSystem.ts:394</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1234,9 +1249,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#setmusicsystemlabelsyposition">setMusicSystemLabelsYPosition</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#setmusicsystemlabelsyposition">setMusicSystemLabelsYPosition</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L336">MusicalScore/Graphical/MusicSystem.ts:336</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L337">MusicalScore/Graphical/MusicSystem.ts:337</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1257,9 +1272,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="musicsystem.html">MusicSystem</a>.<a href="musicsystem.html#setypositionstoverticallineobjectsandcreatelines">setYPositionsToVerticalLineObjectsAndCreateLines</a></p>
+								<p>Inherited from <a href="vexflowmusicsystem.html">VexFlowMusicSystem</a>.<a href="vexflowmusicsystem.html#setypositionstoverticallineobjectsandcreatelines">setYPositionsToVerticalLineObjectsAndCreateLines</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/f050bad/src/MusicalScore/Graphical/MusicSystem.ts#L181">MusicalScore/Graphical/MusicSystem.ts:181</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/a5b9826/src/MusicalScore/Graphical/MusicSystem.ts#L182">MusicalScore/Graphical/MusicSystem.ts:182</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1337,6 +1352,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="vexflowmusicsystem.html#parent" class="tsd-kind-icon">parent</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="vexflowmusicsystem.html#rules" class="tsd-kind-icon">rules</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="vexflowmusicsystem.html#stafflines" class="tsd-kind-icon">staff<wbr>Lines</a>
