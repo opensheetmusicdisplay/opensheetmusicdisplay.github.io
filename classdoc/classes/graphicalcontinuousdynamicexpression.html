@@ -118,6 +118,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="graphicalcontinuousdynamicexpression.html#label" class="tsd-kind-icon">label</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="graphicalcontinuousdynamicexpression.html#lines" class="tsd-kind-icon">lines</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="graphicalcontinuousdynamicexpression.html#nottoberemoved" class="tsd-kind-icon">not<wbr>ToBe<wbr>Removed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="graphicalcontinuousdynamicexpression.html#parentmeasure" class="tsd-kind-icon">parent<wbr>Measure</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="graphicalcontinuousdynamicexpression.html#parentstaffline" class="tsd-kind-icon">parent<wbr>Staff<wbr>Line</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="graphicalcontinuousdynamicexpression.html#rules" class="tsd-kind-icon">rules</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="graphicalcontinuousdynamicexpression.html#startmeasure" class="tsd-kind-icon">start<wbr>Measure</a></li>
@@ -170,14 +171,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Graphical<wbr>Continuous<wbr>Dynamic<wbr>Expression<span class="tsd-signature-symbol">(</span>continuousDynamic<span class="tsd-signature-symbol">: </span><a href="continuousdynamicexpression.html" class="tsd-signature-type">ContinuousDynamicExpression</a>, staffLine<span class="tsd-signature-symbol">: </span><a href="staffline.html" class="tsd-signature-type">StaffLine</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="graphicalcontinuousdynamicexpression.html" class="tsd-signature-type">GraphicalContinuousDynamicExpression</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Graphical<wbr>Continuous<wbr>Dynamic<wbr>Expression<span class="tsd-signature-symbol">(</span>continuousDynamic<span class="tsd-signature-symbol">: </span><a href="continuousdynamicexpression.html" class="tsd-signature-type">ContinuousDynamicExpression</a>, staffLine<span class="tsd-signature-symbol">: </span><a href="staffline.html" class="tsd-signature-type">StaffLine</a>, measure<span class="tsd-signature-symbol">: </span><a href="sourcemeasure.html" class="tsd-signature-type">SourceMeasure</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="graphicalcontinuousdynamicexpression.html" class="tsd-signature-type">GraphicalContinuousDynamicExpression</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="abstractgraphicalexpression.html">AbstractGraphicalExpression</a>.<a href="abstractgraphicalexpression.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L24">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L25">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -199,9 +200,12 @@
 									<h5>staffLine: <a href="staffline.html" class="tsd-signature-type">StaffLine</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>The staffline where the exoression is attached</p>
+											<p>The staffline where the expression is attached</p>
 										</div>
 									</div>
+								</li>
+								<li>
+									<h5>measure: <a href="sourcemeasure.html" class="tsd-signature-type">SourceMeasure</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="graphicalcontinuousdynamicexpression.html" class="tsd-signature-type">GraphicalContinuousDynamicExpression</a></h4>
@@ -216,9 +220,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> bounding<wbr>Box</h3>
 					<div class="tsd-signature tsd-kind-icon">bounding<wbr>Box<span class="tsd-signature-symbol">:</span> <a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="abstractgraphicalinstruction.html">AbstractGraphicalInstruction</a>.<a href="abstractgraphicalinstruction.html#boundingbox">boundingBox</a></p>
+						<p>Inherited from <a href="clickable.html">Clickable</a>.<a href="clickable.html#boundingbox">boundingBox</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalObject.ts#L5">MusicalScore/Graphical/GraphicalObject.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalObject.ts#L5">MusicalScore/Graphical/GraphicalObject.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -228,7 +232,7 @@
 					<div class="tsd-signature tsd-kind-icon">end<wbr>Measure<span class="tsd-signature-symbol">:</span> <a href="graphicalmeasure.html" class="tsd-signature-type">GraphicalMeasure</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L24">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L25">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -237,9 +241,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> expression</h3>
 					<div class="tsd-signature tsd-kind-icon">expression<span class="tsd-signature-symbol">:</span> <a href="abstractexpression.html" class="tsd-signature-type">AbstractExpression</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="graphicalinstantaneousdynamicexpression.html">GraphicalInstantaneousDynamicExpression</a>.<a href="graphicalinstantaneousdynamicexpression.html#expression">expression</a></p>
+						<p>Inherited from <a href="graphicalcontinuousdynamicexpression.html">GraphicalContinuousDynamicExpression</a>.<a href="graphicalcontinuousdynamicexpression.html#expression">expression</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L12">MusicalScore/Graphical/AbstractGraphicalExpression.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L13">MusicalScore/Graphical/AbstractGraphicalExpression.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -254,7 +258,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Splitted<wbr>Part<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L18">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L19">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:19</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -268,9 +272,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> label</h3>
 					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <a href="graphicallabel.html" class="tsd-signature-type">GraphicalLabel</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="graphicalinstantaneousdynamicexpression.html">GraphicalInstantaneousDynamicExpression</a>.<a href="graphicalinstantaneousdynamicexpression.html#label">label</a></p>
+						<p>Inherited from <a href="graphicalcontinuousdynamicexpression.html">GraphicalContinuousDynamicExpression</a>.<a href="graphicalcontinuousdynamicexpression.html#label">label</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L9">MusicalScore/Graphical/AbstractGraphicalExpression.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L10">MusicalScore/Graphical/AbstractGraphicalExpression.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -280,7 +284,7 @@
 					<div class="tsd-signature tsd-kind-icon">lines<span class="tsd-signature-symbol">:</span> <a href="graphicalline.html" class="tsd-signature-type">GraphicalLine</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L22">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L23">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:23</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -295,7 +299,7 @@
 					<div class="tsd-signature tsd-kind-icon">not<wbr>ToBe<wbr>Removed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L20">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L21">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -305,13 +309,24 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="parentmeasure" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> parent<wbr>Measure</h3>
+					<div class="tsd-signature tsd-kind-icon">parent<wbr>Measure<span class="tsd-signature-symbol">:</span> <a href="sourcemeasure.html" class="tsd-signature-type">SourceMeasure</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="graphicalcontinuousdynamicexpression.html">GraphicalContinuousDynamicExpression</a>.<a href="graphicalcontinuousdynamicexpression.html#parentmeasure">parentMeasure</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L16">MusicalScore/Graphical/AbstractGraphicalExpression.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="parentstaffline" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> parent<wbr>Staff<wbr>Line</h3>
 					<div class="tsd-signature tsd-kind-icon">parent<wbr>Staff<wbr>Line<span class="tsd-signature-symbol">:</span> <a href="staffline.html" class="tsd-signature-type">StaffLine</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="graphicalinstantaneousdynamicexpression.html">GraphicalInstantaneousDynamicExpression</a>.<a href="graphicalinstantaneousdynamicexpression.html#parentstaffline">parentStaffLine</a></p>
+						<p>Inherited from <a href="graphicalcontinuousdynamicexpression.html">GraphicalContinuousDynamicExpression</a>.<a href="graphicalcontinuousdynamicexpression.html#parentstaffline">parentStaffLine</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L10">MusicalScore/Graphical/AbstractGraphicalExpression.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L11">MusicalScore/Graphical/AbstractGraphicalExpression.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -320,9 +335,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> rules</h3>
 					<div class="tsd-signature tsd-kind-icon">rules<span class="tsd-signature-symbol">:</span> <a href="engravingrules.html" class="tsd-signature-type">EngravingRules</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="graphicalinstantaneousdynamicexpression.html">GraphicalInstantaneousDynamicExpression</a>.<a href="graphicalinstantaneousdynamicexpression.html#rules">rules</a></p>
+						<p>Inherited from <a href="graphicalcontinuousdynamicexpression.html">GraphicalContinuousDynamicExpression</a>.<a href="graphicalcontinuousdynamicexpression.html#rules">rules</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L14">MusicalScore/Graphical/AbstractGraphicalExpression.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L15">MusicalScore/Graphical/AbstractGraphicalExpression.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -337,7 +352,7 @@
 					<div class="tsd-signature tsd-kind-icon">start<wbr>Measure<span class="tsd-signature-symbol">:</span> <a href="graphicalmeasure.html" class="tsd-signature-type">GraphicalMeasure</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L23">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L24">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -354,7 +369,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L59">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L60">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:60</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="continuousdynamicexpression.html" class="tsd-signature-type">ContinuousDynamicExpression</a></h4>
@@ -372,7 +387,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L44">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L45">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -385,7 +400,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L45">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L46">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -413,7 +428,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L47">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L48">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -436,7 +451,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L49">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L50">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -449,7 +464,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L50">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L51">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:51</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -477,7 +492,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L52">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L53">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:53</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -498,9 +513,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="graphicalinstantaneousdynamicexpression.html">GraphicalInstantaneousDynamicExpression</a>.<a href="graphicalinstantaneousdynamicexpression.html#label-1">Label</a></p>
+								<p>Inherited from <a href="graphicalcontinuousdynamicexpression.html">GraphicalContinuousDynamicExpression</a>.<a href="graphicalcontinuousdynamicexpression.html#label-1">Label</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L26">MusicalScore/Graphical/AbstractGraphicalExpression.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L29">MusicalScore/Graphical/AbstractGraphicalExpression.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -522,7 +537,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L57">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L58">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:58</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -545,7 +560,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L54">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L55">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:55</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -558,7 +573,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L55">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L56">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -585,9 +600,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="graphicalinstantaneousdynamicexpression.html">GraphicalInstantaneousDynamicExpression</a>.<a href="graphicalinstantaneousdynamicexpression.html#parentstaffline-1">ParentStaffLine</a></p>
+								<p>Inherited from <a href="graphicalcontinuousdynamicexpression.html">GraphicalContinuousDynamicExpression</a>.<a href="graphicalcontinuousdynamicexpression.html#parentstaffline-1">ParentStaffLine</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L28">MusicalScore/Graphical/AbstractGraphicalExpression.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L31">MusicalScore/Graphical/AbstractGraphicalExpression.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -608,9 +623,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="graphicalinstantaneousdynamicexpression.html">GraphicalInstantaneousDynamicExpression</a>.<a href="graphicalinstantaneousdynamicexpression.html#placement">Placement</a></p>
+								<p>Inherited from <a href="graphicalcontinuousdynamicexpression.html">GraphicalContinuousDynamicExpression</a>.<a href="graphicalcontinuousdynamicexpression.html#placement">Placement</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L30">MusicalScore/Graphical/AbstractGraphicalExpression.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L33">MusicalScore/Graphical/AbstractGraphicalExpression.ts:33</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/placementenum.html" class="tsd-signature-type">PlacementEnum</a></h4>
@@ -627,18 +642,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="abstractgraphicalinstruction.html">AbstractGraphicalInstruction</a>.<a href="abstractgraphicalinstruction.html#positionandshape">PositionAndShape</a></p>
+								<p>Inherited from <a href="clickable.html">Clickable</a>.<a href="clickable.html#positionandshape">PositionAndShape</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalObject.ts#L7">MusicalScore/Graphical/GraphicalObject.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalObject.ts#L7">MusicalScore/Graphical/GraphicalObject.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="abstractgraphicalinstruction.html">AbstractGraphicalInstruction</a>.<a href="abstractgraphicalinstruction.html#positionandshape">PositionAndShape</a></p>
+								<p>Inherited from <a href="clickable.html">Clickable</a>.<a href="clickable.html#positionandshape">PositionAndShape</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalObject.ts#L11">MusicalScore/Graphical/GraphicalObject.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalObject.ts#L11">MusicalScore/Graphical/GraphicalObject.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -660,9 +675,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="graphicalinstantaneousdynamicexpression.html">GraphicalInstantaneousDynamicExpression</a>.<a href="graphicalinstantaneousdynamicexpression.html#sourceexpression">SourceExpression</a></p>
+								<p>Inherited from <a href="graphicalcontinuousdynamicexpression.html">GraphicalContinuousDynamicExpression</a>.<a href="graphicalcontinuousdynamicexpression.html#sourceexpression">SourceExpression</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L29">MusicalScore/Graphical/AbstractGraphicalExpression.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L32">MusicalScore/Graphical/AbstractGraphicalExpression.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="abstractexpression.html" class="tsd-signature-type">AbstractExpression</a></h4>
@@ -680,7 +695,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L41">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L42">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -693,7 +708,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L42">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L43">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:43</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -724,7 +739,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L336">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:336</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L358">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:358</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -779,7 +794,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L320">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:320</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L342">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:342</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -828,7 +843,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L242">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:242</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L260">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:260</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -850,7 +865,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L263">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:263</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L285">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:285</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -872,7 +887,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L102">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:102</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L120">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:120</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -927,7 +942,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L176">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:176</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L194">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:194</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -982,7 +997,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L119">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:119</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L137">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:137</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1037,7 +1052,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L193">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:193</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L211">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:211</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1098,7 +1113,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L138">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:138</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L156">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:156</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1159,7 +1174,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L212">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:212</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L230">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:230</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1214,7 +1229,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L155">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:155</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L173">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:173</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1257,7 +1272,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L227">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:227</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L245">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:245</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1297,7 +1312,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L271">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:271</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L293">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:293</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1329,7 +1344,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/isqueezable.html">ISqueezable</a>.<a href="../interfaces/isqueezable.html#squeeze">squeeze</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L282">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:282</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L304">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:304</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1353,7 +1368,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="abstractgraphicalexpression.html">AbstractGraphicalExpression</a>.<a href="abstractgraphicalexpression.html#updateskybottomline">updateSkyBottomLine</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L64">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts#L65">MusicalScore/Graphical/GraphicalContinuousDynamicExpression.ts:65</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1400,6 +1415,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="graphicalcontinuousdynamicexpression.html#nottoberemoved" class="tsd-kind-icon">not<wbr>ToBe<wbr>Removed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="graphicalcontinuousdynamicexpression.html#parentmeasure" class="tsd-kind-icon">parent<wbr>Measure</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="graphicalcontinuousdynamicexpression.html#parentstaffline" class="tsd-kind-icon">parent<wbr>Staff<wbr>Line</a>

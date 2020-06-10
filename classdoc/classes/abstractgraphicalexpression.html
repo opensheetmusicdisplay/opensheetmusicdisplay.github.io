@@ -76,13 +76,16 @@
 								<span class="target">AbstractGraphicalExpression</span>
 								<ul class="tsd-hierarchy">
 									<li>
+										<a href="graphicalcontinuousdynamicexpression.html" class="tsd-signature-type">GraphicalContinuousDynamicExpression</a>
+									</li>
+									<li>
 										<a href="graphicalinstantaneousdynamicexpression.html" class="tsd-signature-type">GraphicalInstantaneousDynamicExpression</a>
 									</li>
 									<li>
 										<a href="graphicalinstantaneoustempoexpression.html" class="tsd-signature-type">GraphicalInstantaneousTempoExpression</a>
 									</li>
 									<li>
-										<a href="graphicalcontinuousdynamicexpression.html" class="tsd-signature-type">GraphicalContinuousDynamicExpression</a>
+										<a href="graphicalunknownexpression.html" class="tsd-signature-type">GraphicalUnknownExpression</a>
 									</li>
 								</ul>
 							</li>
@@ -106,6 +109,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="abstractgraphicalexpression.html#boundingbox" class="tsd-kind-icon">bounding<wbr>Box</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="abstractgraphicalexpression.html#expression" class="tsd-kind-icon">expression</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="abstractgraphicalexpression.html#label" class="tsd-kind-icon">label</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="abstractgraphicalexpression.html#parentmeasure" class="tsd-kind-icon">parent<wbr>Measure</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="abstractgraphicalexpression.html#parentstaffline" class="tsd-kind-icon">parent<wbr>Staff<wbr>Line</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="abstractgraphicalexpression.html#rules" class="tsd-kind-icon">rules</a></li>
 							</ul>
@@ -135,13 +139,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Abstract<wbr>Graphical<wbr>Expression<span class="tsd-signature-symbol">(</span>parentStaffline<span class="tsd-signature-symbol">: </span><a href="staffline.html" class="tsd-signature-type">StaffLine</a>, expression<span class="tsd-signature-symbol">: </span><a href="abstractexpression.html" class="tsd-signature-type">AbstractExpression</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="abstractgraphicalexpression.html" class="tsd-signature-type">AbstractGraphicalExpression</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Abstract<wbr>Graphical<wbr>Expression<span class="tsd-signature-symbol">(</span>parentStaffline<span class="tsd-signature-symbol">: </span><a href="staffline.html" class="tsd-signature-type">StaffLine</a>, expression<span class="tsd-signature-symbol">: </span><a href="abstractexpression.html" class="tsd-signature-type">AbstractExpression</a>, measure<span class="tsd-signature-symbol">: </span><a href="sourcemeasure.html" class="tsd-signature-type">SourceMeasure</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="abstractgraphicalexpression.html" class="tsd-signature-type">AbstractGraphicalExpression</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L14">MusicalScore/Graphical/AbstractGraphicalExpression.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L16">MusicalScore/Graphical/AbstractGraphicalExpression.ts:16</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -151,6 +155,9 @@
 								</li>
 								<li>
 									<h5>expression: <a href="abstractexpression.html" class="tsd-signature-type">AbstractExpression</a></h5>
+								</li>
+								<li>
+									<h5>measure: <a href="sourcemeasure.html" class="tsd-signature-type">SourceMeasure</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="abstractgraphicalexpression.html" class="tsd-signature-type">AbstractGraphicalExpression</a></h4>
@@ -165,9 +172,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> bounding<wbr>Box</h3>
 					<div class="tsd-signature tsd-kind-icon">bounding<wbr>Box<span class="tsd-signature-symbol">:</span> <a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="abstractgraphicalinstruction.html">AbstractGraphicalInstruction</a>.<a href="abstractgraphicalinstruction.html#boundingbox">boundingBox</a></p>
+						<p>Inherited from <a href="clickable.html">Clickable</a>.<a href="clickable.html#boundingbox">boundingBox</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalObject.ts#L5">MusicalScore/Graphical/GraphicalObject.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalObject.ts#L5">MusicalScore/Graphical/GraphicalObject.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -177,7 +184,7 @@
 					<div class="tsd-signature tsd-kind-icon">expression<span class="tsd-signature-symbol">:</span> <a href="abstractexpression.html" class="tsd-signature-type">AbstractExpression</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L12">MusicalScore/Graphical/AbstractGraphicalExpression.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L13">MusicalScore/Graphical/AbstractGraphicalExpression.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -192,7 +199,17 @@
 					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <a href="graphicallabel.html" class="tsd-signature-type">GraphicalLabel</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L9">MusicalScore/Graphical/AbstractGraphicalExpression.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L10">MusicalScore/Graphical/AbstractGraphicalExpression.ts:10</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="parentmeasure" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> parent<wbr>Measure</h3>
+					<div class="tsd-signature tsd-kind-icon">parent<wbr>Measure<span class="tsd-signature-symbol">:</span> <a href="sourcemeasure.html" class="tsd-signature-type">SourceMeasure</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L16">MusicalScore/Graphical/AbstractGraphicalExpression.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -202,7 +219,7 @@
 					<div class="tsd-signature tsd-kind-icon">parent<wbr>Staff<wbr>Line<span class="tsd-signature-symbol">:</span> <a href="staffline.html" class="tsd-signature-type">StaffLine</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L10">MusicalScore/Graphical/AbstractGraphicalExpression.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L11">MusicalScore/Graphical/AbstractGraphicalExpression.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -212,7 +229,7 @@
 					<div class="tsd-signature tsd-kind-icon">rules<span class="tsd-signature-symbol">:</span> <a href="engravingrules.html" class="tsd-signature-type">EngravingRules</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L14">MusicalScore/Graphical/AbstractGraphicalExpression.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L15">MusicalScore/Graphical/AbstractGraphicalExpression.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -234,7 +251,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L26">MusicalScore/Graphical/AbstractGraphicalExpression.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L29">MusicalScore/Graphical/AbstractGraphicalExpression.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -256,7 +273,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L28">MusicalScore/Graphical/AbstractGraphicalExpression.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L31">MusicalScore/Graphical/AbstractGraphicalExpression.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -278,7 +295,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L30">MusicalScore/Graphical/AbstractGraphicalExpression.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L33">MusicalScore/Graphical/AbstractGraphicalExpression.ts:33</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/placementenum.html" class="tsd-signature-type">PlacementEnum</a></h4>
@@ -295,18 +312,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="abstractgraphicalinstruction.html">AbstractGraphicalInstruction</a>.<a href="abstractgraphicalinstruction.html#positionandshape">PositionAndShape</a></p>
+								<p>Inherited from <a href="clickable.html">Clickable</a>.<a href="clickable.html#positionandshape">PositionAndShape</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalObject.ts#L7">MusicalScore/Graphical/GraphicalObject.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalObject.ts#L7">MusicalScore/Graphical/GraphicalObject.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="abstractgraphicalinstruction.html">AbstractGraphicalInstruction</a>.<a href="abstractgraphicalinstruction.html#positionandshape">PositionAndShape</a></p>
+								<p>Inherited from <a href="clickable.html">Clickable</a>.<a href="clickable.html#positionandshape">PositionAndShape</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/GraphicalObject.ts#L11">MusicalScore/Graphical/GraphicalObject.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/GraphicalObject.ts#L11">MusicalScore/Graphical/GraphicalObject.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -329,7 +346,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L29">MusicalScore/Graphical/AbstractGraphicalExpression.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L32">MusicalScore/Graphical/AbstractGraphicalExpression.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="abstractexpression.html" class="tsd-signature-type">AbstractExpression</a></h4>
@@ -349,7 +366,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L33">MusicalScore/Graphical/AbstractGraphicalExpression.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/Graphical/AbstractGraphicalExpression.ts#L36">MusicalScore/Graphical/AbstractGraphicalExpression.ts:36</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -384,6 +401,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="abstractgraphicalexpression.html#label" class="tsd-kind-icon">label</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="abstractgraphicalexpression.html#parentmeasure" class="tsd-kind-icon">parent<wbr>Measure</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="abstractgraphicalexpression.html#parentstaffline" class="tsd-kind-icon">parent<wbr>Staff<wbr>Line</a>

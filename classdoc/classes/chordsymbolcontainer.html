@@ -90,8 +90,8 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="chordsymbolcontainer.html#basspitch" class="tsd-kind-icon">bass<wbr>Pitch</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="chordsymbolcontainer.html#chordkind" class="tsd-kind-icon">chord<wbr>Kind</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="chordsymbolcontainer.html#degree" class="tsd-kind-icon">degree</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="chordsymbolcontainer.html#keyinstruction" class="tsd-kind-icon">key<wbr>Instruction</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="chordsymbolcontainer.html#rootpitch" class="tsd-kind-icon">root<wbr>Pitch</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="chordsymbolcontainer.html#rules" class="tsd-kind-icon">rules</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -100,16 +100,15 @@
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="chordsymbolcontainer.html#basspitch-1" class="tsd-kind-icon">Bass<wbr>Pitch</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="chordsymbolcontainer.html#chorddegree" class="tsd-kind-icon">Chord<wbr>Degree</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="chordsymbolcontainer.html#chordkind-1" class="tsd-kind-icon">Chord<wbr>Kind</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="chordsymbolcontainer.html#keyinstruction-1" class="tsd-kind-icon">Key<wbr>Instruction</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="chordsymbolcontainer.html#rootpitch-1" class="tsd-kind-icon">Root<wbr>Pitch</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="chordsymbolcontainer.html#gettextfromchordkindenum" class="tsd-kind-icon">get<wbr>Text<wbr>From<wbr>Chord<wbr>Kind<wbr>Enum</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="chordsymbolcontainer.html#calculatechordtext" class="tsd-kind-icon">calculate<wbr>Chord<wbr>Text</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="chordsymbolcontainer.html#gettextforaccidental" class="tsd-kind-icon">get<wbr>Text<wbr>For<wbr>Accidental</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="chordsymbolcontainer.html#gettextfromchordkindenum" class="tsd-kind-icon">get<wbr>Text<wbr>From<wbr>Chord<wbr>Kind<wbr>Enum</a></li>
 							</ul>
 						</section>
 					</div>
@@ -121,13 +120,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Chord<wbr>Symbol<wbr>Container<span class="tsd-signature-symbol">(</span>rootPitch<span class="tsd-signature-symbol">: </span><a href="pitch.html" class="tsd-signature-type">Pitch</a>, chordKind<span class="tsd-signature-symbol">: </span><a href="../enums/chordsymbolenum.html" class="tsd-signature-type">ChordSymbolEnum</a>, bassPitch<span class="tsd-signature-symbol">: </span><a href="pitch.html" class="tsd-signature-type">Pitch</a>, chordDegree<span class="tsd-signature-symbol">: </span><a href="degree.html" class="tsd-signature-type">Degree</a>, keyInstruction<span class="tsd-signature-symbol">: </span><a href="keyinstruction.html" class="tsd-signature-type">KeyInstruction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="chordsymbolcontainer.html" class="tsd-signature-type">ChordSymbolContainer</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Chord<wbr>Symbol<wbr>Container<span class="tsd-signature-symbol">(</span>rootPitch<span class="tsd-signature-symbol">: </span><a href="pitch.html" class="tsd-signature-type">Pitch</a>, chordKind<span class="tsd-signature-symbol">: </span><a href="../enums/chordsymbolenum.html" class="tsd-signature-type">ChordSymbolEnum</a>, bassPitch<span class="tsd-signature-symbol">: </span><a href="pitch.html" class="tsd-signature-type">Pitch</a>, chordDegree<span class="tsd-signature-symbol">: </span><a href="degree.html" class="tsd-signature-type">Degree</a>, rules<span class="tsd-signature-symbol">: </span><a href="engravingrules.html" class="tsd-signature-type">EngravingRules</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="chordsymbolcontainer.html" class="tsd-signature-type">ChordSymbolContainer</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L11">MusicalScore/VoiceData/ChordSymbolContainer.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L12">MusicalScore/VoiceData/ChordSymbolContainer.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -145,7 +144,7 @@
 									<h5>chordDegree: <a href="degree.html" class="tsd-signature-type">Degree</a></h5>
 								</li>
 								<li>
-									<h5>keyInstruction: <a href="keyinstruction.html" class="tsd-signature-type">KeyInstruction</a></h5>
+									<h5>rules: <a href="engravingrules.html" class="tsd-signature-type">EngravingRules</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="chordsymbolcontainer.html" class="tsd-signature-type">ChordSymbolContainer</a></h4>
@@ -161,7 +160,7 @@
 					<div class="tsd-signature tsd-kind-icon">bass<wbr>Pitch<span class="tsd-signature-symbol">:</span> <a href="pitch.html" class="tsd-signature-type">Pitch</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L9">MusicalScore/VoiceData/ChordSymbolContainer.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L10">MusicalScore/VoiceData/ChordSymbolContainer.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -171,7 +170,7 @@
 					<div class="tsd-signature tsd-kind-icon">chord<wbr>Kind<span class="tsd-signature-symbol">:</span> <a href="../enums/chordsymbolenum.html" class="tsd-signature-type">ChordSymbolEnum</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L8">MusicalScore/VoiceData/ChordSymbolContainer.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L9">MusicalScore/VoiceData/ChordSymbolContainer.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -181,17 +180,7 @@
 					<div class="tsd-signature tsd-kind-icon">degree<span class="tsd-signature-symbol">:</span> <a href="degree.html" class="tsd-signature-type">Degree</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L10">MusicalScore/VoiceData/ChordSymbolContainer.ts:10</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="keyinstruction" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> key<wbr>Instruction</h3>
-					<div class="tsd-signature tsd-kind-icon">key<wbr>Instruction<span class="tsd-signature-symbol">:</span> <a href="keyinstruction.html" class="tsd-signature-type">KeyInstruction</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L11">MusicalScore/VoiceData/ChordSymbolContainer.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L11">MusicalScore/VoiceData/ChordSymbolContainer.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -201,7 +190,17 @@
 					<div class="tsd-signature tsd-kind-icon">root<wbr>Pitch<span class="tsd-signature-symbol">:</span> <a href="pitch.html" class="tsd-signature-type">Pitch</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L7">MusicalScore/VoiceData/ChordSymbolContainer.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L8">MusicalScore/VoiceData/ChordSymbolContainer.ts:8</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="rules" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> rules</h3>
+					<div class="tsd-signature tsd-kind-icon">rules<span class="tsd-signature-symbol">:</span> <a href="engravingrules.html" class="tsd-signature-type">EngravingRules</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L12">MusicalScore/VoiceData/ChordSymbolContainer.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -218,7 +217,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L29">MusicalScore/VoiceData/ChordSymbolContainer.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L30">MusicalScore/VoiceData/ChordSymbolContainer.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="pitch.html" class="tsd-signature-type">Pitch</a></h4>
@@ -235,7 +234,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L33">MusicalScore/VoiceData/ChordSymbolContainer.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L34">MusicalScore/VoiceData/ChordSymbolContainer.ts:34</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="degree.html" class="tsd-signature-type">Degree</a></h4>
@@ -252,27 +251,10 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L25">MusicalScore/VoiceData/ChordSymbolContainer.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L26">MusicalScore/VoiceData/ChordSymbolContainer.ts:26</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/chordsymbolenum.html" class="tsd-signature-type">ChordSymbolEnum</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="keyinstruction-1" class="tsd-anchor"></a>
-					<h3>Key<wbr>Instruction</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> KeyInstruction<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="keyinstruction.html" class="tsd-signature-type">KeyInstruction</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L37">MusicalScore/VoiceData/ChordSymbolContainer.ts:37</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="keyinstruction.html" class="tsd-signature-type">KeyInstruction</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -286,7 +268,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L21">MusicalScore/VoiceData/ChordSymbolContainer.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L22">MusicalScore/VoiceData/ChordSymbolContainer.ts:22</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="pitch.html" class="tsd-signature-type">Pitch</a></h4>
@@ -296,17 +278,40 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a name="calculatechordtext" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> calculate<wbr>Chord<wbr>Text</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">calculate<wbr>Chord<wbr>Text<span class="tsd-signature-symbol">(</span>chordSymbol<span class="tsd-signature-symbol">: </span><a href="chordsymbolcontainer.html" class="tsd-signature-type">ChordSymbolContainer</a>, transposeHalftones<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="gettextfromchordkindenum" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Text<wbr>From<wbr>Chord<wbr>Kind<wbr>Enum</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Text<wbr>From<wbr>Chord<wbr>Kind<wbr>Enum<span class="tsd-signature-symbol">(</span>kind<span class="tsd-signature-symbol">: </span><a href="../enums/chordsymbolenum.html" class="tsd-signature-type">ChordSymbolEnum</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L41">MusicalScore/VoiceData/ChordSymbolContainer.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L114">MusicalScore/VoiceData/ChordSymbolContainer.ts:114</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>kind: <a href="../enums/chordsymbolenum.html" class="tsd-signature-type">ChordSymbolEnum</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="calculatechordtext" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> calculate<wbr>Chord<wbr>Text</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">calculate<wbr>Chord<wbr>Text<span class="tsd-signature-symbol">(</span>chordSymbol<span class="tsd-signature-symbol">: </span><a href="chordsymbolcontainer.html" class="tsd-signature-type">ChordSymbolContainer</a>, transposeHalftones<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, keyInstruction<span class="tsd-signature-symbol">: </span><a href="keyinstruction.html" class="tsd-signature-type">KeyInstruction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L38">MusicalScore/VoiceData/ChordSymbolContainer.ts:38</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -316,6 +321,9 @@
 								</li>
 								<li>
 									<h5>transposeHalftones: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>keyInstruction: <a href="keyinstruction.html" class="tsd-signature-type">KeyInstruction</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -332,36 +340,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L89">MusicalScore/VoiceData/ChordSymbolContainer.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d30b665/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L94">MusicalScore/VoiceData/ChordSymbolContainer.ts:94</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>alteration: <a href="../enums/accidentalenum.html" class="tsd-signature-type">AccidentalEnum</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
-					<a name="gettextfromchordkindenum" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Text<wbr>From<wbr>Chord<wbr>Kind<wbr>Enum</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Text<wbr>From<wbr>Chord<wbr>Kind<wbr>Enum<span class="tsd-signature-symbol">(</span>kind<span class="tsd-signature-symbol">: </span><a href="../enums/chordsymbolenum.html" class="tsd-signature-type">ChordSymbolEnum</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/d714862/src/MusicalScore/VoiceData/ChordSymbolContainer.ts#L109">MusicalScore/VoiceData/ChordSymbolContainer.ts:109</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>kind: <a href="../enums/chordsymbolenum.html" class="tsd-signature-type">ChordSymbolEnum</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -398,10 +383,10 @@
 								<a href="chordsymbolcontainer.html#degree" class="tsd-kind-icon">degree</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="chordsymbolcontainer.html#keyinstruction" class="tsd-kind-icon">key<wbr>Instruction</a>
+								<a href="chordsymbolcontainer.html#rootpitch" class="tsd-kind-icon">root<wbr>Pitch</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="chordsymbolcontainer.html#rootpitch" class="tsd-kind-icon">root<wbr>Pitch</a>
+								<a href="chordsymbolcontainer.html#rules" class="tsd-kind-icon">rules</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="chordsymbolcontainer.html#basspitch-1" class="tsd-kind-icon">Bass<wbr>Pitch</a>
@@ -413,19 +398,16 @@
 								<a href="chordsymbolcontainer.html#chordkind-1" class="tsd-kind-icon">Chord<wbr>Kind</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="chordsymbolcontainer.html#keyinstruction-1" class="tsd-kind-icon">Key<wbr>Instruction</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="chordsymbolcontainer.html#rootpitch-1" class="tsd-kind-icon">Root<wbr>Pitch</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="chordsymbolcontainer.html#gettextfromchordkindenum" class="tsd-kind-icon">get<wbr>Text<wbr>From<wbr>Chord<wbr>Kind<wbr>Enum</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="chordsymbolcontainer.html#calculatechordtext" class="tsd-kind-icon">calculate<wbr>Chord<wbr>Text</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
 								<a href="chordsymbolcontainer.html#gettextforaccidental" class="tsd-kind-icon">get<wbr>Text<wbr>For<wbr>Accidental</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
-								<a href="chordsymbolcontainer.html#gettextfromchordkindenum" class="tsd-kind-icon">get<wbr>Text<wbr>From<wbr>Chord<wbr>Kind<wbr>Enum</a>
 							</li>
 						</ul>
 					</li>
