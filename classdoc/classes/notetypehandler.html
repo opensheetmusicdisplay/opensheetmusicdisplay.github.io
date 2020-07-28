@@ -89,6 +89,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="notetypehandler.html#notetypetostring" class="tsd-kind-icon">Note<wbr>Type<wbr>ToString</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="notetypehandler.html#stringtonotetype" class="tsd-kind-icon">String<wbr>ToNote<wbr>Type</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="notetypehandler.html#getnotedurationfromtype" class="tsd-kind-icon">get<wbr>Note<wbr>Duration<wbr>From<wbr>Type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,7 +103,7 @@
 					<div class="tsd-signature tsd-kind-icon">Note<wbr>Type<wbr>Xml<wbr>Values<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&quot;&quot;, &quot;1024th&quot;, &quot;512th&quot;, &quot;256th&quot;, &quot;128th&quot;, &quot;64th&quot;, &quot;32nd&quot;, &quot;16th&quot;,&quot;eigth&quot;, &quot;quarter&quot;, &quot;half&quot;, &quot;whole&quot;, &quot;breve&quot;, &quot;long&quot;, &quot;maxima&quot;]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3150a24/src/MusicalScore/VoiceData/NoteType.ts#L24">MusicalScore/VoiceData/NoteType.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/90e973d/src/MusicalScore/VoiceData/NoteType.ts#L28">MusicalScore/VoiceData/NoteType.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -119,7 +120,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3150a24/src/MusicalScore/VoiceData/NoteType.ts#L29">MusicalScore/VoiceData/NoteType.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/90e973d/src/MusicalScore/VoiceData/NoteType.ts#L33">MusicalScore/VoiceData/NoteType.ts:33</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -142,7 +143,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3150a24/src/MusicalScore/VoiceData/NoteType.ts#L35">MusicalScore/VoiceData/NoteType.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/90e973d/src/MusicalScore/VoiceData/NoteType.ts#L39">MusicalScore/VoiceData/NoteType.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -152,6 +153,34 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/notetype.html" class="tsd-signature-type">NoteType</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="getnotedurationfromtype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Note<wbr>Duration<wbr>From<wbr>Type</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Note<wbr>Duration<wbr>From<wbr>Type<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="fraction.html" class="tsd-signature-type">Fraction</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/90e973d/src/MusicalScore/VoiceData/NoteType.ts#L49">MusicalScore/VoiceData/NoteType.ts:49</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="fraction.html" class="tsd-signature-type">Fraction</a></h4>
+							<ul>
+								<li>a Note&#39;s Duration from a given type (type must be valid).</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -180,6 +209,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="notetypehandler.html#stringtonotetype" class="tsd-kind-icon">String<wbr>ToNote<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="notetypehandler.html#getnotedurationfromtype" class="tsd-kind-icon">get<wbr>Note<wbr>Duration<wbr>From<wbr>Type</a>
 							</li>
 						</ul>
 					</li>

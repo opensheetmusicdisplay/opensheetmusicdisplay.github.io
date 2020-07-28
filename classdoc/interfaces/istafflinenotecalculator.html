@@ -87,7 +87,9 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="istafflinenotecalculator.html#getstafflineuniquepositioncount" class="tsd-kind-icon">get<wbr>Staffline<wbr>Unique<wbr>Position<wbr>Count</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="istafflinenotecalculator.html#positionnote" class="tsd-kind-icon">position<wbr>Note</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="istafflinenotecalculator.html#tracknote" class="tsd-kind-icon">track<wbr>Note</a></li>
 							</ul>
 						</section>
 					</div>
@@ -96,16 +98,39 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="positionnote" class="tsd-anchor"></a>
-					<h3>position<wbr>Note</h3>
+					<a name="getstafflineuniquepositioncount" class="tsd-anchor"></a>
+					<h3>get<wbr>Staffline<wbr>Unique<wbr>Position<wbr>Count</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">position<wbr>Note<span class="tsd-signature-symbol">(</span>graphicalNote<span class="tsd-signature-symbol">: </span><a href="../classes/graphicalnote.html" class="tsd-signature-type">GraphicalNote</a>, currentClef<span class="tsd-signature-symbol">: </span><a href="../classes/clefinstruction.html" class="tsd-signature-type">ClefInstruction</a>, stafflineCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/graphicalnote.html" class="tsd-signature-type">GraphicalNote</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Staffline<wbr>Unique<wbr>Position<wbr>Count<span class="tsd-signature-symbol">(</span>staffIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3150a24/src/MusicalScore/Interfaces/IStafflineNoteCalculator.ts#L5">MusicalScore/Interfaces/IStafflineNoteCalculator.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/90e973d/src/MusicalScore/Interfaces/IStafflineNoteCalculator.ts#L6">MusicalScore/Interfaces/IStafflineNoteCalculator.ts:6</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>staffIndex: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="positionnote" class="tsd-anchor"></a>
+					<h3>position<wbr>Note</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">position<wbr>Note<span class="tsd-signature-symbol">(</span>graphicalNote<span class="tsd-signature-symbol">: </span><a href="../classes/graphicalnote.html" class="tsd-signature-type">GraphicalNote</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/graphicalnote.html" class="tsd-signature-type">GraphicalNote</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/90e973d/src/MusicalScore/Interfaces/IStafflineNoteCalculator.ts#L5">MusicalScore/Interfaces/IStafflineNoteCalculator.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -113,14 +138,31 @@
 								<li>
 									<h5>graphicalNote: <a href="../classes/graphicalnote.html" class="tsd-signature-type">GraphicalNote</a></h5>
 								</li>
-								<li>
-									<h5>currentClef: <a href="../classes/clefinstruction.html" class="tsd-signature-type">ClefInstruction</a></h5>
-								</li>
-								<li>
-									<h5>stafflineCount: <span class="tsd-signature-type">number</span></h5>
-								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../classes/graphicalnote.html" class="tsd-signature-type">GraphicalNote</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="tracknote" class="tsd-anchor"></a>
+					<h3>track<wbr>Note</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">track<wbr>Note<span class="tsd-signature-symbol">(</span>graphicalNote<span class="tsd-signature-symbol">: </span><a href="../classes/graphicalnote.html" class="tsd-signature-type">GraphicalNote</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/90e973d/src/MusicalScore/Interfaces/IStafflineNoteCalculator.ts#L4">MusicalScore/Interfaces/IStafflineNoteCalculator.ts:4</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>graphicalNote: <a href="../classes/graphicalnote.html" class="tsd-signature-type">GraphicalNote</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -142,7 +184,13 @@
 						<a href="istafflinenotecalculator.html" class="tsd-kind-icon">IStaffline<wbr>Note<wbr>Calculator</a>
 						<ul>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="istafflinenotecalculator.html#getstafflineuniquepositioncount" class="tsd-kind-icon">get<wbr>Staffline<wbr>Unique<wbr>Position<wbr>Count</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="istafflinenotecalculator.html#positionnote" class="tsd-kind-icon">position<wbr>Note</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="istafflinenotecalculator.html#tracknote" class="tsd-kind-icon">track<wbr>Note</a>
 							</li>
 						</ul>
 					</li>

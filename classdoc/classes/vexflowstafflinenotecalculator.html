@@ -93,15 +93,20 @@
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="vexflowstafflinenotecalculator.html#instrumentvoicemapping" class="tsd-kind-icon">instrument<wbr>Voice<wbr>Mapping</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="vexflowstafflinenotecalculator.html#baselinenote" class="tsd-kind-icon">base<wbr>Line<wbr>Note</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="vexflowstafflinenotecalculator.html#baselineoctave" class="tsd-kind-icon">base<wbr>Line<wbr>Octave</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="vexflowstafflinenotecalculator.html#rules" class="tsd-kind-icon">rules</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="vexflowstafflinenotecalculator.html#voiceidx" class="tsd-kind-icon">voice<wbr>Idx</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="vexflowstafflinenotecalculator.html#staffpitchlistmapping" class="tsd-kind-icon">staff<wbr>Pitch<wbr>List<wbr>Mapping</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vexflowstafflinenotecalculator.html#getstafflineuniquepositioncount" class="tsd-kind-icon">get<wbr>Staffline<wbr>Unique<wbr>Position<wbr>Count</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vexflowstafflinenotecalculator.html#positionnote" class="tsd-kind-icon">position<wbr>Note</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vexflowstafflinenotecalculator.html#tracknote" class="tsd-kind-icon">track<wbr>Note</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="vexflowstafflinenotecalculator.html#pitchindexof" class="tsd-kind-icon">Pitch<wbr>Index<wbr>Of</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="vexflowstafflinenotecalculator.html#findorinsert" class="tsd-kind-icon">find<wbr>OrInsert</a></li>
 							</ul>
 						</section>
 					</div>
@@ -119,7 +124,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3150a24/src/MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts#L13">MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/90e973d/src/MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts#L14">MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -136,12 +141,22 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="instrumentvoicemapping" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> instrument<wbr>Voice<wbr>Mapping</h3>
-					<div class="tsd-signature tsd-kind-icon">instrument<wbr>Voice<wbr>Mapping<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{ </span>note<span class="tsd-signature-symbol">: </span><a href="../enums/noteenum.html" class="tsd-signature-type">NoteEnum</a><span class="tsd-signature-symbol">; </span>octave<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Dictionary&lt;string, Dictionary&lt;number, {note: NoteEnum, octave: number}&gt;&gt;()</span></div>
+					<a name="baselinenote" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> base<wbr>Line<wbr>Note</h3>
+					<div class="tsd-signature tsd-kind-icon">base<wbr>Line<wbr>Note<span class="tsd-signature-symbol">:</span> <a href="../enums/noteenum.html" class="tsd-signature-type">NoteEnum</a><span class="tsd-signature-symbol"> = NoteEnum.B</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3150a24/src/MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts#L10">MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/90e973d/src/MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts#L13">MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts:13</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="baselineoctave" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> base<wbr>Line<wbr>Octave</h3>
+					<div class="tsd-signature tsd-kind-icon">base<wbr>Line<wbr>Octave<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/90e973d/src/MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts#L14">MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -151,17 +166,17 @@
 					<div class="tsd-signature tsd-kind-icon">rules<span class="tsd-signature-symbol">:</span> <a href="engravingrules.html" class="tsd-signature-type">EngravingRules</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3150a24/src/MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts#L12">MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/90e973d/src/MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts#L10">MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="voiceidx" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> voice<wbr>Idx</h3>
-					<div class="tsd-signature tsd-kind-icon">voice<wbr>Idx<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
+					<a name="staffpitchlistmapping" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> staff<wbr>Pitch<wbr>List<wbr>Mapping</h3>
+					<div class="tsd-signature tsd-kind-icon">staff<wbr>Pitch<wbr>List<wbr>Mapping<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Dictionary</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/__global.array.html" class="tsd-signature-type">Array</a><span class="tsd-signature-symbol">&lt;</span><a href="pitch.html" class="tsd-signature-type">Pitch</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Dictionary&lt;number, Array&lt;Pitch&gt;&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3150a24/src/MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts#L13">MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/90e973d/src/MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts#L11">MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -169,23 +184,54 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getstafflineuniquepositioncount" class="tsd-anchor"></a>
+					<h3>get<wbr>Staffline<wbr>Unique<wbr>Position<wbr>Count</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Staffline<wbr>Unique<wbr>Position<wbr>Count<span class="tsd-signature-symbol">(</span>staffIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/istafflinenotecalculator.html">IStafflineNoteCalculator</a>.<a href="../interfaces/istafflinenotecalculator.html#getstafflineuniquepositioncount">getStafflineUniquePositionCount</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/90e973d/src/MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts#L169">MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts:169</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the number of unique &quot;voices&quot; or note positions</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>staffIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The Staffline to get the count of</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="positionnote" class="tsd-anchor"></a>
 					<h3>position<wbr>Note</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">position<wbr>Note<span class="tsd-signature-symbol">(</span>graphicalNote<span class="tsd-signature-symbol">: </span><a href="graphicalnote.html" class="tsd-signature-type">GraphicalNote</a>, currentClef<span class="tsd-signature-symbol">: </span><a href="clefinstruction.html" class="tsd-signature-type">ClefInstruction</a>, stafflineCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="graphicalnote.html" class="tsd-signature-type">GraphicalNote</a></li>
+						<li class="tsd-signature tsd-kind-icon">position<wbr>Note<span class="tsd-signature-symbol">(</span>graphicalNote<span class="tsd-signature-symbol">: </span><a href="graphicalnote.html" class="tsd-signature-type">GraphicalNote</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="graphicalnote.html" class="tsd-signature-type">GraphicalNote</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/istafflinenotecalculator.html">IStafflineNoteCalculator</a>.<a href="../interfaces/istafflinenotecalculator.html#positionnote">positionNote</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3150a24/src/MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts#L26">MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/90e973d/src/MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts#L82">MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts:82</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>This method is called for each note, and should make any necessary position changes based on the number of stafflines, clef, etc.
-									Right now this just directly maps a voice number to a position above or below a staffline</p>
+									<p>This method is called for each note, and should make any necessary position changes based on the number of stafflines, clef, etc.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -196,21 +242,98 @@
 										<p>The note to be checked/positioned</p>
 									</div>
 								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="graphicalnote.html" class="tsd-signature-type">GraphicalNote</a></h4>
+							<p>the newly positioned note</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tracknote" class="tsd-anchor"></a>
+					<h3>track<wbr>Note</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">track<wbr>Note<span class="tsd-signature-symbol">(</span>graphicalNote<span class="tsd-signature-symbol">: </span><a href="graphicalnote.html" class="tsd-signature-type">GraphicalNote</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/istafflinenotecalculator.html">IStafflineNoteCalculator</a>.<a href="../interfaces/istafflinenotecalculator.html#tracknote">trackNote</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/90e973d/src/MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts#L26">MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts:26</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method is called for each note during the calc phase. We want to track all possible positions to make decisions
+										during layout about where notes should be positioned.
+									This directly notes that share a line to the same position, regardless of voice</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
-									<h5>currentClef: <a href="clefinstruction.html" class="tsd-signature-type">ClefInstruction</a></h5>
+									<h5>graphicalNote: <a href="graphicalnote.html" class="tsd-signature-type">GraphicalNote</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The clef that is active for this note</p>
-									</div>
-								</li>
-								<li>
-									<h5>stafflineCount: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The number of stafflines we are rendering on</p>
+										<p>The note to be checked/positioned</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="graphicalnote.html" class="tsd-signature-type">GraphicalNote</a></h4>
-							<p>the minimum required x width of the source measure (=list of staff measures)</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="pitchindexof" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> Pitch<wbr>Index<wbr>Of</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">Pitch<wbr>Index<wbr>Of<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><a href="../interfaces/__global.array.html" class="tsd-signature-type">Array</a><span class="tsd-signature-symbol">&lt;</span><a href="pitch.html" class="tsd-signature-type">Pitch</a><span class="tsd-signature-symbol">&gt;</span>, pitch<span class="tsd-signature-symbol">: </span><a href="pitch.html" class="tsd-signature-type">Pitch</a>, start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/90e973d/src/MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts#L44">MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts:44</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>array: <a href="../interfaces/__global.array.html" class="tsd-signature-type">Array</a><span class="tsd-signature-symbol">&lt;</span><a href="pitch.html" class="tsd-signature-type">Pitch</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>pitch: <a href="pitch.html" class="tsd-signature-type">Pitch</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> start: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="findorinsert" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> find<wbr>OrInsert</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>OrInsert<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><a href="../interfaces/__global.array.html" class="tsd-signature-type">Array</a><span class="tsd-signature-symbol">&lt;</span><a href="pitch.html" class="tsd-signature-type">Pitch</a><span class="tsd-signature-symbol">&gt;</span>, pitch<span class="tsd-signature-symbol">: </span><a href="pitch.html" class="tsd-signature-type">Pitch</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/90e973d/src/MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts#L58">MusicalScore/Graphical/VexFlow/VexflowStafflineNoteCalculator.ts:58</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>array: <a href="../interfaces/__global.array.html" class="tsd-signature-type">Array</a><span class="tsd-signature-symbol">&lt;</span><a href="pitch.html" class="tsd-signature-type">Pitch</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>pitch: <a href="pitch.html" class="tsd-signature-type">Pitch</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -235,16 +358,31 @@
 								<a href="vexflowstafflinenotecalculator.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="vexflowstafflinenotecalculator.html#instrumentvoicemapping" class="tsd-kind-icon">instrument<wbr>Voice<wbr>Mapping</a>
+								<a href="vexflowstafflinenotecalculator.html#baselinenote" class="tsd-kind-icon">base<wbr>Line<wbr>Note</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="vexflowstafflinenotecalculator.html#baselineoctave" class="tsd-kind-icon">base<wbr>Line<wbr>Octave</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="vexflowstafflinenotecalculator.html#rules" class="tsd-kind-icon">rules</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="vexflowstafflinenotecalculator.html#voiceidx" class="tsd-kind-icon">voice<wbr>Idx</a>
+								<a href="vexflowstafflinenotecalculator.html#staffpitchlistmapping" class="tsd-kind-icon">staff<wbr>Pitch<wbr>List<wbr>Mapping</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="vexflowstafflinenotecalculator.html#getstafflineuniquepositioncount" class="tsd-kind-icon">get<wbr>Staffline<wbr>Unique<wbr>Position<wbr>Count</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="vexflowstafflinenotecalculator.html#positionnote" class="tsd-kind-icon">position<wbr>Note</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="vexflowstafflinenotecalculator.html#tracknote" class="tsd-kind-icon">track<wbr>Note</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="vexflowstafflinenotecalculator.html#pitchindexof" class="tsd-kind-icon">Pitch<wbr>Index<wbr>Of</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="vexflowstafflinenotecalculator.html#findorinsert" class="tsd-kind-icon">find<wbr>OrInsert</a>
 							</li>
 						</ul>
 					</li>
