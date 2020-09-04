@@ -5,7 +5,7 @@ permalink: /usage/script/
 ---
 
 The documentation for OSMD has moved to the [OSMD Wiki](https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/wiki), please see there:
-[https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/wiki](https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/wiki).
+[https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/wiki](https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/wiki)
 
 # This page focuses on using OpenSheetMusicDisplay as global library via script tag. For usage with module bundlers, take a look at the [TypeScript guide](/usage/typescript) instead.
 
