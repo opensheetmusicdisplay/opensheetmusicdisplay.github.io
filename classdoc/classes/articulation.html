@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Array | OpenSheetMusicDisplay</title>
+	<title>Articulation | OpenSheetMusicDisplay</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,32 +56,21 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/__global.html">__global</a>
-				</li>
-				<li>
-					<a href="__global.array.html">Array</a>
+					<a href="articulation.html">Articulation</a>
 				</li>
 			</ul>
-			<h1>Interface Array&lt;T&gt;</h1>
+			<h1>Class Articulation</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>T</h4>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Array</span>
+						<span class="target">Articulation</span>
 					</li>
 				</ul>
 			</section>
@@ -90,87 +79,101 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="articulation.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="articulation.html#articulationenum" class="tsd-kind-icon">articulation<wbr>Enum</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="articulation.html#placement" class="tsd-kind-icon">placement</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="__global.array.html#clear" class="tsd-kind-icon">clear</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="__global.array.html#contains" class="tsd-kind-icon">contains</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="__global.array.html#last" class="tsd-kind-icon">last</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="articulation.html#equals" class="tsd-kind-icon">Equals</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="clear" class="tsd-anchor"></a>
-					<h3>clear</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Articulation<span class="tsd-signature-symbol">(</span>articulationEnum<span class="tsd-signature-symbol">: </span><a href="../enums/articulationenum.html" class="tsd-signature-type">ArticulationEnum</a>, placement<span class="tsd-signature-symbol">: </span><a href="../enums/placementenum.html" class="tsd-signature-type">PlacementEnum</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="articulation.html" class="tsd-signature-type">Articulation</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/Util/CollectionUtil.ts#L8">Util/CollectionUtil.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/VoiceData/Articulation.ts#L7">MusicalScore/VoiceData/Articulation.ts:7</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Deletes all elements from an array</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="contains" class="tsd-anchor"></a>
-					<h3>contains</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">contains<span class="tsd-signature-symbol">(</span>elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/Util/CollectionUtil.ts#L10">Util/CollectionUtil.ts:10</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns true if the element is found in the array</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>elem: <span class="tsd-signature-type">T</span></h5>
+									<h5>articulationEnum: <a href="../enums/articulationenum.html" class="tsd-signature-type">ArticulationEnum</a></h5>
+								</li>
+								<li>
+									<h5>placement: <a href="../enums/placementenum.html" class="tsd-signature-type">PlacementEnum</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="articulation.html" class="tsd-signature-type">Articulation</a></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="last" class="tsd-anchor"></a>
-					<h3>last</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">last<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="articulationenum" class="tsd-anchor"></a>
+					<h3>articulation<wbr>Enum</h3>
+					<div class="tsd-signature tsd-kind-icon">articulation<wbr>Enum<span class="tsd-signature-symbol">:</span> <a href="../enums/articulationenum.html" class="tsd-signature-type">ArticulationEnum</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/VoiceData/Articulation.ts#L7">MusicalScore/VoiceData/Articulation.ts:7</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="placement" class="tsd-anchor"></a>
+					<h3>placement</h3>
+					<div class="tsd-signature tsd-kind-icon">placement<span class="tsd-signature-symbol">:</span> <a href="../enums/placementenum.html" class="tsd-signature-type">PlacementEnum</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/VoiceData/Articulation.ts#L5">MusicalScore/VoiceData/Articulation.ts:5</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="equals" class="tsd-anchor"></a>
+					<h3>Equals</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">Equals<span class="tsd-signature-symbol">(</span>otherArticulation<span class="tsd-signature-symbol">: </span><a href="articulation.html" class="tsd-signature-type">Articulation</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/Util/CollectionUtil.ts#L6">Util/CollectionUtil.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/VoiceData/Articulation.ts#L14">MusicalScore/VoiceData/Articulation.ts:14</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns the last element from an array</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>otherArticulation: <a href="articulation.html" class="tsd-signature-type">Articulation</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -182,26 +185,26 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-namespace">
-						<a href="../modules/__global.html">__global</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
-						<a href="__global.array.html" class="tsd-kind-icon">Array</a>
+					<li class="current tsd-kind-class">
+						<a href="articulation.html" class="tsd-kind-icon">Articulation</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="__global.array.html#clear" class="tsd-kind-icon">clear</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="articulation.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="__global.array.html#contains" class="tsd-kind-icon">contains</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="articulation.html#articulationenum" class="tsd-kind-icon">articulation<wbr>Enum</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="__global.array.html#last" class="tsd-kind-icon">last</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="articulation.html#placement" class="tsd-kind-icon">placement</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="articulation.html#equals" class="tsd-kind-icon">Equals</a>
 							</li>
 						</ul>
 					</li>
