@@ -99,6 +99,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="graphicalslur.html#graceend" class="tsd-kind-icon">grace<wbr>End</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="graphicalslur.html#gracestart" class="tsd-kind-icon">grace<wbr>Start</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="graphicalslur.html#placement" class="tsd-kind-icon">placement</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="graphicalslur.html#rules" class="tsd-kind-icon">rules</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="graphicalslur.html#slur" class="tsd-kind-icon">slur</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="graphicalslur.html#staffentries" class="tsd-kind-icon">staff<wbr>Entries</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="graphicalslur.html#degreestoradiansfactor" class="tsd-kind-icon">degrees<wbr>ToRadians<wbr>Factor</a></li>
@@ -133,20 +134,23 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Graphical<wbr>Slur<span class="tsd-signature-symbol">(</span>slur<span class="tsd-signature-symbol">: </span><a href="slur.html" class="tsd-signature-type">Slur</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="graphicalslur.html" class="tsd-signature-type">GraphicalSlur</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Graphical<wbr>Slur<span class="tsd-signature-symbol">(</span>slur<span class="tsd-signature-symbol">: </span><a href="slur.html" class="tsd-signature-type">Slur</a>, rules<span class="tsd-signature-symbol">: </span><a href="engravingrules.html" class="tsd-signature-type">EngravingRules</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="graphicalslur.html" class="tsd-signature-type">GraphicalSlur</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="graphicalcurve.html">GraphicalCurve</a>.<a href="graphicalcurve.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L17">MusicalScore/Graphical/GraphicalSlur.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L17">MusicalScore/Graphical/GraphicalSlur.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>slur: <a href="slur.html" class="tsd-signature-type">Slur</a></h5>
+								</li>
+								<li>
+									<h5>rules: <a href="engravingrules.html" class="tsd-signature-type">EngravingRules</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="graphicalslur.html" class="tsd-signature-type">GraphicalSlur</a></h4>
@@ -163,7 +167,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="graphicalcurve.html">GraphicalCurve</a>.<a href="graphicalcurve.html#bezierendcontrolpt">bezierEndControlPt</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalCurve.ts#L28">MusicalScore/Graphical/GraphicalCurve.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalCurve.ts#L28">MusicalScore/Graphical/GraphicalCurve.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -174,7 +178,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="graphicalcurve.html">GraphicalCurve</a>.<a href="graphicalcurve.html#bezierendpt">bezierEndPt</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalCurve.ts#L29">MusicalScore/Graphical/GraphicalCurve.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalCurve.ts#L29">MusicalScore/Graphical/GraphicalCurve.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -185,7 +189,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="graphicalcurve.html">GraphicalCurve</a>.<a href="graphicalcurve.html#bezierstartcontrolpt">bezierStartControlPt</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalCurve.ts#L27">MusicalScore/Graphical/GraphicalCurve.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalCurve.ts#L27">MusicalScore/Graphical/GraphicalCurve.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -196,7 +200,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="graphicalcurve.html">GraphicalCurve</a>.<a href="graphicalcurve.html#bezierstartpt">bezierStartPt</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalCurve.ts#L26">MusicalScore/Graphical/GraphicalCurve.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalCurve.ts#L26">MusicalScore/Graphical/GraphicalCurve.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -206,7 +210,7 @@
 					<div class="tsd-signature tsd-kind-icon">grace<wbr>End<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L29">MusicalScore/Graphical/GraphicalSlur.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L30">MusicalScore/Graphical/GraphicalSlur.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -216,7 +220,7 @@
 					<div class="tsd-signature tsd-kind-icon">grace<wbr>Start<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L28">MusicalScore/Graphical/GraphicalSlur.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L29">MusicalScore/Graphical/GraphicalSlur.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -226,7 +230,17 @@
 					<div class="tsd-signature tsd-kind-icon">placement<span class="tsd-signature-symbol">:</span> <a href="../enums/placementenum.html" class="tsd-signature-type">PlacementEnum</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L27">MusicalScore/Graphical/GraphicalSlur.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L28">MusicalScore/Graphical/GraphicalSlur.ts:28</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="rules" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> rules</h3>
+					<div class="tsd-signature tsd-kind-icon">rules<span class="tsd-signature-symbol">:</span> <a href="engravingrules.html" class="tsd-signature-type">EngravingRules</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L31">MusicalScore/Graphical/GraphicalSlur.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -236,7 +250,7 @@
 					<div class="tsd-signature tsd-kind-icon">slur<span class="tsd-signature-symbol">:</span> <a href="slur.html" class="tsd-signature-type">Slur</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L25">MusicalScore/Graphical/GraphicalSlur.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L26">MusicalScore/Graphical/GraphicalSlur.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -246,7 +260,7 @@
 					<div class="tsd-signature tsd-kind-icon">staff<wbr>Entries<span class="tsd-signature-symbol">:</span> <a href="graphicalstaffentry.html" class="tsd-signature-type">GraphicalStaffEntry</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L26">MusicalScore/Graphical/GraphicalSlur.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L27">MusicalScore/Graphical/GraphicalSlur.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -256,7 +270,7 @@
 					<div class="tsd-signature tsd-kind-icon">degrees<wbr>ToRadians<wbr>Factor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Math.PI / 180</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L918">MusicalScore/Graphical/GraphicalSlur.ts:918</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L925">MusicalScore/Graphical/GraphicalSlur.ts:925</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -273,7 +287,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L893">MusicalScore/Graphical/GraphicalSlur.ts:893</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L900">MusicalScore/Graphical/GraphicalSlur.ts:900</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -320,7 +334,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L702">MusicalScore/Graphical/GraphicalSlur.ts:702</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L709">MusicalScore/Graphical/GraphicalSlur.ts:709</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -359,7 +373,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L865">MusicalScore/Graphical/GraphicalSlur.ts:865</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L872">MusicalScore/Graphical/GraphicalSlur.ts:872</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -409,7 +423,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L62">MusicalScore/Graphical/GraphicalSlur.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L64">MusicalScore/Graphical/GraphicalSlur.ts:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -437,7 +451,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="graphicalcurve.html">GraphicalCurve</a>.<a href="graphicalcurve.html#calculatecurvepointatindex">calculateCurvePointAtIndex</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalCurve.ts#L35">MusicalScore/Graphical/GraphicalCurve.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalCurve.ts#L35">MusicalScore/Graphical/GraphicalCurve.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -464,7 +478,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L847">MusicalScore/Graphical/GraphicalSlur.ts:847</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L854">MusicalScore/Graphical/GraphicalSlur.ts:854</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -498,7 +512,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L734">MusicalScore/Graphical/GraphicalSlur.ts:734</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L741">MusicalScore/Graphical/GraphicalSlur.ts:741</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -534,7 +548,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L760">MusicalScore/Graphical/GraphicalSlur.ts:760</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L767">MusicalScore/Graphical/GraphicalSlur.ts:767</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -570,7 +584,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L601">MusicalScore/Graphical/GraphicalSlur.ts:601</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L603">MusicalScore/Graphical/GraphicalSlur.ts:603</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -603,7 +617,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L453">MusicalScore/Graphical/GraphicalSlur.ts:453</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L455">MusicalScore/Graphical/GraphicalSlur.ts:455</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -659,7 +673,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L671">MusicalScore/Graphical/GraphicalSlur.ts:671</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L678">MusicalScore/Graphical/GraphicalSlur.ts:678</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -698,7 +712,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L805">MusicalScore/Graphical/GraphicalSlur.ts:805</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L812">MusicalScore/Graphical/GraphicalSlur.ts:812</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -737,7 +751,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L827">MusicalScore/Graphical/GraphicalSlur.ts:827</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L834">MusicalScore/Graphical/GraphicalSlur.ts:834</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -776,7 +790,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L784">MusicalScore/Graphical/GraphicalSlur.ts:784</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L791">MusicalScore/Graphical/GraphicalSlur.ts:791</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -806,7 +820,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/95441df/src/MusicalScore/Graphical/GraphicalSlur.ts#L36">MusicalScore/Graphical/GraphicalSlur.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/0c17307/src/MusicalScore/Graphical/GraphicalSlur.ts#L38">MusicalScore/Graphical/GraphicalSlur.ts:38</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -869,6 +883,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="graphicalslur.html#placement" class="tsd-kind-icon">placement</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="graphicalslur.html#rules" class="tsd-kind-icon">rules</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="graphicalslur.html#slur" class="tsd-kind-icon">slur</a>
