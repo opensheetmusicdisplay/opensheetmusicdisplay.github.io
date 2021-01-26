@@ -94,7 +94,10 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="tabnote.html#fingering" class="tsd-kind-icon">Fingering</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="tabnote.html#isgracenote" class="tsd-kind-icon">Is<wbr>Grace<wbr>Note</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="tabnote.html#notetographicalnoteobjectid" class="tsd-kind-icon">Note<wbr>ToGraphical<wbr>Note<wbr>Object<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="tabnote.html#bendarray" class="tsd-kind-icon">bend<wbr>Array</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="tabnote.html#displayoctaveunpitched" class="tsd-kind-icon">display<wbr>Octave<wbr>Unpitched</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="tabnote.html#displaystepunpitched" class="tsd-kind-icon">display<wbr>Step<wbr>Unpitched</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="tabnote.html#fretnumber" class="tsd-kind-icon">fret<wbr>Number</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="tabnote.html#halftone" class="tsd-kind-icon">half<wbr>Tone</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="tabnote.html#state" class="tsd-kind-icon">state</a></li>
@@ -162,7 +165,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="note.html">Note</a>.<a href="note.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/TabNote.ts#L8">MusicalScore/VoiceData/TabNote.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/TabNote.ts#L8">MusicalScore/VoiceData/TabNote.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -209,7 +212,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#fingering">Fingering</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L96">MusicalScore/VoiceData/Note.ts:96</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L98">MusicalScore/VoiceData/Note.ts:98</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -220,9 +223,25 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#isgracenote">IsGraceNote</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L71">MusicalScore/VoiceData/Note.ts:71</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L73">MusicalScore/VoiceData/Note.ts:73</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="notetographicalnoteobjectid" class="tsd-anchor"></a>
+					<h3>Note<wbr>ToGraphical<wbr>Note<wbr>Object<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">Note<wbr>ToGraphical<wbr>Note<wbr>Object<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#notetographicalnoteobjectid">NoteToGraphicalNoteObjectId</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L100">MusicalScore/VoiceData/Note.ts:100</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Used by GraphicalNote.FromNote(note) and osmd.rules.GNote(note) to get a GraphicalNote from a Note.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="bendarray" class="tsd-anchor"></a>
@@ -230,7 +249,29 @@
 					<div class="tsd-signature tsd-kind-icon">bend<wbr>Array<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>bendalter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>direction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/TabNote.ts#L21">MusicalScore/VoiceData/TabNote.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/TabNote.ts#L21">MusicalScore/VoiceData/TabNote.ts:21</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="displayoctaveunpitched" class="tsd-anchor"></a>
+					<h3>display<wbr>Octave<wbr>Unpitched</h3>
+					<div class="tsd-signature tsd-kind-icon">display<wbr>Octave<wbr>Unpitched<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#displayoctaveunpitched">displayOctaveUnpitched</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L57">MusicalScore/VoiceData/Note.ts:57</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="displaystepunpitched" class="tsd-anchor"></a>
+					<h3>display<wbr>Step<wbr>Unpitched</h3>
+					<div class="tsd-signature tsd-kind-icon">display<wbr>Step<wbr>Unpitched<span class="tsd-signature-symbol">:</span> <a href="../enums/noteenum.html" class="tsd-signature-type">NoteEnum</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#displaystepunpitched">displayStepUnpitched</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L56">MusicalScore/VoiceData/Note.ts:56</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -240,7 +281,7 @@
 					<div class="tsd-signature tsd-kind-icon">fret<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/TabNote.ts#L20">MusicalScore/VoiceData/TabNote.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/TabNote.ts#L20">MusicalScore/VoiceData/TabNote.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -251,7 +292,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#halftone">halfTone</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L39">MusicalScore/VoiceData/Note.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L39">MusicalScore/VoiceData/Note.ts:39</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -267,7 +308,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#state">state</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L40">MusicalScore/VoiceData/Note.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L40">MusicalScore/VoiceData/Note.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -277,7 +318,7 @@
 					<div class="tsd-signature tsd-kind-icon">string<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/TabNote.ts#L19">MusicalScore/VoiceData/TabNote.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/TabNote.ts#L19">MusicalScore/VoiceData/TabNote.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -287,7 +328,7 @@
 					<div class="tsd-signature tsd-kind-icon">vibrato<wbr>Stroke<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/TabNote.ts#L22">MusicalScore/VoiceData/TabNote.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/TabNote.ts#L22">MusicalScore/VoiceData/TabNote.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -306,7 +347,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#arpeggio-1">Arpeggio</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L182">MusicalScore/VoiceData/Note.ts:182</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L186">MusicalScore/VoiceData/Note.ts:186</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="arpeggio.html" class="tsd-signature-type">Arpeggio</a></h4>
@@ -315,7 +356,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#arpeggio-1">Arpeggio</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L185">MusicalScore/VoiceData/Note.ts:185</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L189">MusicalScore/VoiceData/Note.ts:189</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -338,7 +379,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/TabNote.ts#L32">MusicalScore/VoiceData/TabNote.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/TabNote.ts#L32">MusicalScore/VoiceData/TabNote.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>bendalter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>direction<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -355,7 +396,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/TabNote.ts#L28">MusicalScore/VoiceData/TabNote.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/TabNote.ts#L28">MusicalScore/VoiceData/TabNote.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -374,7 +415,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#iscuenote-1">IsCueNote</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L188">MusicalScore/VoiceData/Note.ts:188</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L192">MusicalScore/VoiceData/Note.ts:192</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -383,7 +424,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#iscuenote-1">IsCueNote</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L191">MusicalScore/VoiceData/Note.ts:191</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L195">MusicalScore/VoiceData/Note.ts:195</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -408,7 +449,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#length-1">Length</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L110">MusicalScore/VoiceData/Note.ts:110</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L114">MusicalScore/VoiceData/Note.ts:114</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="fraction.html" class="tsd-signature-type">Fraction</a></h4>
@@ -417,7 +458,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#length-1">Length</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L113">MusicalScore/VoiceData/Note.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L117">MusicalScore/VoiceData/Note.ts:117</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -442,7 +483,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#normalnotes-1">NormalNotes</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L131">MusicalScore/VoiceData/Note.ts:131</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L135">MusicalScore/VoiceData/Note.ts:135</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -451,7 +492,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#normalnotes-1">NormalNotes</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L134">MusicalScore/VoiceData/Note.ts:134</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L138">MusicalScore/VoiceData/Note.ts:138</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -475,7 +516,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#noteasstring">NoteAsString</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L56">MusicalScore/VoiceData/Note.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L58">MusicalScore/VoiceData/Note.ts:58</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -494,7 +535,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#notebeam">NoteBeam</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L140">MusicalScore/VoiceData/Note.ts:140</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L144">MusicalScore/VoiceData/Note.ts:144</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="beam.html" class="tsd-signature-type">Beam</a></h4>
@@ -503,7 +544,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#notebeam">NoteBeam</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L143">MusicalScore/VoiceData/Note.ts:143</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L147">MusicalScore/VoiceData/Note.ts:147</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -528,7 +569,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#noteslurs">NoteSlurs</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L164">MusicalScore/VoiceData/Note.ts:164</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L168">MusicalScore/VoiceData/Note.ts:168</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="slur.html" class="tsd-signature-type">Slur</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -537,7 +578,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#noteslurs">NoteSlurs</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L167">MusicalScore/VoiceData/Note.ts:167</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L171">MusicalScore/VoiceData/Note.ts:171</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -562,7 +603,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#notetie">NoteTie</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L158">MusicalScore/VoiceData/Note.ts:158</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L162">MusicalScore/VoiceData/Note.ts:162</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="tie.html" class="tsd-signature-type">Tie</a></h4>
@@ -571,7 +612,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#notetie">NoteTie</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L161">MusicalScore/VoiceData/Note.ts:161</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L165">MusicalScore/VoiceData/Note.ts:165</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -596,7 +637,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#notetuplet">NoteTuplet</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L152">MusicalScore/VoiceData/Note.ts:152</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L156">MusicalScore/VoiceData/Note.ts:156</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="tuplet.html" class="tsd-signature-type">Tuplet</a></h4>
@@ -605,7 +646,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#notetuplet">NoteTuplet</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L155">MusicalScore/VoiceData/Note.ts:155</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L159">MusicalScore/VoiceData/Note.ts:159</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -630,7 +671,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#notetypexml-1">NoteTypeXml</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L125">MusicalScore/VoiceData/Note.ts:125</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L129">MusicalScore/VoiceData/Note.ts:129</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/notetype.html" class="tsd-signature-type">NoteType</a></h4>
@@ -639,7 +680,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#notetypexml-1">NoteTypeXml</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L128">MusicalScore/VoiceData/Note.ts:128</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L132">MusicalScore/VoiceData/Note.ts:132</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -664,7 +705,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#notehead-1">Notehead</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L149">MusicalScore/VoiceData/Note.ts:149</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L153">MusicalScore/VoiceData/Note.ts:153</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="notehead.html" class="tsd-signature-type">Notehead</a></h4>
@@ -673,7 +714,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#notehead-1">Notehead</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L146">MusicalScore/VoiceData/Note.ts:146</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L150">MusicalScore/VoiceData/Note.ts:150</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -698,7 +739,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#noteheadcolor-1">NoteheadColor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L219">MusicalScore/VoiceData/Note.ts:219</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L223">MusicalScore/VoiceData/Note.ts:223</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -712,7 +753,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#noteheadcolor-1">NoteheadColor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L222">MusicalScore/VoiceData/Note.ts:222</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L226">MusicalScore/VoiceData/Note.ts:226</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -742,7 +783,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#noteheadcolorcurrentlyrendered-1">NoteheadColorCurrentlyRendered</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L225">MusicalScore/VoiceData/Note.ts:225</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L229">MusicalScore/VoiceData/Note.ts:229</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -751,7 +792,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#noteheadcolorcurrentlyrendered-1">NoteheadColorCurrentlyRendered</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L228">MusicalScore/VoiceData/Note.ts:228</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L232">MusicalScore/VoiceData/Note.ts:232</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -776,7 +817,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#noteheadcolorxml-1">NoteheadColorXml</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L212">MusicalScore/VoiceData/Note.ts:212</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L216">MusicalScore/VoiceData/Note.ts:216</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -785,7 +826,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#noteheadcolorxml-1">NoteheadColorXml</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L215">MusicalScore/VoiceData/Note.ts:215</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L219">MusicalScore/VoiceData/Note.ts:219</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -809,7 +850,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#parentstaff">ParentStaff</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L107">MusicalScore/VoiceData/Note.ts:107</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L111">MusicalScore/VoiceData/Note.ts:111</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="staff.html" class="tsd-signature-type">Staff</a></h4>
@@ -827,7 +868,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#parentstaffentry-1">ParentStaffEntry</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L104">MusicalScore/VoiceData/Note.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L108">MusicalScore/VoiceData/Note.ts:108</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="sourcestaffentry.html" class="tsd-signature-type">SourceStaffEntry</a></h4>
@@ -846,7 +887,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#parentvoiceentry">ParentVoiceEntry</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L98">MusicalScore/VoiceData/Note.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L102">MusicalScore/VoiceData/Note.ts:102</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="voiceentry.html" class="tsd-signature-type">VoiceEntry</a></h4>
@@ -855,7 +896,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#parentvoiceentry">ParentVoiceEntry</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L101">MusicalScore/VoiceData/Note.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L105">MusicalScore/VoiceData/Note.ts:105</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -879,7 +920,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#pitch-1">Pitch</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L137">MusicalScore/VoiceData/Note.ts:137</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L141">MusicalScore/VoiceData/Note.ts:141</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="pitch.html" class="tsd-signature-type">Pitch</a></h4>
@@ -898,7 +939,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#playbackinstrumentid-1">PlaybackInstrumentId</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L170">MusicalScore/VoiceData/Note.ts:170</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L174">MusicalScore/VoiceData/Note.ts:174</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -907,7 +948,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#playbackinstrumentid-1">PlaybackInstrumentId</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L173">MusicalScore/VoiceData/Note.ts:173</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L177">MusicalScore/VoiceData/Note.ts:177</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -932,7 +973,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#printobject-1">PrintObject</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L176">MusicalScore/VoiceData/Note.ts:176</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L180">MusicalScore/VoiceData/Note.ts:180</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -941,7 +982,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#printobject-1">PrintObject</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L179">MusicalScore/VoiceData/Note.ts:179</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L183">MusicalScore/VoiceData/Note.ts:183</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -965,7 +1006,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#sourcemeasure-1">SourceMeasure</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L116">MusicalScore/VoiceData/Note.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L120">MusicalScore/VoiceData/Note.ts:120</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="sourcemeasure.html" class="tsd-signature-type">SourceMeasure</a></h4>
@@ -984,7 +1025,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#stemcolorxml-1">StemColorXml</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L206">MusicalScore/VoiceData/Note.ts:206</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L210">MusicalScore/VoiceData/Note.ts:210</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -993,7 +1034,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#stemcolorxml-1">StemColorXml</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L209">MusicalScore/VoiceData/Note.ts:209</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L213">MusicalScore/VoiceData/Note.ts:213</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1018,7 +1059,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#stemdirectionxml-1">StemDirectionXml</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L194">MusicalScore/VoiceData/Note.ts:194</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L198">MusicalScore/VoiceData/Note.ts:198</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/stemdirectiontype.html" class="tsd-signature-type">StemDirectionType</a></h4>
@@ -1027,7 +1068,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#stemdirectionxml-1">StemDirectionXml</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L197">MusicalScore/VoiceData/Note.ts:197</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L201">MusicalScore/VoiceData/Note.ts:201</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1050,7 +1091,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/TabNote.ts#L24">MusicalScore/VoiceData/TabNote.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/TabNote.ts#L24">MusicalScore/VoiceData/TabNote.ts:24</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -1069,7 +1110,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#tremolostrokes-1">TremoloStrokes</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L200">MusicalScore/VoiceData/Note.ts:200</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L204">MusicalScore/VoiceData/Note.ts:204</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -1078,7 +1119,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#tremolostrokes-1">TremoloStrokes</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L203">MusicalScore/VoiceData/Note.ts:203</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L207">MusicalScore/VoiceData/Note.ts:207</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1103,7 +1144,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#typelength-1">TypeLength</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L119">MusicalScore/VoiceData/Note.ts:119</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L123">MusicalScore/VoiceData/Note.ts:123</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="fraction.html" class="tsd-signature-type">Fraction</a></h4>
@@ -1112,7 +1153,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#typelength-1">TypeLength</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L122">MusicalScore/VoiceData/Note.ts:122</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L126">MusicalScore/VoiceData/Note.ts:126</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1135,7 +1176,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/TabNote.ts#L36">MusicalScore/VoiceData/TabNote.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/TabNote.ts#L36">MusicalScore/VoiceData/TabNote.ts:36</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1156,7 +1197,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#tostring">ToString</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L244">MusicalScore/VoiceData/Note.ts:244</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L248">MusicalScore/VoiceData/Note.ts:248</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -1174,7 +1215,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#checkfordoubleslur">checkForDoubleSlur</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L257">MusicalScore/VoiceData/Note.ts:257</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L261">MusicalScore/VoiceData/Note.ts:261</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1198,7 +1239,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#getabsolutetimestamp">getAbsoluteTimestamp</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L251">MusicalScore/VoiceData/Note.ts:251</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L255">MusicalScore/VoiceData/Note.ts:255</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="fraction.html" class="tsd-signature-type">Fraction</a></h4>
@@ -1216,7 +1257,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#isrest">isRest</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L232">MusicalScore/VoiceData/Note.ts:232</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L236">MusicalScore/VoiceData/Note.ts:236</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1234,7 +1275,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="note.html">Note</a>.<a href="note.html#iswholerest">isWholeRest</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/3e25912/src/MusicalScore/VoiceData/Note.ts#L240">MusicalScore/VoiceData/Note.ts:240</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/92224e7/src/MusicalScore/VoiceData/Note.ts#L244">MusicalScore/VoiceData/Note.ts:244</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1274,8 +1315,17 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="tabnote.html#isgracenote" class="tsd-kind-icon">Is<wbr>Grace<wbr>Note</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="tabnote.html#notetographicalnoteobjectid" class="tsd-kind-icon">Note<wbr>ToGraphical<wbr>Note<wbr>Object<wbr>Id</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="tabnote.html#bendarray" class="tsd-kind-icon">bend<wbr>Array</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="tabnote.html#displayoctaveunpitched" class="tsd-kind-icon">display<wbr>Octave<wbr>Unpitched</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="tabnote.html#displaystepunpitched" class="tsd-kind-icon">display<wbr>Step<wbr>Unpitched</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="tabnote.html#fretnumber" class="tsd-kind-icon">fret<wbr>Number</a>
