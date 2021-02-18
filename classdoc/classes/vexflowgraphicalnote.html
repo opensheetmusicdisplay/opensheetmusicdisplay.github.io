@@ -100,6 +100,8 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="vexflowgraphicalnote.html#drawnaccidental" class="tsd-kind-icon">Drawn<wbr>Accidental</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="vexflowgraphicalnote.html#basefingeringxoffset" class="tsd-kind-icon">base<wbr>FingeringXOffset</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="vexflowgraphicalnote.html#basestringnumberxoffset" class="tsd-kind-icon">base<wbr>String<wbr>NumberXOffset</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="vexflowgraphicalnote.html#boundingbox" class="tsd-kind-icon">bounding<wbr>Box</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="vexflowgraphicalnote.html#clef" class="tsd-kind-icon">clef</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="vexflowgraphicalnote.html#graphicalnotelength" class="tsd-kind-icon">graphical<wbr>Note<wbr>Length</a></li>
@@ -108,7 +110,9 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="vexflowgraphicalnote.html#parentvoiceentry" class="tsd-kind-icon">parent<wbr>Voice<wbr>Entry</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="vexflowgraphicalnote.html#rules" class="tsd-kind-icon">rules</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="vexflowgraphicalnote.html#sourcenote" class="tsd-kind-icon">source<wbr>Note</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="vexflowgraphicalnote.html#staffline" class="tsd-kind-icon">staff<wbr>Line</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vexflowgraphicalnote.html#vfnote" class="tsd-kind-icon">vfnote</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vexflowgraphicalnote.html#vfnoteindex" class="tsd-kind-icon">vfnote<wbr>Index</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vexflowgraphicalnote.html#vfpitch" class="tsd-kind-icon">vfpitch</a></li>
 							</ul>
 						</section>
@@ -127,6 +131,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vexflowgraphicalnote.html#drawpitch" class="tsd-kind-icon">draw<wbr>Pitch</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vexflowgraphicalnote.html#getsvggelement" class="tsd-kind-icon">getSVGGElement</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vexflowgraphicalnote.html#getsvgid" class="tsd-kind-icon">getSVGId</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="vexflowgraphicalnote.html#isinstanceofclass" class="tsd-kind-icon">is<wbr>Instance<wbr>OfClass</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vexflowgraphicalnote.html#notehead" class="tsd-kind-icon">notehead</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vexflowgraphicalnote.html#setaccidental" class="tsd-kind-icon">set<wbr>Accidental</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vexflowgraphicalnote.html#setindex" class="tsd-kind-icon">set<wbr>Index</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="vexflowgraphicalnote.html#fromnote" class="tsd-kind-icon">From<wbr>Note</a></li>
@@ -148,7 +154,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="graphicalnote.html">GraphicalNote</a>.<a href="graphicalnote.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L16">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L16">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:16</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -184,9 +190,31 @@
 					<h3>Drawn<wbr>Accidental</h3>
 					<div class="tsd-signature tsd-kind-icon">Drawn<wbr>Accidental<span class="tsd-signature-symbol">:</span> <a href="../enums/accidentalenum.html" class="tsd-signature-type">AccidentalEnum</a><span class="tsd-signature-symbol"> = AccidentalEnum.NONE</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="graphicalnote.html">GraphicalNote</a>.<a href="graphicalnote.html#drawnaccidental">DrawnAccidental</a></p>
+						<p>Inherited from <a href="vexflowgraphicalnote.html">VexFlowGraphicalNote</a>.<a href="vexflowgraphicalnote.html#drawnaccidental">DrawnAccidental</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/GraphicalNote.ts#L35">MusicalScore/Graphical/GraphicalNote.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/GraphicalNote.ts#L35">MusicalScore/Graphical/GraphicalNote.ts:35</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="basefingeringxoffset" class="tsd-anchor"></a>
+					<h3>base<wbr>FingeringXOffset</h3>
+					<div class="tsd-signature tsd-kind-icon">base<wbr>FingeringXOffset<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="vexflowgraphicalnote.html">VexFlowGraphicalNote</a>.<a href="vexflowgraphicalnote.html#basefingeringxoffset">baseFingeringXOffset</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/GraphicalNote.ts#L41">MusicalScore/Graphical/GraphicalNote.ts:41</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="basestringnumberxoffset" class="tsd-anchor"></a>
+					<h3>base<wbr>String<wbr>NumberXOffset</h3>
+					<div class="tsd-signature tsd-kind-icon">base<wbr>String<wbr>NumberXOffset<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="vexflowgraphicalnote.html">VexFlowGraphicalNote</a>.<a href="vexflowgraphicalnote.html#basestringnumberxoffset">baseStringNumberXOffset</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/GraphicalNote.ts#L42">MusicalScore/Graphical/GraphicalNote.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -197,7 +225,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="clickable.html">Clickable</a>.<a href="clickable.html#boundingbox">boundingBox</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/GraphicalObject.ts#L5">MusicalScore/Graphical/GraphicalObject.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/GraphicalObject.ts#L6">MusicalScore/Graphical/GraphicalObject.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -207,7 +235,7 @@
 					<div class="tsd-signature tsd-kind-icon">clef<span class="tsd-signature-symbol">:</span> <a href="clefinstruction.html" class="tsd-signature-type">ClefInstruction</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L37">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L38">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -216,9 +244,9 @@
 					<h3>graphical<wbr>Note<wbr>Length</h3>
 					<div class="tsd-signature tsd-kind-icon">graphical<wbr>Note<wbr>Length<span class="tsd-signature-symbol">:</span> <a href="fraction.html" class="tsd-signature-type">Fraction</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="graphicalnote.html">GraphicalNote</a>.<a href="graphicalnote.html#graphicalnotelength">graphicalNoteLength</a></p>
+						<p>Inherited from <a href="vexflowgraphicalnote.html">VexFlowGraphicalNote</a>.<a href="vexflowgraphicalnote.html#graphicalnotelength">graphicalNoteLength</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/GraphicalNote.ts#L36">MusicalScore/Graphical/GraphicalNote.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/GraphicalNote.ts#L36">MusicalScore/Graphical/GraphicalNote.ts:36</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -227,9 +255,9 @@
 					<h3>number<wbr>OfDots</h3>
 					<div class="tsd-signature tsd-kind-icon">number<wbr>OfDots<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="graphicalnote.html">GraphicalNote</a>.<a href="graphicalnote.html#numberofdots">numberOfDots</a></p>
+						<p>Inherited from <a href="vexflowgraphicalnote.html">VexFlowGraphicalNote</a>.<a href="vexflowgraphicalnote.html#numberofdots">numberOfDots</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/GraphicalNote.ts#L38">MusicalScore/Graphical/GraphicalNote.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/GraphicalNote.ts#L38">MusicalScore/Graphical/GraphicalNote.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -239,7 +267,7 @@
 					<div class="tsd-signature tsd-kind-icon">octave<wbr>Shift<span class="tsd-signature-symbol">:</span> <a href="../enums/octaveenum.html" class="tsd-signature-type">OctaveEnum</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L31">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L31">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -248,9 +276,9 @@
 					<h3>parent<wbr>Voice<wbr>Entry</h3>
 					<div class="tsd-signature tsd-kind-icon">parent<wbr>Voice<wbr>Entry<span class="tsd-signature-symbol">:</span> <a href="graphicalvoiceentry.html" class="tsd-signature-type">GraphicalVoiceEntry</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="graphicalnote.html">GraphicalNote</a>.<a href="graphicalnote.html#parentvoiceentry">parentVoiceEntry</a></p>
+						<p>Inherited from <a href="vexflowgraphicalnote.html">VexFlowGraphicalNote</a>.<a href="vexflowgraphicalnote.html#parentvoiceentry">parentVoiceEntry</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/GraphicalNote.ts#L37">MusicalScore/Graphical/GraphicalNote.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/GraphicalNote.ts#L37">MusicalScore/Graphical/GraphicalNote.ts:37</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -259,9 +287,9 @@
 					<h3>rules</h3>
 					<div class="tsd-signature tsd-kind-icon">rules<span class="tsd-signature-symbol">:</span> <a href="engravingrules.html" class="tsd-signature-type">EngravingRules</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="graphicalnote.html">GraphicalNote</a>.<a href="graphicalnote.html#rules">rules</a></p>
+						<p>Inherited from <a href="vexflowgraphicalnote.html">VexFlowGraphicalNote</a>.<a href="vexflowgraphicalnote.html#rules">rules</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/GraphicalNote.ts#L39">MusicalScore/Graphical/GraphicalNote.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/GraphicalNote.ts#L39">MusicalScore/Graphical/GraphicalNote.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -270,9 +298,20 @@
 					<h3>source<wbr>Note</h3>
 					<div class="tsd-signature tsd-kind-icon">source<wbr>Note<span class="tsd-signature-symbol">:</span> <a href="note.html" class="tsd-signature-type">Note</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="graphicalnote.html">GraphicalNote</a>.<a href="graphicalnote.html#sourcenote">sourceNote</a></p>
+						<p>Inherited from <a href="vexflowgraphicalnote.html">VexFlowGraphicalNote</a>.<a href="vexflowgraphicalnote.html#sourcenote">sourceNote</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/GraphicalNote.ts#L34">MusicalScore/Graphical/GraphicalNote.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/GraphicalNote.ts#L34">MusicalScore/Graphical/GraphicalNote.ts:34</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="staffline" class="tsd-anchor"></a>
+					<h3>staff<wbr>Line</h3>
+					<div class="tsd-signature tsd-kind-icon">staff<wbr>Line<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="vexflowgraphicalnote.html">VexFlowGraphicalNote</a>.<a href="vexflowgraphicalnote.html#staffline">staffLine</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/GraphicalNote.ts#L40">MusicalScore/Graphical/GraphicalNote.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -282,7 +321,17 @@
 					<div class="tsd-signature tsd-kind-icon">vfnote<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">StemmableNote</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L35">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L35">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:35</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="vfnoteindex" class="tsd-anchor"></a>
+					<h3>vfnote<wbr>Index</h3>
+					<div class="tsd-signature tsd-kind-icon">vfnote<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L36">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:36</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -292,7 +341,7 @@
 					<div class="tsd-signature tsd-kind-icon">vfpitch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="clefinstruction.html" class="tsd-signature-type">ClefInstruction</a><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L33">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L33">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -308,9 +357,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="graphicalnote.html">GraphicalNote</a>.<a href="graphicalnote.html#parentmusicpage">ParentMusicPage</a></p>
+								<p>Inherited from <a href="vexflowgraphicalnote.html">VexFlowGraphicalNote</a>.<a href="vexflowgraphicalnote.html#parentmusicpage">ParentMusicPage</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/GraphicalNote.ts#L67">MusicalScore/Graphical/GraphicalNote.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/GraphicalNote.ts#L70">MusicalScore/Graphical/GraphicalNote.ts:70</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="graphicalmusicpage.html" class="tsd-signature-type">GraphicalMusicPage</a></h4>
@@ -329,7 +378,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="clickable.html">Clickable</a>.<a href="clickable.html#positionandshape">PositionAndShape</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/GraphicalObject.ts#L7">MusicalScore/Graphical/GraphicalObject.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/GraphicalObject.ts#L8">MusicalScore/Graphical/GraphicalObject.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="boundingbox.html" class="tsd-signature-type">BoundingBox</a></h4>
@@ -338,7 +387,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="clickable.html">Clickable</a>.<a href="clickable.html#positionandshape">PositionAndShape</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/GraphicalObject.ts#L11">MusicalScore/Graphical/GraphicalObject.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/GraphicalObject.ts#L12">MusicalScore/Graphical/GraphicalObject.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -364,7 +413,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L85">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:85</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L100">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:100</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -387,7 +436,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="graphicalnote.html">GraphicalNote</a>.<a href="graphicalnote.html#transpose">Transpose</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L65">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L66">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:66</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -419,7 +468,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L61">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L62">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:62</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -442,7 +491,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L101">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L116">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:116</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -465,7 +514,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L93">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L108">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:108</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -475,6 +524,58 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="isinstanceofclass" class="tsd-anchor"></a>
+					<h3>is<wbr>Instance<wbr>OfClass</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Instance<wbr>OfClass<span class="tsd-signature-symbol">(</span>className<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="aclasshierarchytrackable.html">AClassHierarchyTrackable</a>.<a href="aclasshierarchytrackable.html#isinstanceofclass">isInstanceOfClass</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Interfaces/AClassHierarchyTrackable.ts#L5">MusicalScore/Interfaces/AClassHierarchyTrackable.ts:5</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>className: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="notehead" class="tsd-anchor"></a>
+					<h3>notehead</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">notehead<span class="tsd-signature-symbol">(</span>vfNote<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">StemmableNote</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>line<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L84">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:84</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> vfNote: <span class="tsd-signature-type">StemmableNote</span><span class="tsd-signature-symbol"> = undefined</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>line<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>line<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -488,7 +589,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L44">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L45">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -519,7 +620,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L78">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts#L79">MusicalScore/Graphical/VexFlow/VexFlowGraphicalNote.ts:79</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -551,9 +652,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="graphicalnote.html">GraphicalNote</a>.<a href="graphicalnote.html#fromnote">FromNote</a></p>
+								<p>Inherited from <a href="vexflowgraphicalnote.html">VexFlowGraphicalNote</a>.<a href="vexflowgraphicalnote.html#fromnote">FromNote</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/decd6be/src/MusicalScore/Graphical/GraphicalNote.ts#L73">MusicalScore/Graphical/GraphicalNote.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/Graphical/GraphicalNote.ts#L76">MusicalScore/Graphical/GraphicalNote.ts:76</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -598,6 +699,12 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="vexflowgraphicalnote.html#drawnaccidental" class="tsd-kind-icon">Drawn<wbr>Accidental</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="vexflowgraphicalnote.html#basefingeringxoffset" class="tsd-kind-icon">base<wbr>FingeringXOffset</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="vexflowgraphicalnote.html#basestringnumberxoffset" class="tsd-kind-icon">base<wbr>String<wbr>NumberXOffset</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="vexflowgraphicalnote.html#boundingbox" class="tsd-kind-icon">bounding<wbr>Box</a>
 							</li>
@@ -622,8 +729,14 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="vexflowgraphicalnote.html#sourcenote" class="tsd-kind-icon">source<wbr>Note</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="vexflowgraphicalnote.html#staffline" class="tsd-kind-icon">staff<wbr>Line</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="vexflowgraphicalnote.html#vfnote" class="tsd-kind-icon">vfnote</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="vexflowgraphicalnote.html#vfnoteindex" class="tsd-kind-icon">vfnote<wbr>Index</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="vexflowgraphicalnote.html#vfpitch" class="tsd-kind-icon">vfpitch</a>
@@ -648,6 +761,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="vexflowgraphicalnote.html#getsvgid" class="tsd-kind-icon">getSVGId</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="vexflowgraphicalnote.html#isinstanceofclass" class="tsd-kind-icon">is<wbr>Instance<wbr>OfClass</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="vexflowgraphicalnote.html#notehead" class="tsd-kind-icon">notehead</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="vexflowgraphicalnote.html#setaccidental" class="tsd-kind-icon">set<wbr>Accidental</a>
