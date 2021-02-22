@@ -96,11 +96,13 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="keyinstruction.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-private-protected">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="keyinstruction.html#alteratednotes" class="tsd-kind-icon">alterated<wbr>Notes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="keyinstruction.html#istransposedby" class="tsd-kind-icon">is<wbr>Transposed<wbr>By</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="keyinstruction.html#keytype" class="tsd-kind-icon">key<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="keyinstruction.html#keytypeoriginal" class="tsd-kind-icon">key<wbr>Type<wbr>Original</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="keyinstruction.html#mode" class="tsd-kind-icon">mode</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="keyinstruction.html#parent" class="tsd-kind-icon">parent</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="keyinstruction.html#flatpositionlist" class="tsd-kind-icon">flat<wbr>Position<wbr>List</a></li>
@@ -146,7 +148,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="abstractnotationinstruction.html">AbstractNotationInstruction</a>.<a href="abstractnotationinstruction.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L10">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L10">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -166,7 +168,7 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="alteratednotes" class="tsd-anchor"></a>
@@ -174,9 +176,24 @@
 					<div class="tsd-signature tsd-kind-icon">alterated<wbr>Notes<span class="tsd-signature-symbol">:</span> <a href="../enums/noteenum.html" class="tsd-signature-type">NoteEnum</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L23">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L25">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:25</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="istransposedby" class="tsd-anchor"></a>
+					<h3>is<wbr>Transposed<wbr>By</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Transposed<wbr>By<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L27">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:27</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The halftones this instruction was transposed by, compared to the original.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="keytype" class="tsd-anchor"></a>
@@ -184,7 +201,17 @@
 					<div class="tsd-signature tsd-kind-icon">key<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L21">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L22">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:22</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="keytypeoriginal" class="tsd-anchor"></a>
+					<h3>key<wbr>Type<wbr>Original</h3>
+					<div class="tsd-signature tsd-kind-icon">key<wbr>Type<wbr>Original<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L23">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -194,7 +221,7 @@
 					<div class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">:</span> <a href="../enums/keyenum.html" class="tsd-signature-type">KeyEnum</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L22">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L24">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -205,7 +232,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="abstractnotationinstruction.html">AbstractNotationInstruction</a>.<a href="abstractnotationinstruction.html#parent">parent</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts#L9">MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts#L9">MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -215,7 +242,7 @@
 					<div class="tsd-signature tsd-kind-icon">flat<wbr>Position<wbr>List<span class="tsd-signature-symbol">:</span> <a href="../enums/noteenum.html" class="tsd-signature-type">NoteEnum</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [NoteEnum.B, NoteEnum.E, NoteEnum.A, NoteEnum.D, NoteEnum.G, NoteEnum.C, NoteEnum.F]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L19">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L20">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -225,7 +252,7 @@
 					<div class="tsd-signature tsd-kind-icon">sharp<wbr>Position<wbr>List<span class="tsd-signature-symbol">:</span> <a href="../enums/noteenum.html" class="tsd-signature-type">NoteEnum</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [NoteEnum.F, NoteEnum.C, NoteEnum.G, NoteEnum.D, NoteEnum.A, NoteEnum.E, NoteEnum.B]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L18">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L19">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -242,7 +269,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L56">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L62">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:62</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/noteenum.html" class="tsd-signature-type">NoteEnum</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -260,7 +287,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L39">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L45">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:45</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -268,7 +295,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L43">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L49">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:49</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -292,7 +319,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L48">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L54">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:54</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/keyenum.html" class="tsd-signature-type">KeyEnum</a></h4>
@@ -300,7 +327,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L52">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L58">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:58</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -325,7 +352,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="abstractnotationinstruction.html">AbstractNotationInstruction</a>.<a href="abstractnotationinstruction.html#parent-1">Parent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts#L13">MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts#L13">MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="sourcestaffentry.html" class="tsd-signature-type">SourceStaffEntry</a></h4>
@@ -334,7 +361,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="abstractnotationinstruction.html">AbstractNotationInstruction</a>.<a href="abstractnotationinstruction.html#parent-1">Parent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts#L16">MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts#L16">MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts:16</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -359,7 +386,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="abstractnotationinstruction.html">AbstractNotationInstruction</a>.<a href="abstractnotationinstruction.html#printobject-1">PrintObject</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts#L20">MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts#L20">MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -368,7 +395,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="abstractnotationinstruction.html">AbstractNotationInstruction</a>.<a href="abstractnotationinstruction.html#printobject-1">PrintObject</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts#L24">MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts#L24">MusicalScore/VoiceData/Instructions/AbstractNotationInstruction.ts:24</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -394,7 +421,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L94">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L102">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:102</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -417,7 +444,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L105">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L113">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:113</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -440,7 +467,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L90">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:90</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L98">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:98</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -457,7 +484,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L60">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L66">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:66</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/noteenum.html" class="tsd-signature-type">NoteEnum</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -474,7 +501,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L81">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L87">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:87</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -497,7 +524,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L74">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L80">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:80</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -520,7 +547,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L25">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L29">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -543,7 +570,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/7464b73/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L30">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/940d3db/src/MusicalScore/VoiceData/Instructions/KeyInstruction.ts#L36">MusicalScore/VoiceData/Instructions/KeyInstruction.ts:36</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="keyinstruction.html" class="tsd-signature-type">KeyInstruction</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -573,8 +600,14 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="keyinstruction.html#alteratednotes" class="tsd-kind-icon">alterated<wbr>Notes</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="keyinstruction.html#istransposedby" class="tsd-kind-icon">is<wbr>Transposed<wbr>By</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="keyinstruction.html#keytype" class="tsd-kind-icon">key<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="keyinstruction.html#keytypeoriginal" class="tsd-kind-icon">key<wbr>Type<wbr>Original</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="keyinstruction.html#mode" class="tsd-kind-icon">mode</a>
