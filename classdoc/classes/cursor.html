@@ -98,6 +98,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="cursor.html#currentpagenumber" class="tsd-kind-icon">current<wbr>Page<wbr>Number</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="cursor.html#cursorelement" class="tsd-kind-icon">cursor<wbr>Element</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="cursor.html#cursorelementid" class="tsd-kind-icon">cursor<wbr>Element<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="cursor.html#cursoroptions" class="tsd-kind-icon">cursor<wbr>Options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="cursor.html#graphic" class="tsd-kind-icon">graphic</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="cursor.html#hidden" class="tsd-kind-icon">hidden</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="cursor.html#iterator" class="tsd-kind-icon">iterator</a></li>
@@ -139,13 +140,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Cursor<span class="tsd-signature-symbol">(</span>container<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, openSheetMusicDisplay<span class="tsd-signature-symbol">: </span><a href="opensheetmusicdisplay.html" class="tsd-signature-type">OpenSheetMusicDisplay</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cursor.html" class="tsd-signature-type">Cursor</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Cursor<span class="tsd-signature-symbol">(</span>container<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, openSheetMusicDisplay<span class="tsd-signature-symbol">: </span><a href="opensheetmusicdisplay.html" class="tsd-signature-type">OpenSheetMusicDisplay</a>, cursorOptions<span class="tsd-signature-symbol">: </span><a href="../interfaces/cursoroptions.html" class="tsd-signature-type">CursorOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cursor.html" class="tsd-signature-type">Cursor</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L20">OpenSheetMusicDisplay/Cursor.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L22">OpenSheetMusicDisplay/Cursor.ts:22</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -155,6 +156,9 @@
 								</li>
 								<li>
 									<h5>openSheetMusicDisplay: <a href="opensheetmusicdisplay.html" class="tsd-signature-type">OpenSheetMusicDisplay</a></h5>
+								</li>
+								<li>
+									<h5>cursorOptions: <a href="../interfaces/cursoroptions.html" class="tsd-signature-type">CursorOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="cursor.html" class="tsd-signature-type">Cursor</a></h4>
@@ -170,7 +174,7 @@
 					<div class="tsd-signature tsd-kind-icon">container<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L44">OpenSheetMusicDisplay/Cursor.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L51">OpenSheetMusicDisplay/Cursor.ts:51</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -180,7 +184,7 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Page<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L57">OpenSheetMusicDisplay/Cursor.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L64">OpenSheetMusicDisplay/Cursor.ts:64</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -190,7 +194,7 @@
 					<div class="tsd-signature tsd-kind-icon">cursor<wbr>Element<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLImageElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L45">OpenSheetMusicDisplay/Cursor.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L52">OpenSheetMusicDisplay/Cursor.ts:52</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -200,7 +204,7 @@
 					<div class="tsd-signature tsd-kind-icon">cursor<wbr>Element<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L50">OpenSheetMusicDisplay/Cursor.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L57">OpenSheetMusicDisplay/Cursor.ts:57</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -212,12 +216,22 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="cursoroptions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> cursor<wbr>Options</h3>
+					<div class="tsd-signature tsd-kind-icon">cursor<wbr>Options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/cursoroptions.html" class="tsd-signature-type">CursorOptions</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L65">OpenSheetMusicDisplay/Cursor.ts:65</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="graphic" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> graphic</h3>
 					<div class="tsd-signature tsd-kind-icon">graphic<span class="tsd-signature-symbol">:</span> <a href="graphicalmusicsheet.html" class="tsd-signature-type">GraphicalMusicSheet</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L55">OpenSheetMusicDisplay/Cursor.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L62">OpenSheetMusicDisplay/Cursor.ts:62</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -227,7 +241,7 @@
 					<div class="tsd-signature tsd-kind-icon">hidden<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L56">OpenSheetMusicDisplay/Cursor.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L63">OpenSheetMusicDisplay/Cursor.ts:63</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -237,7 +251,7 @@
 					<div class="tsd-signature tsd-kind-icon">iterator<span class="tsd-signature-symbol">:</span> <a href="musicpartmanageriterator.html" class="tsd-signature-type">MusicPartManagerIterator</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L54">OpenSheetMusicDisplay/Cursor.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L61">OpenSheetMusicDisplay/Cursor.ts:61</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -247,7 +261,7 @@
 					<div class="tsd-signature tsd-kind-icon">manager<span class="tsd-signature-symbol">:</span> <a href="musicpartmanager.html" class="tsd-signature-type">MusicPartManager</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L53">OpenSheetMusicDisplay/Cursor.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L60">OpenSheetMusicDisplay/Cursor.ts:60</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -257,7 +271,7 @@
 					<div class="tsd-signature tsd-kind-icon">open<wbr>Sheet<wbr>Music<wbr>Display<span class="tsd-signature-symbol">:</span> <a href="opensheetmusicdisplay.html" class="tsd-signature-type">OpenSheetMusicDisplay</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L51">OpenSheetMusicDisplay/Cursor.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L58">OpenSheetMusicDisplay/Cursor.ts:58</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -267,7 +281,7 @@
 					<div class="tsd-signature tsd-kind-icon">rules<span class="tsd-signature-symbol">:</span> <a href="engravingrules.html" class="tsd-signature-type">EngravingRules</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L52">OpenSheetMusicDisplay/Cursor.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L59">OpenSheetMusicDisplay/Cursor.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -284,7 +298,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L240">OpenSheetMusicDisplay/Cursor.ts:240</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L294">OpenSheetMusicDisplay/Cursor.ts:294</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -301,7 +315,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L236">OpenSheetMusicDisplay/Cursor.ts:236</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L290">OpenSheetMusicDisplay/Cursor.ts:290</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="musicpartmanageriterator.html" class="tsd-signature-type">MusicPartManagerIterator</a></h4>
@@ -321,7 +335,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L249">OpenSheetMusicDisplay/Cursor.ts:249</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L303">OpenSheetMusicDisplay/Cursor.ts:303</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -344,7 +358,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L245">OpenSheetMusicDisplay/Cursor.ts:245</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L299">OpenSheetMusicDisplay/Cursor.ts:299</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -372,7 +386,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L101">OpenSheetMusicDisplay/Cursor.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L109">OpenSheetMusicDisplay/Cursor.ts:109</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -395,7 +409,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L185">OpenSheetMusicDisplay/Cursor.ts:185</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L229">OpenSheetMusicDisplay/Cursor.ts:229</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -417,7 +431,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L60">OpenSheetMusicDisplay/Cursor.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L68">OpenSheetMusicDisplay/Cursor.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -448,7 +462,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L199">OpenSheetMusicDisplay/Cursor.ts:199</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L243">OpenSheetMusicDisplay/Cursor.ts:243</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -470,7 +484,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L207">OpenSheetMusicDisplay/Cursor.ts:207</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L251">OpenSheetMusicDisplay/Cursor.ts:251</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -492,7 +506,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L77">OpenSheetMusicDisplay/Cursor.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L85">OpenSheetMusicDisplay/Cursor.ts:85</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -509,7 +523,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L71">OpenSheetMusicDisplay/Cursor.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L79">OpenSheetMusicDisplay/Cursor.ts:79</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -531,7 +545,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L107">OpenSheetMusicDisplay/Cursor.ts:107</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L115">OpenSheetMusicDisplay/Cursor.ts:115</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -548,7 +562,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L261">OpenSheetMusicDisplay/Cursor.ts:261</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L315">OpenSheetMusicDisplay/Cursor.ts:315</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -565,13 +579,13 @@
 					<a name="updatestyle" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> update<wbr>Style</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Style<span class="tsd-signature-symbol">(</span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, color<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Style<span class="tsd-signature-symbol">(</span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, cursorOptions<span class="tsd-signature-symbol">?: </span><a href="../interfaces/cursoroptions.html" class="tsd-signature-type">CursorOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/11e608f/src/OpenSheetMusicDisplay/Cursor.ts#L213">OpenSheetMusicDisplay/Cursor.ts:213</a></li>
+									<li>Defined in <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/586e9bf/src/OpenSheetMusicDisplay/Cursor.ts#L257">OpenSheetMusicDisplay/Cursor.ts:257</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -580,7 +594,7 @@
 									<h5>width: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> color: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = undefined</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> cursorOptions: <a href="../interfaces/cursoroptions.html" class="tsd-signature-type">CursorOptions</a><span class="tsd-signature-symbol"> = undefined</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -618,6 +632,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="cursor.html#cursorelementid" class="tsd-kind-icon">cursor<wbr>Element<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="cursor.html#cursoroptions" class="tsd-kind-icon">cursor<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="cursor.html#graphic" class="tsd-kind-icon">graphic</a>
