@@ -26,7 +26,7 @@ OSMD is able to display a simple cursor. You can control the visibility of the c
     <h4 class="centered">Cursor</h4>
     <input type="button" value="Show" id="show-cursor-btn" class="btn btn-demo"/>
     <input type="button" value="Hide" id="hide-cursor-btn" class="btn btn-demo"/>
-    <input type="button" value="Previous" id="previous-cursor-btn" class="btn btn-demo"/>
+    <input type="button" value="Back" id="previous-cursor-btn" class="btn btn-demo"/>
     <input type="button" value="Next" id="next-cursor-btn" class="btn btn-demo"/>
     <input type="button" value="Reset" id="reset-cursor-btn" class="btn btn-demo"/>
   </div>
