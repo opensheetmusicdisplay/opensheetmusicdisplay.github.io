@@ -2,6 +2,7 @@
 layout: page
 title: Using OpenSheetMusicDisplay
 permalink: /usage/script/
+lang: en_US
 ---
 
 The documentation for OSMD has moved to the [OSMD Wiki](https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/wiki), please see there:
