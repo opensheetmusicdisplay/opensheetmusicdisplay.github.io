@@ -18,7 +18,8 @@ You can select the rendering strategy, by choosing either the Canvas option, or 
 You control the zoom level of the music sheet displayed. Right now, OSMD is rendering the music piece at <span id="zoom-str">100</span>% on <span id="size-str">0</span>px width.
 
 ## Cursor
-OSMD is able to display a simple cursor. You can control the visibility of the cursor and navigate through the piece using the following controls. You can also use the right arrow key to step through the piece. -->
+OSMD is able to display a simple cursor. You can control the visibility of the cursor and navigate through the piece using the following controls. You can also use the right arrow key to step through the piece.
+-->
 
 <h3 class="centered" id="header"> <img alt="OSMD logo" align="center" height="40" src="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/assets/33069673/a83dc850-65c2-4c7a-8836-eb75cefc006f"/> OpenSheetMusicDisplay Demo </h3>
 <div id="versionDiv" class="version-div centered">OSMD Version: </div>
