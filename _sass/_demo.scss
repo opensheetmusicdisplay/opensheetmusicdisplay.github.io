@@ -28,7 +28,7 @@ select.btn.btn-demo {
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
-  padding: 0.75rem 1rem;
+  padding: 0.1rem 0.4rem; /* we don't need much or any top/bottom padding here because buttons have it */
   color: darken($osmd-orange, 5%);
   border-color: darken($osmd-orange, 5%);
   background-color: transparentize(darken($osmd-orange, 5%), 0.95);
