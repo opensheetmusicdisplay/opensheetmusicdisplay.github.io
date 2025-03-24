@@ -32,7 +32,7 @@ select.btn.btn-demo {
   color: darken($osmd-orange, 5%);
   border-color: darken($osmd-orange, 5%);
   background-color: transparentize(darken($osmd-orange, 5%), 0.95);
-  margin: 0.5rem !important;
+  margin: 0.1rem 0.5rem !important; /* we don't want much top/bottom margin on mobile portrait mode so we don't need to scroll much to the score */
   text-align: center;
   display: inline-block;
 }
