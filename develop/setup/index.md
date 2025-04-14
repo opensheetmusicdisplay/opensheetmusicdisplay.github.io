@@ -2,6 +2,7 @@
 title: Setting up OSMD for Development
 layout: page
 permalink: "/develop/setup/"
+lang: en_US
 ---
 
 This page describes how to set up OpenSheetMusicDisplay for development.

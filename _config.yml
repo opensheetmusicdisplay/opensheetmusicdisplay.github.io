@@ -3,10 +3,26 @@ title: OpenSheetMusicDisplay
 email: thomas@opensheetmusicdisplay.org
 description: The first JavaScript engine for MusicXML using VexFlow
 baseurl: ""
-url: "https://opensheetmusicdisplay.github.io/"
+url: "https://opensheetmusicdisplay.org/"
 twitter_username: osmdengine
 github_username: opensheetmusicdisplay/opensheetmusicdisplay
 facebook_username: opensheetmusicdisplay
+
+# Used by jekyll-seo-tag
+author: OpenSheetMusicDisplay Contributors
+twitter:
+  username: osmdengine
+facebook:
+ app_id: 
+ publisher: 
+ admins: 
+logo: /assets/osmd_logo.svg
+social:
+  name: OpenSheetMusicDisplay
+  links:
+    - https://twitter.com/osmdengine
+    - https://www.facebook.com/opensheetmusicdisplay
+    - https://github.com/opensheetmusicdisplay
 
 # Build settings
 markdown: kramdown
@@ -18,3 +34,6 @@ page_gen:
     template: rule
     name: ruleName
     dir: rules
+
+plugins:
+  - jekyll-seo-tag

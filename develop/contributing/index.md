@@ -2,6 +2,7 @@
 layout: page
 title: Contributing to OSMD
 permalink: /develop/contributing/
+lang: en_US
 ---
 
 A collection of open issues that are suitable for community contribution, is maintained on [Github][0].

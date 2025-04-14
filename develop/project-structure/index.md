@@ -2,6 +2,7 @@
 layout: page
 title: Project Structure
 permalink: /develop/project-structure/
+lang: en_US
 ---
 
 ## Project Structure
