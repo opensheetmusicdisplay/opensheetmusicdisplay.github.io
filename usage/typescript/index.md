@@ -2,6 +2,7 @@
 layout: page
 title: Using OSMD with TypeScript
 permalink: /usage/typescript/
+lang: en_US
 ---
 
 [TypeScript][0] in combination with [Webpack][1], [SystemJS][2] or [Browserify][3], is the most comfortable and straightforward way of using OpenSheetMusicDisplay.

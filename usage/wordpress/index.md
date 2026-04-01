@@ -2,6 +2,7 @@
 layout: page
 title: The OSMD WordPress Plugin
 permalink: /usage/wordpress/
+lang: en_US
 ---
 
 OpenSheetMusicDisplay will be available as WordPress plugin, which can be installed to display sheet music in blogs.

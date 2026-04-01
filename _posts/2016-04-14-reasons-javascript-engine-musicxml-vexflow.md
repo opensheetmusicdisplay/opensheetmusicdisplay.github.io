@@ -3,6 +3,7 @@ layout: post
 title:  "5 Reasons why we decided to build the first open source JavaScript engine for MusicXML using VexFlow"
 date:   2016-04-14 00:00:00
 author: Thomas Buchstätter
+lang:   en_US
 ---
 
 Every developer building solutions for digital sheet music using JavaScript sooner or later stumbles across [VexFlow][1]:
