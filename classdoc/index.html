@@ -33,13 +33,13 @@
 <img title="Local OSMD Development/Debug demo" alt="Local OSMD Developer Demo" src="https://user-images.githubusercontent.com/33069673/106189263-5695f400-61a8-11eb-901f-aafc853af497.png" style="max-width: 100%; max-height: 100vh; width: auto; margin: auto;">
 <h2 id="key-features" class="tsd-anchor-link">Key Features<a href="#key-features" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2>
 <ul>
-<li>Displays MusicXML sheet music in a browser(less) environment (Javascript, Typescript, server-side: browserless NodeJS script)</li>
+<li>Displays MusicXML sheet music in a browser(less) environment (Javascript, Typescript, server-side: headless/browserless NodeJS script)</li>
 <li><em>Soon: Audio Playback (work in progress, early access build available for <a href="https://github.com/sponsors/opensheetmusicdisplay">Github sponsors</a>)</em></li>
 <li>Uses <a href="https://www.vexflow.com/">Vexflow</a> for rendering and (partly) layout</li>
 <li>Parses most MusicXML tags and integrates it into an accessible and modifiable data model (e.g. to change a note's color)</li>
 <li>Offers many options (<a href="https://opensheetmusicdisplay.github.io/classdoc/classes/OSMDOptions.html">OSMDOptions</a> / <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/blob/master/src/MusicalScore/Graphical/EngravingRules.ts">EngravingRules</a>): Page Format, Font Family, Positioning, not rendering certain elements like the title or lyrics, etc.</li>
 <li>Allows modification of the displayed score, like hiding parts or instruments, hiding instrument names, title or composer, a more compact layout, or coloring notes</li>
-<li>Outputs SVG or PNG, also via nodejs script in the command line, completely browserless (e.g. for server-side rendering)</li>
+<li>Outputs SVG or PNG, also via nodejs script in the command line, completely headless/browserless (e.g. for server-side rendering - see generateImages script)</li>
 <li>Written in <a href="https://www.typescriptlang.org/">Typescript</a> with complete type information, 100% compatible with Javascript (minified build is .js)</li>
 <li>Can display tablature (guitar tabs) from MusicXML, including effects like bends and glissandi. Can be combined with treble clef.
 <img src="https://user-images.githubusercontent.com/33069673/127324371-b7c5f137-a1b8-4127-95b0-38e6a185c906.png" height="130"></li>
@@ -52,13 +52,13 @@
 <h2 id="limitations" class="tsd-anchor-link">Limitations<a href="#limitations" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2>
 <p>Not all MusicXML tags are (fully) supported:</p>
 <ul>
-<li>Pedal marks (currently in early access for sponsors)</li>
-<li>Glissando lines</li>
-<li>Wavy-line (currently in early access for sponsors)</li>
-<li>Etc, see <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/projects/3">OSMD 1.0 Project</a></li>
+<li>Advanced Pedal marks (down/up brackets and lift wedge currently in early access for sponsors, &quot;Ped.&quot; and &quot;*&quot; signs supported)</li>
+<li>Tremolo between 2 notes (tremolo on a single note is supported)</li>
+<li>Slurs across staves (e.g. from piano left hand to right hand)</li>
 </ul>
-<p>Also, <strong>OSMD is a renderer, not an interactive sheet music editor.</strong> Rendering takes some time, and you can't easily/quickly move notes, place new notes, etc.<br>
-(You can, however, manipulate the SVG nodes for instant changes like note re-coloring, see <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/wiki/Exploring-the-Demo">Exploring the Demo | Wiki</a>)</p>
+<p>Also, <strong>OSMD is a renderer, not a full interactive sheet music editor.</strong> Rendering takes some time for long scores, and you can't easily/quickly move notes, place new notes, etc.<br>
+There are however limited editing features like making notes invisible, coloring, hiding some instruments/staffs, not showing key or time signatures, and so on, see IOSMDOptions and EngravingRules<br>
+(You can manipulate the SVG nodes for instant changes like note re-coloring, see <a href="https://github.com/opensheetmusicdisplay/opensheetmusicdisplay/wiki/Exploring-the-Demo">Exploring the Demo | Wiki</a>)</p>
 <h2 id="how-to-use-osmd" class="tsd-anchor-link">How to Use OSMD<a href="#how-to-use-osmd" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2>
 <ul>
 <li>Available as <a href="https://www.npmjs.com/package/opensheetmusicdisplay">NPM module</a>, can be used with plain javascript or module managers like webpack</li>
