@@ -41,7 +41,7 @@ OSMD is able to display a simple cursor. You can control the visibility of the c
   </div>
   <div class="control-container">
     <h4 class="centered">Renderer</h4>
-    <label class="btn btn-demo"><input type="checkbox" id="incremental-checkbox"/> Incremental rendering (load on scroll)</label>
+    <label class="btn btn-demo"><input type="checkbox" id="incremental-checkbox"/> Incremental (load on scroll)</label>
     <input type="button" value="Re-Render" id="debug-re-render-btn" class="btn btn-demo"/>
     <input type="button" value="Clear" id="debug-clear-btn" class="btn btn-demo"/>
     <input type="button" value="Create PDF" id="print-pdf-btn" class="btn btn-demo"/>
