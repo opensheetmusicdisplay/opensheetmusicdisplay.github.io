@@ -14,6 +14,12 @@
       </attributes>
       <direction placement="above">
         <direction-type>
+          <rehearsal font-weight="bold">A</rehearsal>
+          <rehearsal font-size="10">′</rehearsal>
+        </direction-type>
+      </direction>
+      <direction placement="above">
+        <direction-type>
           <words font-weight="bold">Allegro </words>
           <words font-weight="normal">con brio</words>
         </direction-type>
@@ -30,6 +36,12 @@
         </direction-type>
       </direction>
       <note><pitch><step>D</step><octave>4</octave></pitch><duration>4</duration><type>whole</type></note>
+      <direction placement="above">
+        <direction-type>
+          <words>Da </words>
+          <words font-style="italic">Capo</words>
+        </direction-type>
+      </direction>
     </measure>
   </part>
 </score-partwise>
